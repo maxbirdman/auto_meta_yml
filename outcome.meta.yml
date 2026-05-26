@@ -1,4 +1,4 @@
-# Update: 2026-05-25 18:47
+# Update: 2026-05-26 19:24
 allow-lan: false
 dns:
   enable: true
@@ -18,21 +18,32 @@ log-level: warning
 mixed-port: 7890
 mode: rule
 proxies:
-- name: '[5ms] 美国 - 聖荷西 - 18'
-  server: 167.68.11.253
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
+- encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
+  name: '[1ms] 🇨🇭CH_1|1.2MB/s'
+  network: http
+  port: 22
+  server: 172.65.111.43
+  type: vless
+  udp: true
+  uuid: monacoVPN
+  xudp: true
+- name: '[1ms] 🇩🇪DE_7|1.2MB/s'
   network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2096
+  server: 104.20.6.134
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
   ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 785
-- name: '[5ms] 美国 - 聖荷西 - 31'
+    path: /tr
+- name: '[1ms] 美国 - 聖荷西 - 31'
   server: 45.40.145.253
   port: 443
   type: trojan
@@ -46,156 +57,7 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 775
-- name: '[5ms] 🇩🇪DE_4|1.6MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2096
-  server: 104.20.5.134
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /tr
-- encryption: none
-  name: '[5ms] 🇺🇸US_4|1.1MB/s'
-  network: ws
-  port: 2052
-  server: 104.18.12.229
-  type: vless
-  udp: true
-  uuid: cdec8542-a21f-4377-9da3-ea60bb6d3a30
-  ws-opts:
-    headers:
-      Host: chosenflyesqt-q3y28ipf-v2.chosen-fly-esqt.workers.dev
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36
-    path: /
-  xudp: true
-- name: '[5ms] 🇩🇪DE_7|1.2MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2096
-  server: 104.20.6.134
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /tr
-- name: '[5ms] 美国 - 聖荷西 - 10'
-  server: 50.62.89.253
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 788
-- name: '[5ms] 美国 - 聖荷西 - 15'
-  server: 66.81.247.253
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1363
-- name: '[5ms] 美国 - 聖荷西 - 29'
-  server: 166.62.113.253
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 803
-- name: '[5ms] 美国 - 聖荷西 - 40'
-  server: 141.193.27.253
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1446
-- encryption: none
-  http-opts:
-    headers: {}
-    path:
-    - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
-  name: '[5ms] 🇨🇭CH_1|1.2MB/s'
-  network: http
-  port: 22
-  server: 172.65.111.43
-  type: vless
-  udp: true
-  uuid: monacoVPN
-  xudp: true
-- name: '[5ms] 美国 - 聖荷西 - 38'
-  server: 192.169.223.253
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1622
-- name: '[5ms] 美国 - 聖荷西 - 39'
-  server: 50.62.195.253
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1396
-- name: '[5ms] 美国 - 聖荷西 - 9'
-  server: 8.34.146.253
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /tr
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 823
-- name: '[5ms] 🇺🇸US_12|1.1MB/s'
+- name: '[1ms] 🇺🇸US_12|1.1MB/s'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -207,87 +69,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-- name: '[5ms] 🇺🇸US_13|2.3MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 161.145.150.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '[5ms] 美国 - Reston - 34'
-  server: 150.136.254.79
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1656
-- name: '[5ms] 美国 - 聖荷西 - 37'
-  server: 159.242.242.253
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 2004
-- name: '[5ms] 美国 - 聖荷西 - 41'
-  server: 104.129.165.253
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1801
-- name: '[5ms] 🇺🇸US_11|2.4MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 45.40.145.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '[5ms] 美国 - 聖荷西 - 36'
-  server: 166.62.111.253
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 782
-- name: '[6ms] 美国 - 聖荷西 - 8'
+- name: '[1ms] 美国 - 聖荷西 - 8'
   server: 184.174.80.253
   port: 443
   type: trojan
@@ -301,21 +83,20 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 824
-- name: '[6ms] 美国 - 聖荷西 - 30'
-  server: 198.177.56.253
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
+- name: '[1ms] 13|US_speednode_0026'
   network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
+  password: 2238e2f3-1a01-485e-8c22-24b65764c68b
+  port: 443
+  server: 172.64.152.23
+  skip-cert-verify: false
+  sni: gzjx.dpdns.org
+  type: trojan
   udp: true
-  delay: 973
-- name: '[6ms] 美国 - 聖荷西 - 35'
+  ws-opts:
+    headers:
+      Host: gzjx.dpdns.org
+    path: /51.91.253.83=8443
+- name: '[1ms] 美国 - 聖荷西 - 35'
   server: 159.246.55.253
   port: 443
   type: trojan
@@ -329,7 +110,291 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 785
-- name: '[6ms] 美国 - 聖荷西 - 4'
+- name: '[1ms] 美国 - 聖荷西 - 37'
+  server: 159.242.242.253
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 2004
+- name: '[1ms] 美国 - 聖荷西 - 9'
+  server: 8.34.146.253
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /tr
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 823
+- name: '[1ms] 🇺🇸US_3|1.0MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 166.62.113.253
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: '[2ms] 美国 - 聖荷西 - 18'
+  server: 167.68.11.253
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 785
+- name: '[2ms] 美国 - 聖荷西 - 30'
+  server: 198.177.56.253
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 973
+- encryption: none
+  name: '[2ms] 🇺🇸US_4|1.1MB/s'
+  network: ws
+  port: 2052
+  server: 104.18.12.229
+  type: vless
+  udp: true
+  uuid: cdec8542-a21f-4377-9da3-ea60bb6d3a30
+  ws-opts:
+    headers:
+      Host: chosenflyesqt-q3y28ipf-v2.chosen-fly-esqt.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36
+    path: /
+  xudp: true
+- name: '[2ms] 美国 - 聖荷西 - 10'
+  server: 50.62.89.253
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 788
+- name: '[2ms] 美国 - 聖荷西 - 15'
+  server: 66.81.247.253
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1363
+- name: '[2ms] 美国 - 聖荷西 - 36'
+  server: 166.62.111.253
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 782
+- name: '[2ms] 美国 - 聖荷西 - 39'
+  server: 50.62.195.253
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1396
+- name: '[2ms] 13|US_speednode_0025'
+  network: ws
+  password: :U]2hAN7Y[Ka0Eb_
+  port: 8443
+  server: 104.17.148.22
+  skip-cert-verify: false
+  sni: TEst-63W.PaGEs.deV
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: TEst-63W.PaGEs.deV
+    path: /tre6QQRE1ue6YL7k30/NzIuMTMuMTIyLjEzNw==
+- name: '[2ms] 🇺🇸US_10|1.0MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 198.177.56.253
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: '[2ms] 🇺🇸US_11|2.4MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 45.40.145.253
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: '[2ms] 美国 - Reston - 34'
+  server: 150.136.254.79
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1656
+- name: '[2ms] 🇩🇪DE_3|1.1MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 141.101.113.253
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: '[2ms] 🇸🇬SG_1|1.2MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 108.162.192.253
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: '[2ms] 13|US_speednode_0023'
+  network: ws
+  port: 2096
+  server: 172.64.47.168
+  servername: jp.aniua.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  ws-opts:
+    headers:
+      Host: jp.aniua.qzz.io
+    path: /?ed=2095
+- name: '[2ms] 美国 - 聖荷西 - 38'
+  server: 192.169.223.253
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1622
+- name: '[2ms] 美国 - 聖荷西 - 40'
+  server: 141.193.27.253
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1446
+- name: '[2ms] 美国 - 聖荷西 - 41'
+  server: 104.129.165.253
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1801
+- name: '[2ms] 🇺🇸US_13|2.3MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 161.145.150.253
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: '[3ms] 美国 - 聖荷西 - 4'
   server: 80.93.202.253
   port: 443
   type: trojan
@@ -343,20 +408,19 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 796
-- name: '[6ms] 🇺🇸US_3|1.0MB/s'
+- name: '[3ms] 🇩🇪DE_4|1.6MB/s'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 166.62.113.253
-  skip-cert-verify: true
+  port: 2096
+  server: 104.20.5.134
   sni: Koma-YT.PAGeS.Dev
   type: trojan
   udp: true
   ws-opts:
     headers:
       Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '[6ms] 美国 - Ashburn - 3'
+    path: /tr
+- name: '[3ms] 美国 - Ashburn - 3'
   server: 100.27.193.207
   type: ss
   country: 🇺🇸US
@@ -364,103 +428,9 @@ proxies:
   password: amazonskr05
   cipher: aes-256-cfb
   delay: 506
-- cipher: aes-256-cfb
-  name: '[6ms] 🇺🇸US_2|1009KB/s'
-  password: amazonskr05
+- name: '[4ms] 美国 - 聖荷西 - 29'
+  server: 166.62.113.253
   port: 443
-  server: 54.234.5.174
-  type: ss
-  udp: true
-- name: '[7ms] 🇩🇪DE_3|1.1MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 141.101.113.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '[7ms] 美国 - Reston - 28'
-  server: 44.217.235.114
-  port: 8443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 2060
-- client-fingerprint: randomized
-  name: '[7ms] 13|US_speednode_0045'
-  network: ws
-  port: 2095
-  server: openai.com
-  servername: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-    path: /
-- name: '[7ms] 🇸🇬SG_1|1.2MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 108.162.192.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '[8ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
-  type: ss
-  server: 15.204.247.49
-  port: 12000
-  password: 8JCsPssfgS8tiRwiMlhARg==
-  cipher: aes-256-gcm
-- name: '[8ms] 🇺🇸US_10|1.0MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 198.177.56.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '[11ms] 美国 - 紐約 - 20'
-  server: 205.172.57.218
-  port: 2053
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 2135
-- name: '[11ms] 美国 - 紐約 - 33'
-  server: 199.119.137.41
-  port: 2053
   type: trojan
   password: 8r<[9'l6hAO#8ZQi
   sni: Koma-YT.PAGeS.Dev
@@ -471,107 +441,8 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
   udp: true
-  delay: 2078
-- name: '[12ms] 🇺🇸US_15|1012KB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 199.119.137.41
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '[12ms] 美国 - 紐約 - 21'
-  server: 207.246.122.197
-  port: 2053
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 2094
-- name: '[12ms] 美国 - 紐約 - 19'
-  server: 80.209.242.70
-  port: 2053
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1418
-- flow: xtls-rprx-vision
-  name: '[12ms] 13|NL_speednode_0025'
-  port: 8443
-  reality-opts:
-    public-key: k-vQOS0BRMLybmbbgXA73BH0sXMvPOKc9ESzaxYY4RA
-    short-id: 6e49074f
-  server: 45.88.78.89
-  servername: www.spotify.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 07c7b9c6-387b-5e38-86e9-c29d3436d177
-- name: '[12ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
-  type: ss
-  server: 23.95.75.146
-  port: 443
-  password: NDRySIABARbErNIVsCNVkyYAHiBzhveT
-  cipher: chacha20-ietf-poly1305
-- name: '[13ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
-  type: trojan
-  network: ws
-  server: 160.153.136.238
-  port: 2096
-  password: 5a2c16f9
-  skip-cert-verify: true
-  sni: snippets.kkii.eu.org
-  ws-opts:
-    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
-- client-fingerprint: randomized
-  name: '[13ms] 13|US_speednode_0038'
-  network: ws
-  port: 2095
-  server: ns.cloudflare.com
-  servername: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-    path: /
-- client-fingerprint: randomized
-  name: '[13ms] 13|US_speednode_0042'
-  network: ws
-  port: 2095
-  server: developers.cloudflare.com
-  servername: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-    path: /
-- name: '[14ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
+  delay: 803
+- name: '[4ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
   type: trojan
   network: ws
   server: 188.244.122.238
@@ -583,49 +454,7 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
-- client-fingerprint: randomized
-  name: '[14ms] 13|US_speednode_0037'
-  network: ws
-  port: 2095
-  server: www.npmjs.com
-  servername: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-    path: /
-- name: '[14ms] 13|GB_speednode_0019'
-  port: 443
-  reality-opts:
-    public-key: xPEXenK1VOMc2VKmnA8a4VSHb7AjcGIScGG7iy0EiwQ
-    short-id: 84fc368a
-  server: singapore.cloudpath.live
-  servername: microsoft.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5e1083b9-4d4f-50ef-93e7-6e966dfce1f9
-- client-fingerprint: randomized
-  name: '[14ms] 13|US_speednode_0039'
-  network: ws
-  port: 2095
-  server: docs.cloudflare.com
-  servername: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-    path: /
-- name: '[18ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
+- name: '[5ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
   type: vmess
   server: support.zoom.us
   port: 8080
@@ -641,56 +470,47 @@ proxies:
     path: /@Malinda6104
     headers:
       HOST: node4.rtxconfigz.com
-- name: '[19ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
-  type: ss
-  server: 144.217.164.29
-  port: 12000
-  password: 8JCsPssfgS8tiRwiMlhARg==
-  cipher: aes-256-gcm
-- name: '[20ms] 美国 - South Fulton - 5'
-  server: 77.110.124.132
-  port: 443
+- name: '[6ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
+  type: trojan
+  network: ws
+  server: 160.153.136.238
+  port: 2096
+  password: 5a2c16f9
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  ws-opts:
+    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
+- name: '[7ms] 美国 - 紐約 - 20'
+  server: 205.172.57.218
+  port: 2053
   type: trojan
   password: 8r<[9'l6hAO#8ZQi
   sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
+    path: /trTelegram
     headers:
       Host: Koma-YT.PAGeS.Dev
   udp: true
-  delay: 1421
-- name: '[20ms] 13|GB_speednode_0018'
-  port: 443
-  reality-opts:
-    public-key: jnlUXqaLeqZSYBQLjk1oUGTrxH0TTmLojXWb1X8vzgE
-    short-id: 33b973c3
-  server: hongkong.cloudpath.live
-  servername: microsoft.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5e1083b9-4d4f-50ef-93e7-6e966dfce1f9
-- client-fingerprint: randomized
-  name: '[20ms] 13|US_speednode_0040'
+  delay: 2135
+- name: '[7ms] 美国 - 紐約 - 21'
+  server: 207.246.122.197
+  port: 2053
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
   network: ws
-  port: 2095
-  server: www.wto.org
-  servername: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   ws-opts:
+    path: /trTelegram
     headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-    path: /
-- name: '[21ms] 美国 - South Fulton - 23'
-  server: 138.124.60.93
-  port: 8443
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 2094
+- name: '[8ms] 美国 - 紐約 - 19'
+  server: 80.209.242.70
+  port: 2053
   type: trojan
   password: 8r<[9'l6hAO#8ZQi
   sni: Koma-YT.PAGeS.Dev
@@ -701,28 +521,68 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
   udp: true
-  delay: 1129
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '[25ms] 13|CA_speednode_0002'
-  port: 51072
-  reality-opts:
-    public-key: 5KJ1tLErCUEfqxc3IsnY_49p_gWe0mPB8eXJ3MLucgU
-    short-id: 0675732ab101
-  server: 35.182.252.92
-  servername: www.sony.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b6b2c827-4ac1-4e2c-af28-dfa7edbfeb81
-- name: '[25ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
+  delay: 1418
+- name: '[8ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
   type: ss
-  server: 45.154.204.7
-  port: 990
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  server: 23.95.75.146
+  port: 443
+  password: NDRySIABARbErNIVsCNVkyYAHiBzhveT
   cipher: chacha20-ietf-poly1305
-- name: '[25ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
+- name: '[8ms] 美国 - 紐約 - 33'
+  server: 199.119.137.41
+  port: 2053
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 2078
+- name: '[8ms] 🇺🇸US_15|1012KB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 199.119.137.41
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: '[11ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
+  type: ss
+  server: 15.204.247.49
+  port: 12000
+  password: 8JCsPssfgS8tiRwiMlhARg==
+  cipher: aes-256-gcm
+- name: '[16ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
+  type: vmess
+  server: sy4.620720.xyz
+  port: 443
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  alterId: 0
+  cipher: auto
+  network: ws
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: sy4.620720.xyz
+- name: '[17ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
+  type: ss
+  server: 144.217.164.29
+  port: 12000
+  password: 8JCsPssfgS8tiRwiMlhARg==
+  cipher: aes-256-gcm
+- name: '[18ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
   type: vmess
   server: t1.620720.xyz
   port: 8443
@@ -738,28 +598,20 @@ proxies:
     path: /
     headers:
       Host: t1.620720.xyz
-- client-fingerprint: randomized
-  name: '[25ms] 13|US_speednode_0041'
+- name: '[19ms] 13|US_speednode_0022'
   network: ws
-  port: 2095
-  server: www.epicgames.com
-  servername: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
+  password: :U]2hAN7Y[Ka0Eb_
+  port: 8443
+  server: www.speedtest.net
   skip-cert-verify: false
-  tls: false
-  type: vless
+  sni: TEst-63W.PaGEs.deV
+  type: trojan
   udp: true
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   ws-opts:
     headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-    path: /
-- name: '[27ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
-  type: ss
-  server: 23.95.76.59
-  port: 990
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  cipher: chacha20-ietf-poly1305
-- name: '[27ms] 美国 - Cheektowaga - 24'
+      Host: TEst-63W.PaGEs.deV
+    path: /tre6QQRE1ue6YL7k30/NzIuMTMuMTIyLjEzNw==
+- name: '[19ms] 美国 - Cheektowaga - 24'
   server: 172.245.246.110
   port: 443
   type: trojan
@@ -773,20 +625,41 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 2094
-- name: '[27ms] 13|US_speednode_0048'
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: vless.herogoing.top
-  skip-cert-verify: false
-  sni: vless.herogoing.top
+- name: '[22ms] 美国 - South Fulton - 23'
+  server: 138.124.60.93
+  port: 8443
   type: trojan
-  udp: true
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
   ws-opts:
+    path: /trTelegram @WangCai2
     headers:
-      Host: vless.herogoing.top
-    path: /tr?ed=2560
-- name: '[31ms] 美国 - 迈阿密 - 11'
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1129
+- name: '[22ms] 美国 - South Fulton - 5'
+  server: 77.110.124.132
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1421
+- name: '[28ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
+  type: ss
+  server: 23.95.76.59
+  port: 990
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  cipher: chacha20-ietf-poly1305
+- name: '[29ms] 美国 - 迈阿密 - 11'
   server: 142.252.220.13
   port: 443
   type: trojan
@@ -800,7 +673,7 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 1088
-- name: '[35ms] 美国 - Flower Mound - 26'
+- name: '[33ms] 美国 - Flower Mound - 26'
   server: 198.23.224.230
   port: 443
   type: trojan
@@ -814,23 +687,12 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 2093
-- name: '[37ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
-  type: vmess
-  server: hgtrojan.zabc.net
-  port: 2083
-  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
-  alterId: 0
-  cipher: auto
-  network: ws
-  servername: hgtrojan.zabc.net
-  http-opts: {}
-  h2-opts: {}
-  tls: true
-  skip-cert-verify: true
-  ws-opts:
-    path: /e6395c20
-    headers:
-      HOST: hgtrojan.zabc.net
+- name: '[35ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
+  type: ss
+  server: 45.154.204.7
+  port: 990
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  cipher: chacha20-ietf-poly1305
 - name: '[37ms] 美国 - 迈阿密 - 27'
   server: 165.140.117.193
   port: 443
@@ -873,21 +735,6 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 970
-- client-fingerprint: randomized
-  name: '[39ms] 13|US_speednode_0044'
-  network: ws
-  port: 2095
-  server: cdnjs.com
-  servername: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-    path: /
 - name: '[39ms] 美国 - Flower Mound - 17'
   server: 172.86.114.80
   port: 443
@@ -902,43 +749,7 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 1050
-- name: '[52ms] 美国 - 东洛杉矶 - 12'
-  server: 148.135.100.229
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 2620
-- name: '[52ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
-  type: ssr
-  server: 107.151.182.253
-  port: 8080
-  password: 14fFPrbezE3HDZzsMOr6
-  cipher: rc4-md5
-  protocol: origin
-  obfs: plain
-- name: '[55ms] 美国 - 天堂市 - 32'
-  server: 216.126.237.69
-  port: 8443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 2071
-- name: '[55ms] 美国 - 东洛杉矶 - 16'
+- name: '[54ms] 美国 - 东洛杉矶 - 16'
   server: 129.146.121.203
   port: 8443
   type: trojan
@@ -952,40 +763,21 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 1981
-- cipher: chacha20-ietf-poly1305
-  name: '[55ms] 🇺🇸US_9|1.2MB/s'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-  port: 2377
-  server: 88.210.36.109
-  type: ss
+- name: '[56ms] 美国 - 天堂市 - 32'
+  server: 216.126.237.69
+  port: 8443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '[55ms] 🇺🇸US_8|1.0MB/s'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: feb7fa9:154948
-    mode: tls
-  port: 2377
-  server: 88.210.36.107
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '[56ms] 🇺🇸US_7|1.4MB/s'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-  port: 2377
-  server: 88.210.36.108
-  type: ss
-  udp: true
-- name: '[56ms] 🇺🇸US_14|2.3MB/s'
+  delay: 2071
+- name: '[57ms] 🇺🇸US_14|2.3MB/s'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 8443
@@ -996,27 +788,45 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳+@WangCai2
-- name: '[57ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
-  type: vmess
-  server: sy4.620720.xyz
+- cipher: chacha20-ietf-poly1305
+  name: '[60ms] 🇺🇸US_7|1.4MB/s'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 817aa69.default.nintendo.com:112719
+    mode: tls
+  port: 2377
+  server: 88.210.36.108
+  type: ss
+  udp: true
+- name: '[64ms] 美国 - 东洛杉矶 - 12'
+  server: 148.135.100.229
   port: 443
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  alterId: 0
-  cipher: auto
-  network: ws
-  http-opts: {}
-  h2-opts: {}
-  tls: true
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
+  network: ws
   ws-opts:
-    path: /
+    path: /trTelegram
     headers:
-      Host: sy4.620720.xyz
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 2620
+- alterId: 0
+  cipher: auto
+  name: '[64ms] 11|🇺🇸 美国4|@ripaojiedian'
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alpn:
   - ''
   alterId: '0'
   cipher: auto
-  name: '[57ms] 🇺🇸US_5|1.1MB/s'
+  name: '[64ms] 🇺🇸US_5|1.1MB/s'
   network: tcp
   port: 180
   server: 82.198.246.37
@@ -1026,16 +836,7 @@ proxies:
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   xudp: true
-- alterId: 0
-  cipher: auto
-  name: '[58ms] 11|🇺🇸 美国5|@ripaojiedian'
-  port: 180
-  server: 82.198.246.233
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: '[60ms] 美国 - 洛杉矶 - 2'
+- name: '[64ms] 美国 - 洛杉矶 - 2'
   server: 82.198.246.37
   port: 180
   type: vmess
@@ -1048,9 +849,20 @@ proxies:
   ws-path: /
   skip-cert-verify: true
   delay: 630
+- cipher: chacha20-ietf-poly1305
+  name: '[64ms] 🇺🇸US_9|1.2MB/s'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 817aa69.default.nintendo.com:112719
+    mode: tls
+  port: 2377
+  server: 88.210.36.109
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '[64ms] 12|美国4|@ripaojiedian'
+  name: '[65ms] 12|美国4|@ripaojiedian'
   network: tcp
   port: '180'
   server: 82.198.246.250
@@ -1058,26 +870,7 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: '[66ms] 11|🇺🇸 美国4|@ripaojiedian'
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: '[66ms] 12|美国5|@ripaojiedian'
-  network: tcp
-  port: '180'
-  server: 82.198.246.233
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: '[66ms] 德国-001 |569KB/s'
+- name: '[65ms] 德国-001 |569KB/s'
   type: vmess
   network: tcp
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -1090,15 +883,388 @@ proxies:
   xudp: true
   alterId: 0
   cipher: auto
-- name: '[70ms] SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:989'
-  type: ssr
+- alterId: 0
+  cipher: auto
+  name: '[65ms] 11|🇺🇸 美国5|@ripaojiedian'
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '[65ms] 13|NN_speednode_0014'
+  network: ws
+  port: 2053
+  server: 142.248.219.34
+  servername: c1mxc.api-gateway.fgfw.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: c1mxc.api-gateway.fgfw.qzz.io
+    path: /danfeng-2cm3?ed=2560
+- name: '[65ms] 加拿大 - 列治文 - 2'
+  server: 23.173.104.238
+  port: 2053
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 2045
+- alterId: 0
+  cipher: auto
+  name: '[67ms] 12|美国5|@ripaojiedian'
+  network: tcp
+  port: '180'
+  server: 82.198.246.233
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: '[69ms] 美国 - 天堂市 - 13'
+  server: 31.58.50.23
+  port: 2053
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 986
+- cipher: chacha20-ietf-poly1305
+  name: '[69ms] 🇺🇸US_8|1.0MB/s'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: feb7fa9:154948
+    mode: tls
+  port: 2377
+  server: 88.210.36.107
+  type: ss
+  udp: true
+- name: '[69ms] 加拿大 - 列治文 - 1'
+  server: 23.173.104.205
+  port: 2053
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1544
+- name: '[70ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
+  type: ss
   server: 79.127.233.170
-  port: 989
+  port: 990
   password: f8f7aCzcPKbsF8p3
-  cipher: aes-256-cfb
+  cipher: chacha20-ietf-poly1305
+- name: '[70ms] 美国 - 天堂市 - 6'
+  server: 31.58.50.114
+  port: 8443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1108
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '[71ms] 13|US_speednode_0024'
+  network: ws
+  port: 443
+  server: 92.118.228.113
+  servername: c1mxc.api-gateway.fgfw.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: c1mxc.api-gateway.fgfw.qzz.io
+    path: /danfeng-2cm3?ed=2560
+- name: '[71ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
+  type: ssr
+  server: 107.151.182.253
+  port: 8080
+  password: 14fFPrbezE3HDZzsMOr6
+  cipher: rc4-md5
   protocol: origin
   obfs: plain
-- name: '[70ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
+- name: '[74ms] 美国 - 天堂市 - 7'
+  server: 31.58.50.143
+  port: 8443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1930
+- name: '[76ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
+  type: ss
+  server: 71.19.148.143
+  port: 443
+  password: p78naCf2EfOlRSLTX0wFVx
+  cipher: chacha20-ietf-poly1305
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '[78ms] 13|GB_speednode_0007'
+  network: ws
+  port: 443
+  server: 157.245.33.149
+  servername: c1mxc.api-gateway.fgfw.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: c1mxc.api-gateway.fgfw.qzz.io
+    path: /danfeng-2cm3?ed=2560
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '[78ms] 13|GB_speednode_0006'
+  network: ws
+  port: 2087
+  server: 157.245.34.157
+  servername: c1mxc.api-gateway.fgfw.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: c1mxc.api-gateway.fgfw.qzz.io
+    path: /danfeng-2cm3?ed=2560
+- name: '[79ms] 美国 - 天堂市 - 14'
+  server: 31.58.50.110
+  port: 2053
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 855
+- name: '[81ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
+  type: ss
+  server: pupas-shirting-unsung.freesocks.work
+  port: 443
+  password: p78naCf2EfOlRSLTX0wFVx
+  cipher: chacha20-ietf-poly1305
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '[85ms] 13|US_speednode_0021'
+  port: 36895
+  reality-opts:
+    public-key: SKJQzoN8Lh8kqrDEyKzevbHHmfRhKe8XmzBxPYXF2A4
+    short-id: 5a585c3e894bf074
+  server: 44.242.50.106
+  servername: www.icloud.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5c875449-ae7d-46f8-b919-5a29f271dfce
+- name: '[86ms] 🇳🇱NL_5|1005KB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 46.17.102.249
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+- name: '[86ms] 🇫🇷FR_2|1.1MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 31.57.109.126
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+- name: '[87ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
+  type: vmess
+  server: hgtrojan.zabc.net
+  port: 2083
+  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: hgtrojan.zabc.net
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+  ws-opts:
+    path: /e6395c20
+    headers:
+      HOST: hgtrojan.zabc.net
+- name: '[88ms] 🇳🇱NL_2|1.2MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 45.66.10.141
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+- name: '[89ms] 荷兰 - 阿姆斯特丹 - 3'
+  server: 45.66.10.141
+  port: 8443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1720
+- name: '[89ms] 荷兰 - 阿姆斯特丹 - 5'
+  server: 46.17.102.249
+  port: 2053
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 2247
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '[90ms] 13|DE_speednode_0004'
+  network: ws
+  port: 2053
+  server: 167.99.131.232
+  servername: c1mxc.api-gateway.fgfw.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: c1mxc.api-gateway.fgfw.qzz.io
+    path: /danfeng-2cm3?ed=2560
+- name: '[90ms] 德国 - 德赖艾希 - 9'
+  server: 57.129.81.233
+  port: 2053
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 897
+- name: '[91ms] 🇩🇪DE_11|2.7MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 57.129.81.233
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+- name: '[92ms] 🇩🇪DE_16|1.2MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 194.76.173.184
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+- name: '[93ms] 荷兰 - 阿姆斯特丹 - 1'
+  server: 72.56.78.204
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 2091
+- name: '[93ms] 德国 - 德赖艾希 - 10'
+  server: 194.87.29.106
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 2313
+- name: '[93ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
   type: vmess
   server: cg1c01.waimaojd.com
   port: 443
@@ -1114,350 +1280,14 @@ proxies:
     path: /api/v1/graphql
     headers:
       Host: cg1c01.waimaojd.com
-- name: '[71ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
+- name: '[94ms] 美国 - 波特蘭 - 1'
+  server: bgroup.node5.s.nodelist-airport.com
   type: ss
-  server: 79.127.233.170
-  port: 990
-  password: f8f7aCzcPKbsF8p3
-  cipher: chacha20-ietf-poly1305
-- name: '[73ms] 加拿大 - 列治文 - 1'
-  server: 23.173.104.205
-  port: 2053
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1544
-- name: '[74ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
-  type: ss
-  server: 71.19.148.143
-  port: 443
-  password: p78naCf2EfOlRSLTX0wFVx
-  cipher: chacha20-ietf-poly1305
-- name: '[74ms] 加拿大 - 列治文 - 2'
-  server: 23.173.104.238
-  port: 2053
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 2045
-- name: '[80ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
-  type: ss
-  server: pupas-shirting-unsung.freesocks.work
-  port: 443
-  password: p78naCf2EfOlRSLTX0wFVx
-  cipher: chacha20-ietf-poly1305
-- name: '[81ms] 法国 - 奧奈叢林 - 1'
-  server: 31.57.109.126
-  port: 8443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1141
-- name: '[82ms] 🇫🇷FR_2|1.1MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 31.57.109.126
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: '[84ms] 13|GB_speednode_0016'
-  port: 40721
-  reality-opts:
-    public-key: TUZgwzcTvoROSbgnqMh3WorXVMxQNIF2zsEM39FQbyk
-    short-id: df8611c07d
-  server: 140.238.100.35
-  servername: yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: bf3e8944-8d26-47de-8748-b9aa74cce974
-- name: '[87ms] 🇳🇱NL_2|1.2MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 45.66.10.141
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: '[87ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
-  type: vmess
-  server: cg1c04.waimaojd.com
-  port: 443
-  uuid: be8e3136-b874-4085-bd23-ec3699300490
-  alterId: 0
-  cipher: auto
-  network: ws
-  servername: cg1c04.waimaojd.com
-  http-opts: {}
-  h2-opts: {}
-  tls: true
-  skip-cert-verify: true
-  ws-opts:
-    path: /api/v1/graphql
-    headers:
-      HOST: cg1c04.waimaojd.com
-- name: '[87ms] 荷兰 - 阿姆斯特丹 - 1'
-  server: 72.56.78.204
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 2091
-- client-fingerprint: edge
-  encryption: none
-  flow: xtls-rprx-vision
-  name: '[88ms] 🇺🇸US_1|1.1MB/s'
-  network: tcp
-  port: 22231
-  server: r1.mizulina.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  xudp: true
-  servername: r1.mizulina.top
-- name: '[88ms] 🇳🇱NL_3|1.6MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 91.84.107.167
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- client-fingerprint: edge
-  encryption: none
-  flow: xtls-rprx-vision-udp443
-  name: '[88ms] 🇺🇸US_6|1.8MB/s'
-  network: raw
-  port: 22231
-  server: r1.mizulina.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  xudp: true
-  servername: r1.mizulina.top
-- name: '[88ms] 🇳🇱NL_1|1.5MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 89.110.102.169
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: '[89ms] 荷兰 - 阿姆斯特丹 - 4'
-  server: 77.238.236.134
-  port: 2053
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1166
-- name: '[89ms] 9|🛡️1@oneclickvpnkeys'
-  password: fe9b17e8-41e1-4d1b-b588-93a23665724f
-  port: 2056
-  server: 84.200.33.151
-  skip-cert-verify: true
-  sni: nlb1.mangshe.xyz
-  tls: false
-  type: hysteria2
-- name: '[89ms] 🇳🇱NL_5|1005KB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 46.17.102.249
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: '[89ms] 德国 - 德赖艾希 - 8'
-  server: 138.124.50.47
-  port: 8443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1116
-- name: '[90ms] 荷兰 - 阿姆斯特丹 - 5'
-  server: 46.17.102.249
-  port: 2053
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 2247
-- name: '[90ms] 🇫🇷FR_3|2.2MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 161.97.183.222
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: '[90ms] 🇩🇪DE_13|2.1MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 193.42.61.121
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: '[90ms] 荷兰 - 阿姆斯特丹 - 2'
-  server: 89.110.102.169
-  port: 8443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1287
-- name: '[90ms] 🇩🇪DE_12|3.2MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 163.5.187.118
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: '[91ms] 🇳🇱NL_4|1.7MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 77.238.236.134
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: '[91ms] 德国 - 德赖艾希 - 9'
-  server: 57.129.81.233
-  port: 2053
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 897
-- flow: xtls-rprx-vision
-  name: '[92ms] 13|US_speednode_0046'
-  port: 443
-  reality-opts:
-    public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
-  server: 144.31.157.163
-  servername: www.deepl.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d511e429-e32b-46a7-ac07-a0fffa9b634c
-- name: '[92ms] 🇩🇪DE_11|2.7MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 57.129.81.233
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: '[93ms] 德国 - 德赖艾希 - 10'
-  server: 194.87.29.106
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 2313
-- name: '[93ms] 德国 - 諾德施泰特 - 11'
+  port: 59167
+  password: 504cb0be-b285-4ec5-9561-bc289aea0d46
+  cipher: aes-256-gcm
+  delay: 638
+- name: '[94ms] 德国 - 諾德施泰特 - 11'
   server: 185.216.177.197
   port: 443
   type: ss
@@ -1473,70 +1303,6 @@ proxies:
     skip-cert-verify: true
   udp: true
   delay: 740
-- client-fingerprint: chrome
-  name: '[93ms] 🇩🇪DE_15|1.3MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 194.87.29.106
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36
-    path: /trTelegram🇨🇳 @WangCai2
-- cipher: none
-  name: '[93ms] 🇩🇪DE_1|1.4MB/s'
-  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: woshinidie-et3.pages.dev
-    mode: websocket
-    mux: false
-    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
-    tls: true
-  port: 443
-  server: 185.216.177.197
-  type: ss
-  udp: true
-- name: '[94ms] 德国 - 德赖艾希 - 3'
-  server: 72.56.106.103
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1188
-- name: '[94ms] 🇩🇪DE_10|1.2MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 138.124.50.47
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: '[94ms] 🇩🇪DE_16|1.2MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 194.76.173.184
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
 - name: '[95ms] 德国 - 德赖艾希 - 5'
   server: 83.147.253.187
   port: 443
@@ -1551,17 +1317,56 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 1375
-- name: '[95ms] 🇩🇪DE_9|2.1MB/s'
+- name: '[95ms] 德国 - 德赖艾希 - 3'
+  server: 72.56.106.103
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1188
+- name: '[95ms] 🇫🇷FR_3|2.2MB/s'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 8443
-  server: 138.124.54.117
+  server: 161.97.183.222
   sni: Koma-YT.PAGeS.Dev
   type: trojan
   ws-opts:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳+@WangCai2
+- name: '[95ms] 🇳🇱NL_4|1.7MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 77.238.236.134
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+- client-fingerprint: chrome
+  name: '[95ms] 🇩🇪DE_15|1.3MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 194.87.29.106
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /trTelegram🇨🇳 @WangCai2
 - name: '[95ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443'
   type: vmess
   server: cg1c07.waimaojd.com
@@ -1578,45 +1383,30 @@ proxies:
     path: /api/v1/graphql
     headers:
       Host: cg1c07.waimaojd.com
-- name: '[96ms] 德国 - 德赖艾希 - 7'
-  server: 150.241.108.48
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
+- name: '[95ms] 🇩🇪DE_6|1.7MB/s'
   network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 72.56.106.103
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
   ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1232
-- name: '[96ms] 🇳🇱NL_6|2.0MB/s'
+    path: /trTelegram🇨🇳 @WangCai2
+- name: '[97ms] 🇩🇪DE_2|1.4MB/s'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 8443
-  server: 62.84.97.56
+  server: 152.53.153.158
   sni: Koma-YT.PAGeS.Dev
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳+@WangCai2
-- name: '[97ms] 德国 - 德赖艾希 - 2'
-  server: 64.188.89.147
-  port: 8443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 2300
 - name: '[97ms] 德国 - 德赖艾希 - 6'
   server: 152.53.153.158
   port: 8443
@@ -1631,69 +1421,63 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 1992
-- name: '[97ms] 13|AT_speednode_0001'
+- name: '[97ms] 🇩🇪DE_13|2.1MB/s'
   network: ws
-  port: 8445
-  server: 152.53.178.240
-  servername: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
-  skip-cert-verify: false
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 193.42.61.121
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+- cipher: none
+  name: '[98ms] 🇩🇪DE_1|1.4MB/s'
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: woshinidie-et3.pages.dev
+    mode: websocket
+    mux: false
+    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
+    tls: true
+  port: 443
+  server: 185.216.177.197
+  type: ss
+  udp: true
+- client-fingerprint: edge
+  encryption: none
+  flow: xtls-rprx-vision-udp443
+  name: '[99ms] 🇺🇸US_6|1.8MB/s'
+  network: raw
+  port: 22231
+  server: r1.mizulina.top
   tls: true
   type: vless
   udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    headers:
-      Host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
-    path: /@Marisa_kristifp=chrome
-- name: '[98ms] 🇩🇪DE_8|1.1MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  xudp: true
+  servername: r1.mizulina.top
+- name: '[99ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
+  type: vmess
+  server: cg1c04.waimaojd.com
   port: 443
-  server: 150.241.108.48
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: cg1c04.waimaojd.com
+  http-opts: {}
+  h2-opts: {}
+  tls: true
   skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
   ws-opts:
+    path: /api/v1/graphql
     headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '[98ms] 🇩🇪DE_14|1018KB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 89.58.40.232
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: '[98ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
-  type: trojan
-  network: ws
-  server: 202.61.254.159
-  port: 443
-  password: 5a2c16f9
-  skip-cert-verify: true
-  sni: snippets.kkii.eu.org
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
-- name: '[98ms] 🇩🇪DE_2|1.4MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 152.53.153.158
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: '[98ms] 荷兰 - 阿姆斯特丹 - 3'
-  server: 45.66.10.141
+      HOST: cg1c04.waimaojd.com
+- name: '[99ms] 荷兰 - 阿姆斯特丹 - 2'
+  server: 89.110.102.169
   port: 8443
   type: trojan
   password: 8r<[9'l6hAO#8ZQi
@@ -1705,7 +1489,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
   udp: true
-  delay: 1720
+  delay: 1287
 - name: '[99ms] 德国 - 德赖艾希 - 4'
   server: 83.147.253.194
   port: 443
@@ -1720,7 +1504,29 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 1359
-- name: '[101ms] 瑞典 - Steninge - 2'
+- name: '[99ms] 🇳🇱NL_7|1.3MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 77.246.102.229
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+- name: '[100ms] 🇩🇪DE_14|1018KB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 89.58.40.232
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+- name: '[100ms] 瑞典 - Steninge - 2'
   server: 185.130.46.81
   port: 443
   type: trojan
@@ -1734,70 +1540,44 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 1280
-- client-fingerprint: randomized
-  name: '[103ms] 13|US_speednode_0043'
-  network: ws
-  port: 2095
-  server: www.whatismyip.net
-  servername: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-    path: /
-- name: '[103ms] 🇸🇪SE_2|1.2MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 185.130.46.81
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
+- name: '[101ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
   type: trojan
+  network: ws
+  server: 202.61.254.159
+  port: 443
+  password: 5a2c16f9
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
   ws-opts:
     headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- client-fingerprint: chrome
-  name: '[107ms] 🇸🇪SE_1|1.1MB/s'
+      Host: snippets.kkii.eu.org
+    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
+- name: '[101ms] 🇳🇱NL_6|2.0MB/s'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 8443
-  server: 31.57.105.242
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '[107ms] 🇩🇪DE_6|1.7MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 72.56.106.103
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '[110ms] 🇵🇱PL_1|1.8MB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 151.115.61.151
+  server: 62.84.97.56
   sni: Koma-YT.PAGeS.Dev
   type: trojan
   ws-opts:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳+@WangCai2
-- name: '[111ms] 瑞典 - Steninge - 1'
+- name: '[101ms] 德国 - 德赖艾希 - 2'
+  server: 64.188.89.147
+  port: 8443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 2300
+- name: '[102ms] 瑞典 - Steninge - 1'
   server: 31.57.105.242
   port: 8443
   type: trojan
@@ -1811,8 +1591,34 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 1076
-- name: '[112ms] 瑞典 - Steninge - 4'
-  server: 46.17.106.121
+- name: '[102ms] 荷兰 - 阿姆斯特丹 - 4'
+  server: 77.238.236.134
+  port: 2053
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1166
+- name: '[102ms] 🇸🇪SE_2|1.2MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 185.130.46.81
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: '[102ms] 德国 - 德赖艾希 - 7'
+  server: 150.241.108.48
   port: 443
   type: trojan
   password: 8r<[9'l6hAO#8ZQi
@@ -1824,59 +1630,73 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
   udp: true
-  delay: 1349
-- flow: xtls-rprx-vision
-  name: '[112ms] 13|GB_speednode_0015'
+  delay: 1232
+- name: '[104ms] 🇩🇪DE_8|1.1MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
   port: 443
-  reality-opts:
-    public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
-    short-id: 67ccfc02
-  server: 2.26.3.148
-  servername: www.deepl.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d511e429-e32b-46a7-ac07-a0fffa9b634c
-- name: '[114ms] 🇳🇱NL_7|1.3MB/s'
+  server: 150.241.108.48
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: '[105ms] 🇳🇱NL_3|1.6MB/s'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 8443
-  server: 77.246.102.229
+  server: 91.84.107.167
   sni: Koma-YT.PAGeS.Dev
   type: trojan
   ws-opts:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳+@WangCai2
-- name: '[119ms] 美国 - 波特蘭 - 1'
-  server: bgroup.node5.s.nodelist-airport.com
-  type: ss
-  port: 59167
-  password: 504cb0be-b285-4ec5-9561-bc289aea0d46
-  cipher: aes-256-gcm
-  delay: 638
-- flow: xtls-rprx-vision
-  name: '[120ms] 13|GB_speednode_0014'
-  port: 443
-  reality-opts:
-    public-key: 56RJlIcxwncUs5m9QSfd3waHxm6vJFBKso5IkMSsyCA
-    short-id: 5d
-  server: 194.238.57.104
-  servername: www.icloud.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
+- client-fingerprint: chrome
+  name: '[106ms] 🇸🇪SE_1|1.1MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 31.57.105.242
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
   udp: true
-  uuid: 8046e3a1-83a7-4155-86e4-374153fe66f3
-- name: '[125ms] 13|RO_speednode_0027'
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+    path: /trTelegram🇨🇳 @WangCai2
+- name: '[107ms] 🇳🇱NL_1|1.5MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 89.110.102.169
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+- name: '[110ms] 🇵🇱PL_1|1.8MB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 151.115.61.151
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+- name: '[120ms] 13|RO_speednode_0016'
   port: 9002
   server: 84.239.14.158
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: '[125ms] 罗马尼亚 - Voluntari - 1'
+- name: '[121ms] 罗马尼亚 - Voluntari - 1'
   server: 84.239.14.158
   port: 9002
   type: http
@@ -1884,49 +1704,7 @@ proxies:
   skip-cert-verify: true
   udp: true
   delay: 1184
-- name: '[130ms] 13|RU_speednode_0030'
-  port: 26424
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  server: 45.12.75.242
-  servername: ya.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-- name: '[138ms] 巴拉圭 - 亞松森 - 1'
-  server: 38.165.233.93
-  port: 989
-  type: ss
-  country: 🇺🇸 US
-  password: f8f7aCzcPKbsF8p3
-  cipher: aes-256-cfb
-  delay: 2894
-- name: '[139ms] 芬兰 - 赫尔辛基 - 1'
-  server: 109.107.182.229
-  port: 51544
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: rgb8YGYlxYN7jvDGxA14K9
-  udp: true
-  delay: 1190
-- name: '[141ms] 瑞典 - Steninge - 3'
-  server: 95.85.245.152
-  port: 8443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1282
-- name: '[142ms] 拉脱维亚 - 里加 - 1'
+- name: '[137ms] 拉脱维亚 - 里加 - 1'
   server: 185.239.142.215
   port: 443
   type: trojan
@@ -1940,7 +1718,29 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 1172
-- name: '[160ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
+- name: '[141ms] 瑞典 - Steninge - 4'
+  server: 46.17.106.121
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1349
+- name: '[146ms] 芬兰 - 赫尔辛基 - 1'
+  server: 109.107.182.229
+  port: 51544
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rgb8YGYlxYN7jvDGxA14K9
+  udp: true
+  delay: 1190
+- name: '[152ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
   type: vmess
   server: cg1c14.waimaojd.com
   port: 443
@@ -1957,7 +1757,7 @@ proxies:
     path: /api/v1/graphql
     headers:
       HOST: cg1c14.waimaojd.com
-- name: '[163ms] 日本 - 成田市 - 1'
+- name: '[158ms] 日本 - 成田市 - 1'
   server: 103.125.216.22
   port: 8443
   type: trojan
@@ -1971,52 +1771,28 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 2449
-- name: '[165ms] 日本-003 |689KB/s'
+- name: '[164ms] 瑞典 - Steninge - 3'
+  server: 95.85.245.152
+  port: 8443
   type: trojan
-  network: ws
-  server: 168.138.46.67
-  port: 443
-  password: 5a2c16f9
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-  udp: true
-  sni: snippets.kkii.eu.org
+  network: ws
   ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
-    path: /Telegram🇨🇳WangCai2
-  client-fingerprint: chrome
-- flow: xtls-rprx-vision
-  name: '[185ms] 13|US_speednode_0049'
-  port: 443
-  reality-opts:
-    public-key: JbxZQuL2t4eews1QuA8O4jpsU_NXPMpmzKwlxSQj5Sk
-    short-id: f690c1046814dc9d
-  server: ru3.banovano.space
-  servername: www.icloud.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
+      Host: Koma-YT.PAGeS.Dev
   udp: true
-  uuid: dc540911-cd1d-41e9-9301-ecb5a507b788
-- name: '[188ms] 韩国-007 |821KB/s'
+  delay: 1282
+- name: '[191ms] 韩国-007 |821KB/s'
   type: socks5
   server: 121.169.46.116
   port: 1090
   skip-cert-verify: true
   udp: true
   client-fingerprint: chrome
-- name: '[188ms] 🇰🇷KR_1|1010KB/s'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 7778
-  server: 146.56.113.221
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: '[188ms] 韩国 - Yeongdong-gun - 1'
+- name: '[193ms] 韩国 - Yeongdong-gun - 1'
   server: 146.56.113.221
   port: 7778
   type: trojan
@@ -2030,7 +1806,31 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
   udp: true
   delay: 837
-- name: '[190ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
+- name: '[194ms] 🇰🇷KR_1|1010KB/s'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 7778
+  server: 146.56.113.221
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+- client-fingerprint: edge
+  encryption: none
+  flow: xtls-rprx-vision
+  name: '[198ms] 🇺🇸US_1|1.1MB/s'
+  network: tcp
+  port: 22231
+  server: r1.mizulina.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  xudp: true
+  servername: r1.mizulina.top
+- name: '[200ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
   type: trojan
   network: ws
   server: 211.48.77.114
@@ -2042,8 +1842,168 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '[202ms] 13|KR_speednode_0008'
+  network: ws
+  port: 26257
+  server: 121.175.192.245
+  servername: c1mxc.api-gateway.fgfw.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: c1mxc.api-gateway.fgfw.qzz.io
+    path: /danfeng-2cm3?ed=2560
+- name: '[206ms] 阿曼-001 |1.6MB/s'
+  type: ss
+  server: 154.205.147.105
+  port: 11201
+  password: 4f53937e66f3d673
+  udp: true
+  cipher: chacha20-ietf-poly1305
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '[209ms] 13|KR_speednode_0010'
+  network: ws
+  port: 16010
+  server: 118.33.142.8
+  servername: c1mxc.api-gateway.fgfw.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: c1mxc.api-gateway.fgfw.qzz.io
+    path: /danfeng-2cm3?ed=2560
+- name: '[224ms] 新加坡 - 新加坡 - 2'
+  server: 8.222.195.24
+  port: 14706
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 946
+- name: '[226ms] 日本 - 成田市 - 2'
+  server: 161.248.254.27
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1803
+- name: '[239ms] 新加坡 - 新加坡 - 1'
+  server: 18.143.76.130
+  port: 443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 385
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '[252ms] 13|RU_speednode_0019'
+  port: 22231
+  server: r1.mizulina.top
+  servername: r1.mizulina.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- flow: xtls-rprx-vision
+  name: '[270ms] 13|GB_speednode_0005'
+  port: 443
+  reality-opts:
+    public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
+    short-id: bdac121c7debdaba
+  server: swe-8t.freeonline.pro
+  servername: www.microsoft.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 980231fb-4372-5c81-b696-20aa34d33af0
+- flow: xtls-rprx-vision
+  name: '[483ms] 13|NL_speednode_0013'
+  port: 8443
+  reality-opts:
+    public-key: mgIiNnujl3pahea0WW3bCFqmdwofldk85e9XD3rQcQc
+    short-id: d8d900
+  server: lv-geo.dataload-cdn.ru
+  servername: www.vk.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
+- name: '[510ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
+  type: trojan
+  network: ws
+  server: 121.159.68.210
+  port: 12088
+  password: 5a2c16f9
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
+- name: '[1119ms] 法国 - 奧奈叢林 - 1'
+  server: 31.57.109.126
+  port: 8443
+  type: trojan
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  delay: 1141
+- name: '[1177ms] 日本-003 |689KB/s'
+  type: trojan
+  network: ws
+  server: 168.138.46.67
+  port: 443
+  password: 5a2c16f9
+  skip-cert-verify: true
+  udp: true
+  sni: snippets.kkii.eu.org
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+    path: /Telegram🇨🇳WangCai2
+  client-fingerprint: chrome
 - cipher: none
-  name: '[204ms] 🇰🇷KR_2|1.4MB/s'
+  name: '[1224ms] 🇰🇷KR_2|1.4MB/s'
   password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
   plugin: v2ray-plugin
   plugin-opts:
@@ -2058,207 +2018,17 @@ proxies:
   skip-cert-verify: false
   type: ss
   udp: false
-- name: '[207ms] 阿曼-001 |1.6MB/s'
-  type: ss
-  server: 154.205.147.105
-  port: 11201
-  password: 4f53937e66f3d673
-  udp: true
-  cipher: chacha20-ietf-poly1305
-- name: '[225ms] 日本 - 成田市 - 2'
-  server: 161.248.254.27
-  port: 443
-  type: trojan
+- name: '[2135ms] 🇩🇪DE_12|3.2MB/s'
+  network: ws
   password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1803
-- name: '[226ms] 13|SG_speednode_0032'
-  network: ws
-  port: 74
-  server: 209.97.170.177
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    headers:
-      Host: nn9jdg-k7yewrrk.acg.xx.kg
-    path: /@Marisa_kristi
-- name: '[227ms] 新加坡 - 新加坡 - 1'
-  server: 18.143.76.130
-  port: 443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 385
-- name: '[228ms] 新加坡 - 新加坡 - 2'
-  server: 8.222.195.24
-  port: 14706
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 946
-- name: '[238ms] 美国 - 天堂市 - 7'
-  server: 31.58.50.143
-  port: 8443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1930
-- name: '[238ms] 美国 - 天堂市 - 14'
-  server: 31.58.50.110
   port: 2053
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
+  server: 163.5.187.118
   sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
+  type: trojan
   ws-opts:
-    path: /trTelegram
     headers:
       Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 855
-- flow: xtls-rprx-vision
-  name: '[256ms] 13|GB_speednode_0017'
-  port: 443
-  reality-opts:
-    public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
-    short-id: bdac121c7debdaba
-  server: swe-8t.freeonline.pro
-  servername: www.microsoft.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 980231fb-4372-5c81-b696-20aa34d33af0
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '[259ms] 13|RU_speednode_0029'
-  port: 22231
-  server: r1.mizulina.top
-  servername: r1.mizulina.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- name: '[274ms] 13|NN_speednode_0026'
-  password: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9
-  port: 5228
-  server: 532b2ef9-t9zts0-tfeciy-1iddy.cm4.oshuawei.com
-  tls: true
-  type: http
-  udp: true
-  username: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9
-- name: '[310ms] 13|SG_speednode_0031'
-  network: ws
-  port: 28382
-  server: 138.2.71.48
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    headers:
-      Host: nn9jdg-k7yewrrk.acg.xx.kg
-    path: /@Marisa_kristi
-- name: '[521ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
-  type: trojan
-  network: ws
-  server: 121.159.68.210
-  port: 12088
-  password: 5a2c16f9
-  skip-cert-verify: true
-  sni: snippets.kkii.eu.org
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
-- client-fingerprint: randomized
-  name: '[531ms] 13|US_speednode_0036'
-  network: ws
-  port: 2095
-  server: cf.090227.xyz
-  servername: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-p.workers.dev
-    path: /
-- name: '[675ms] 13|KR_speednode_0022'
-  password: test.+
-  port: 30446
-  server: testkr3.ssv.vc
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: test
-- name: '[1300ms] 美国 - 天堂市 - 6'
-  server: 31.58.50.114
-  port: 8443
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 1108
-- name: '[2323ms] 美国 - 天堂市 - 13'
-  server: 31.58.50.23
-  port: 2053
-  type: trojan
-  password: 8r<[9'l6hAO#8ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-  udp: true
-  delay: 986
+    path: /trTelegram🇨🇳+@WangCai2
 proxy-groups:
 - name: 🚀 选择代理
   type: select
@@ -2272,552 +2042,489 @@ proxy-groups:
   url: https://www.google.com/
   interval: 300
   proxies:
-  - '[5ms] 美国 - 聖荷西 - 18'
-  - '[5ms] 美国 - 聖荷西 - 31'
-  - '[5ms] 🇩🇪DE_4|1.6MB/s'
-  - '[5ms] 🇺🇸US_4|1.1MB/s'
-  - '[5ms] 🇩🇪DE_7|1.2MB/s'
-  - '[5ms] 美国 - 聖荷西 - 10'
-  - '[5ms] 美国 - 聖荷西 - 15'
-  - '[5ms] 美国 - 聖荷西 - 29'
-  - '[5ms] 美国 - 聖荷西 - 40'
-  - '[5ms] 🇨🇭CH_1|1.2MB/s'
-  - '[5ms] 美国 - 聖荷西 - 38'
-  - '[5ms] 美国 - 聖荷西 - 39'
-  - '[5ms] 美国 - 聖荷西 - 9'
-  - '[5ms] 🇺🇸US_12|1.1MB/s'
-  - '[5ms] 🇺🇸US_13|2.3MB/s'
-  - '[5ms] 美国 - Reston - 34'
-  - '[5ms] 美国 - 聖荷西 - 37'
-  - '[5ms] 美国 - 聖荷西 - 41'
-  - '[5ms] 🇺🇸US_11|2.4MB/s'
-  - '[5ms] 美国 - 聖荷西 - 36'
-  - '[6ms] 美国 - 聖荷西 - 8'
-  - '[6ms] 美国 - 聖荷西 - 30'
-  - '[6ms] 美国 - 聖荷西 - 35'
-  - '[6ms] 美国 - 聖荷西 - 4'
-  - '[6ms] 🇺🇸US_3|1.0MB/s'
-  - '[6ms] 美国 - Ashburn - 3'
-  - '[6ms] 🇺🇸US_2|1009KB/s'
-  - '[7ms] 🇩🇪DE_3|1.1MB/s'
-  - '[7ms] 美国 - Reston - 28'
-  - '[7ms] 13|US_speednode_0045'
-  - '[7ms] 🇸🇬SG_1|1.2MB/s'
-  - '[8ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
-  - '[8ms] 🇺🇸US_10|1.0MB/s'
-  - '[11ms] 美国 - 紐約 - 20'
-  - '[11ms] 美国 - 紐約 - 33'
-  - '[12ms] 🇺🇸US_15|1012KB/s'
-  - '[12ms] 美国 - 紐約 - 21'
-  - '[12ms] 美国 - 紐約 - 19'
-  - '[12ms] 13|NL_speednode_0025'
-  - '[12ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
-  - '[13ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
-  - '[13ms] 13|US_speednode_0038'
-  - '[13ms] 13|US_speednode_0042'
-  - '[14ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
-  - '[14ms] 13|US_speednode_0037'
-  - '[14ms] 13|GB_speednode_0019'
-  - '[14ms] 13|US_speednode_0039'
-  - '[18ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
-  - '[19ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
-  - '[20ms] 美国 - South Fulton - 5'
-  - '[20ms] 13|GB_speednode_0018'
-  - '[20ms] 13|US_speednode_0040'
-  - '[21ms] 美国 - South Fulton - 23'
-  - '[25ms] 13|CA_speednode_0002'
-  - '[25ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
-  - '[25ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
-  - '[25ms] 13|US_speednode_0041'
-  - '[27ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
-  - '[27ms] 美国 - Cheektowaga - 24'
-  - '[27ms] 13|US_speednode_0048'
-  - '[31ms] 美国 - 迈阿密 - 11'
-  - '[35ms] 美国 - Flower Mound - 26'
-  - '[37ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
+  - '[1ms] 🇨🇭CH_1|1.2MB/s'
+  - '[1ms] 🇩🇪DE_7|1.2MB/s'
+  - '[1ms] 美国 - 聖荷西 - 31'
+  - '[1ms] 🇺🇸US_12|1.1MB/s'
+  - '[1ms] 美国 - 聖荷西 - 8'
+  - '[1ms] 13|US_speednode_0026'
+  - '[1ms] 美国 - 聖荷西 - 35'
+  - '[1ms] 美国 - 聖荷西 - 37'
+  - '[1ms] 美国 - 聖荷西 - 9'
+  - '[1ms] 🇺🇸US_3|1.0MB/s'
+  - '[2ms] 美国 - 聖荷西 - 18'
+  - '[2ms] 美国 - 聖荷西 - 30'
+  - '[2ms] 🇺🇸US_4|1.1MB/s'
+  - '[2ms] 美国 - 聖荷西 - 10'
+  - '[2ms] 美国 - 聖荷西 - 15'
+  - '[2ms] 美国 - 聖荷西 - 36'
+  - '[2ms] 美国 - 聖荷西 - 39'
+  - '[2ms] 13|US_speednode_0025'
+  - '[2ms] 🇺🇸US_10|1.0MB/s'
+  - '[2ms] 🇺🇸US_11|2.4MB/s'
+  - '[2ms] 美国 - Reston - 34'
+  - '[2ms] 🇩🇪DE_3|1.1MB/s'
+  - '[2ms] 🇸🇬SG_1|1.2MB/s'
+  - '[2ms] 13|US_speednode_0023'
+  - '[2ms] 美国 - 聖荷西 - 38'
+  - '[2ms] 美国 - 聖荷西 - 40'
+  - '[2ms] 美国 - 聖荷西 - 41'
+  - '[2ms] 🇺🇸US_13|2.3MB/s'
+  - '[3ms] 美国 - 聖荷西 - 4'
+  - '[3ms] 🇩🇪DE_4|1.6MB/s'
+  - '[3ms] 美国 - Ashburn - 3'
+  - '[4ms] 美国 - 聖荷西 - 29'
+  - '[4ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
+  - '[5ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
+  - '[6ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
+  - '[7ms] 美国 - 紐約 - 20'
+  - '[7ms] 美国 - 紐約 - 21'
+  - '[8ms] 美国 - 紐約 - 19'
+  - '[8ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
+  - '[8ms] 美国 - 紐約 - 33'
+  - '[8ms] 🇺🇸US_15|1012KB/s'
+  - '[11ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
+  - '[16ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
+  - '[17ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
+  - '[18ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
+  - '[19ms] 13|US_speednode_0022'
+  - '[19ms] 美国 - Cheektowaga - 24'
+  - '[22ms] 美国 - South Fulton - 23'
+  - '[22ms] 美国 - South Fulton - 5'
+  - '[28ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
+  - '[29ms] 美国 - 迈阿密 - 11'
+  - '[33ms] 美国 - Flower Mound - 26'
+  - '[35ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
   - '[37ms] 美国 - 迈阿密 - 27'
   - '[37ms] 美国 - Aldine - 25'
   - '[39ms] 美国 - Flower Mound - 22'
-  - '[39ms] 13|US_speednode_0044'
   - '[39ms] 美国 - Flower Mound - 17'
-  - '[52ms] 美国 - 东洛杉矶 - 12'
-  - '[52ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
-  - '[55ms] 美国 - 天堂市 - 32'
-  - '[55ms] 美国 - 东洛杉矶 - 16'
-  - '[55ms] 🇺🇸US_9|1.2MB/s'
-  - '[55ms] 🇺🇸US_8|1.0MB/s'
-  - '[56ms] 🇺🇸US_7|1.4MB/s'
-  - '[56ms] 🇺🇸US_14|2.3MB/s'
-  - '[57ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
-  - '[57ms] 🇺🇸US_5|1.1MB/s'
-  - '[58ms] 11|🇺🇸 美国5|@ripaojiedian'
-  - '[60ms] 美国 - 洛杉矶 - 2'
-  - '[64ms] 12|美国4|@ripaojiedian'
-  - '[66ms] 11|🇺🇸 美国4|@ripaojiedian'
-  - '[66ms] 12|美国5|@ripaojiedian'
-  - '[66ms] 德国-001 |569KB/s'
-  - '[70ms] SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:989'
-  - '[70ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
-  - '[71ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
-  - '[73ms] 加拿大 - 列治文 - 1'
-  - '[74ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
-  - '[74ms] 加拿大 - 列治文 - 2'
-  - '[80ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
-  - '[81ms] 法国 - 奧奈叢林 - 1'
-  - '[82ms] 🇫🇷FR_2|1.1MB/s'
-  - '[84ms] 13|GB_speednode_0016'
-  - '[87ms] 🇳🇱NL_2|1.2MB/s'
-  - '[87ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
-  - '[87ms] 荷兰 - 阿姆斯特丹 - 1'
-  - '[88ms] 🇺🇸US_1|1.1MB/s'
-  - '[88ms] 🇳🇱NL_3|1.6MB/s'
-  - '[88ms] 🇺🇸US_6|1.8MB/s'
-  - '[88ms] 🇳🇱NL_1|1.5MB/s'
-  - '[89ms] 荷兰 - 阿姆斯特丹 - 4'
-  - '[89ms] 9|🛡️1@oneclickvpnkeys'
-  - '[89ms] 🇳🇱NL_5|1005KB/s'
-  - '[89ms] 德国 - 德赖艾希 - 8'
-  - '[90ms] 荷兰 - 阿姆斯特丹 - 5'
-  - '[90ms] 🇫🇷FR_3|2.2MB/s'
-  - '[90ms] 🇩🇪DE_13|2.1MB/s'
-  - '[90ms] 荷兰 - 阿姆斯特丹 - 2'
-  - '[90ms] 🇩🇪DE_12|3.2MB/s'
-  - '[91ms] 🇳🇱NL_4|1.7MB/s'
-  - '[91ms] 德国 - 德赖艾希 - 9'
-  - '[92ms] 13|US_speednode_0046'
-  - '[92ms] 🇩🇪DE_11|2.7MB/s'
+  - '[54ms] 美国 - 东洛杉矶 - 16'
+  - '[56ms] 美国 - 天堂市 - 32'
+  - '[57ms] 🇺🇸US_14|2.3MB/s'
+  - '[60ms] 🇺🇸US_7|1.4MB/s'
+  - '[64ms] 美国 - 东洛杉矶 - 12'
+  - '[64ms] 11|🇺🇸 美国4|@ripaojiedian'
+  - '[64ms] 🇺🇸US_5|1.1MB/s'
+  - '[64ms] 美国 - 洛杉矶 - 2'
+  - '[64ms] 🇺🇸US_9|1.2MB/s'
+  - '[65ms] 12|美国4|@ripaojiedian'
+  - '[65ms] 德国-001 |569KB/s'
+  - '[65ms] 11|🇺🇸 美国5|@ripaojiedian'
+  - '[65ms] 13|NN_speednode_0014'
+  - '[65ms] 加拿大 - 列治文 - 2'
+  - '[67ms] 12|美国5|@ripaojiedian'
+  - '[69ms] 美国 - 天堂市 - 13'
+  - '[69ms] 🇺🇸US_8|1.0MB/s'
+  - '[69ms] 加拿大 - 列治文 - 1'
+  - '[70ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
+  - '[70ms] 美国 - 天堂市 - 6'
+  - '[71ms] 13|US_speednode_0024'
+  - '[71ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
+  - '[74ms] 美国 - 天堂市 - 7'
+  - '[76ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
+  - '[78ms] 13|GB_speednode_0007'
+  - '[78ms] 13|GB_speednode_0006'
+  - '[79ms] 美国 - 天堂市 - 14'
+  - '[81ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
+  - '[85ms] 13|US_speednode_0021'
+  - '[86ms] 🇳🇱NL_5|1005KB/s'
+  - '[86ms] 🇫🇷FR_2|1.1MB/s'
+  - '[87ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
+  - '[88ms] 🇳🇱NL_2|1.2MB/s'
+  - '[89ms] 荷兰 - 阿姆斯特丹 - 3'
+  - '[89ms] 荷兰 - 阿姆斯特丹 - 5'
+  - '[90ms] 13|DE_speednode_0004'
+  - '[90ms] 德国 - 德赖艾希 - 9'
+  - '[91ms] 🇩🇪DE_11|2.7MB/s'
+  - '[92ms] 🇩🇪DE_16|1.2MB/s'
+  - '[93ms] 荷兰 - 阿姆斯特丹 - 1'
   - '[93ms] 德国 - 德赖艾希 - 10'
-  - '[93ms] 德国 - 諾德施泰特 - 11'
-  - '[93ms] 🇩🇪DE_15|1.3MB/s'
-  - '[93ms] 🇩🇪DE_1|1.4MB/s'
-  - '[94ms] 德国 - 德赖艾希 - 3'
-  - '[94ms] 🇩🇪DE_10|1.2MB/s'
-  - '[94ms] 🇩🇪DE_16|1.2MB/s'
+  - '[93ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
+  - '[94ms] 美国 - 波特蘭 - 1'
+  - '[94ms] 德国 - 諾德施泰特 - 11'
   - '[95ms] 德国 - 德赖艾希 - 5'
-  - '[95ms] 🇩🇪DE_9|2.1MB/s'
+  - '[95ms] 德国 - 德赖艾希 - 3'
+  - '[95ms] 🇫🇷FR_3|2.2MB/s'
+  - '[95ms] 🇳🇱NL_4|1.7MB/s'
+  - '[95ms] 🇩🇪DE_15|1.3MB/s'
   - '[95ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443'
-  - '[96ms] 德国 - 德赖艾希 - 7'
-  - '[96ms] 🇳🇱NL_6|2.0MB/s'
-  - '[97ms] 德国 - 德赖艾希 - 2'
+  - '[95ms] 🇩🇪DE_6|1.7MB/s'
+  - '[97ms] 🇩🇪DE_2|1.4MB/s'
   - '[97ms] 德国 - 德赖艾希 - 6'
-  - '[97ms] 13|AT_speednode_0001'
-  - '[98ms] 🇩🇪DE_8|1.1MB/s'
-  - '[98ms] 🇩🇪DE_14|1018KB/s'
-  - '[98ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
-  - '[98ms] 🇩🇪DE_2|1.4MB/s'
-  - '[98ms] 荷兰 - 阿姆斯特丹 - 3'
+  - '[97ms] 🇩🇪DE_13|2.1MB/s'
+  - '[98ms] 🇩🇪DE_1|1.4MB/s'
+  - '[99ms] 🇺🇸US_6|1.8MB/s'
+  - '[99ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
+  - '[99ms] 荷兰 - 阿姆斯特丹 - 2'
   - '[99ms] 德国 - 德赖艾希 - 4'
-  - '[101ms] 瑞典 - Steninge - 2'
-  - '[103ms] 13|US_speednode_0043'
-  - '[103ms] 🇸🇪SE_2|1.2MB/s'
-  - '[107ms] 🇸🇪SE_1|1.1MB/s'
-  - '[107ms] 🇩🇪DE_6|1.7MB/s'
+  - '[99ms] 🇳🇱NL_7|1.3MB/s'
+  - '[100ms] 🇩🇪DE_14|1018KB/s'
+  - '[100ms] 瑞典 - Steninge - 2'
+  - '[101ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
+  - '[101ms] 🇳🇱NL_6|2.0MB/s'
+  - '[101ms] 德国 - 德赖艾希 - 2'
+  - '[102ms] 瑞典 - Steninge - 1'
+  - '[102ms] 荷兰 - 阿姆斯特丹 - 4'
+  - '[102ms] 🇸🇪SE_2|1.2MB/s'
+  - '[102ms] 德国 - 德赖艾希 - 7'
+  - '[104ms] 🇩🇪DE_8|1.1MB/s'
+  - '[105ms] 🇳🇱NL_3|1.6MB/s'
+  - '[106ms] 🇸🇪SE_1|1.1MB/s'
+  - '[107ms] 🇳🇱NL_1|1.5MB/s'
   - '[110ms] 🇵🇱PL_1|1.8MB/s'
-  - '[111ms] 瑞典 - Steninge - 1'
-  - '[112ms] 瑞典 - Steninge - 4'
-  - '[112ms] 13|GB_speednode_0015'
-  - '[114ms] 🇳🇱NL_7|1.3MB/s'
-  - '[119ms] 美国 - 波特蘭 - 1'
-  - '[120ms] 13|GB_speednode_0014'
-  - '[125ms] 13|RO_speednode_0027'
-  - '[125ms] 罗马尼亚 - Voluntari - 1'
-  - '[130ms] 13|RU_speednode_0030'
-  - '[138ms] 巴拉圭 - 亞松森 - 1'
-  - '[139ms] 芬兰 - 赫尔辛基 - 1'
-  - '[141ms] 瑞典 - Steninge - 3'
-  - '[142ms] 拉脱维亚 - 里加 - 1'
-  - '[160ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
-  - '[163ms] 日本 - 成田市 - 1'
-  - '[165ms] 日本-003 |689KB/s'
-  - '[185ms] 13|US_speednode_0049'
-  - '[188ms] 韩国-007 |821KB/s'
-  - '[188ms] 🇰🇷KR_1|1010KB/s'
-  - '[188ms] 韩国 - Yeongdong-gun - 1'
-  - '[190ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
-  - '[204ms] 🇰🇷KR_2|1.4MB/s'
-  - '[207ms] 阿曼-001 |1.6MB/s'
-  - '[225ms] 日本 - 成田市 - 2'
-  - '[226ms] 13|SG_speednode_0032'
-  - '[227ms] 新加坡 - 新加坡 - 1'
-  - '[228ms] 新加坡 - 新加坡 - 2'
-  - '[238ms] 美国 - 天堂市 - 7'
-  - '[238ms] 美国 - 天堂市 - 14'
-  - '[256ms] 13|GB_speednode_0017'
-  - '[259ms] 13|RU_speednode_0029'
-  - '[274ms] 13|NN_speednode_0026'
-  - '[310ms] 13|SG_speednode_0031'
-  - '[521ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
-  - '[531ms] 13|US_speednode_0036'
-  - '[675ms] 13|KR_speednode_0022'
-  - '[1300ms] 美国 - 天堂市 - 6'
-  - '[2323ms] 美国 - 天堂市 - 13'
+  - '[120ms] 13|RO_speednode_0016'
+  - '[121ms] 罗马尼亚 - Voluntari - 1'
+  - '[137ms] 拉脱维亚 - 里加 - 1'
+  - '[141ms] 瑞典 - Steninge - 4'
+  - '[146ms] 芬兰 - 赫尔辛基 - 1'
+  - '[152ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
+  - '[158ms] 日本 - 成田市 - 1'
+  - '[164ms] 瑞典 - Steninge - 3'
+  - '[191ms] 韩国-007 |821KB/s'
+  - '[193ms] 韩国 - Yeongdong-gun - 1'
+  - '[194ms] 🇰🇷KR_1|1010KB/s'
+  - '[198ms] 🇺🇸US_1|1.1MB/s'
+  - '[200ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
+  - '[202ms] 13|KR_speednode_0008'
+  - '[206ms] 阿曼-001 |1.6MB/s'
+  - '[209ms] 13|KR_speednode_0010'
+  - '[224ms] 新加坡 - 新加坡 - 2'
+  - '[226ms] 日本 - 成田市 - 2'
+  - '[239ms] 新加坡 - 新加坡 - 1'
+  - '[252ms] 13|RU_speednode_0019'
+  - '[270ms] 13|GB_speednode_0005'
+  - '[483ms] 13|NL_speednode_0013'
+  - '[510ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
+  - '[1119ms] 法国 - 奧奈叢林 - 1'
+  - '[1177ms] 日本-003 |689KB/s'
+  - '[1224ms] 🇰🇷KR_2|1.4MB/s'
+  - '[2135ms] 🇩🇪DE_12|3.2MB/s'
 - name: 🔰 延迟最低
   type: url-test
   url: https://www.google.com/
   interval: 300
   tolerance: 20
   proxies:
-  - '[5ms] 美国 - 聖荷西 - 18'
-  - '[5ms] 美国 - 聖荷西 - 31'
-  - '[5ms] 🇩🇪DE_4|1.6MB/s'
-  - '[5ms] 🇺🇸US_4|1.1MB/s'
-  - '[5ms] 🇩🇪DE_7|1.2MB/s'
-  - '[5ms] 美国 - 聖荷西 - 10'
-  - '[5ms] 美国 - 聖荷西 - 15'
-  - '[5ms] 美国 - 聖荷西 - 29'
-  - '[5ms] 美国 - 聖荷西 - 40'
-  - '[5ms] 🇨🇭CH_1|1.2MB/s'
-  - '[5ms] 美国 - 聖荷西 - 38'
-  - '[5ms] 美国 - 聖荷西 - 39'
-  - '[5ms] 美国 - 聖荷西 - 9'
-  - '[5ms] 🇺🇸US_12|1.1MB/s'
-  - '[5ms] 🇺🇸US_13|2.3MB/s'
-  - '[5ms] 美国 - Reston - 34'
-  - '[5ms] 美国 - 聖荷西 - 37'
-  - '[5ms] 美国 - 聖荷西 - 41'
-  - '[5ms] 🇺🇸US_11|2.4MB/s'
-  - '[5ms] 美国 - 聖荷西 - 36'
-  - '[6ms] 美国 - 聖荷西 - 8'
-  - '[6ms] 美国 - 聖荷西 - 30'
-  - '[6ms] 美国 - 聖荷西 - 35'
-  - '[6ms] 美国 - 聖荷西 - 4'
-  - '[6ms] 🇺🇸US_3|1.0MB/s'
-  - '[6ms] 美国 - Ashburn - 3'
-  - '[6ms] 🇺🇸US_2|1009KB/s'
-  - '[7ms] 🇩🇪DE_3|1.1MB/s'
-  - '[7ms] 美国 - Reston - 28'
-  - '[7ms] 13|US_speednode_0045'
-  - '[7ms] 🇸🇬SG_1|1.2MB/s'
-  - '[8ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
-  - '[8ms] 🇺🇸US_10|1.0MB/s'
-  - '[11ms] 美国 - 紐約 - 20'
-  - '[11ms] 美国 - 紐約 - 33'
-  - '[12ms] 🇺🇸US_15|1012KB/s'
-  - '[12ms] 美国 - 紐約 - 21'
-  - '[12ms] 美国 - 紐約 - 19'
-  - '[12ms] 13|NL_speednode_0025'
-  - '[12ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
-  - '[13ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
-  - '[13ms] 13|US_speednode_0038'
-  - '[13ms] 13|US_speednode_0042'
-  - '[14ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
-  - '[14ms] 13|US_speednode_0037'
-  - '[14ms] 13|GB_speednode_0019'
-  - '[14ms] 13|US_speednode_0039'
-  - '[18ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
-  - '[19ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
-  - '[20ms] 美国 - South Fulton - 5'
-  - '[20ms] 13|GB_speednode_0018'
-  - '[20ms] 13|US_speednode_0040'
-  - '[21ms] 美国 - South Fulton - 23'
-  - '[25ms] 13|CA_speednode_0002'
-  - '[25ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
-  - '[25ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
-  - '[25ms] 13|US_speednode_0041'
-  - '[27ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
-  - '[27ms] 美国 - Cheektowaga - 24'
-  - '[27ms] 13|US_speednode_0048'
-  - '[31ms] 美国 - 迈阿密 - 11'
-  - '[35ms] 美国 - Flower Mound - 26'
-  - '[37ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
+  - '[1ms] 🇨🇭CH_1|1.2MB/s'
+  - '[1ms] 🇩🇪DE_7|1.2MB/s'
+  - '[1ms] 美国 - 聖荷西 - 31'
+  - '[1ms] 🇺🇸US_12|1.1MB/s'
+  - '[1ms] 美国 - 聖荷西 - 8'
+  - '[1ms] 13|US_speednode_0026'
+  - '[1ms] 美国 - 聖荷西 - 35'
+  - '[1ms] 美国 - 聖荷西 - 37'
+  - '[1ms] 美国 - 聖荷西 - 9'
+  - '[1ms] 🇺🇸US_3|1.0MB/s'
+  - '[2ms] 美国 - 聖荷西 - 18'
+  - '[2ms] 美国 - 聖荷西 - 30'
+  - '[2ms] 🇺🇸US_4|1.1MB/s'
+  - '[2ms] 美国 - 聖荷西 - 10'
+  - '[2ms] 美国 - 聖荷西 - 15'
+  - '[2ms] 美国 - 聖荷西 - 36'
+  - '[2ms] 美国 - 聖荷西 - 39'
+  - '[2ms] 13|US_speednode_0025'
+  - '[2ms] 🇺🇸US_10|1.0MB/s'
+  - '[2ms] 🇺🇸US_11|2.4MB/s'
+  - '[2ms] 美国 - Reston - 34'
+  - '[2ms] 🇩🇪DE_3|1.1MB/s'
+  - '[2ms] 🇸🇬SG_1|1.2MB/s'
+  - '[2ms] 13|US_speednode_0023'
+  - '[2ms] 美国 - 聖荷西 - 38'
+  - '[2ms] 美国 - 聖荷西 - 40'
+  - '[2ms] 美国 - 聖荷西 - 41'
+  - '[2ms] 🇺🇸US_13|2.3MB/s'
+  - '[3ms] 美国 - 聖荷西 - 4'
+  - '[3ms] 🇩🇪DE_4|1.6MB/s'
+  - '[3ms] 美国 - Ashburn - 3'
+  - '[4ms] 美国 - 聖荷西 - 29'
+  - '[4ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
+  - '[5ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
+  - '[6ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
+  - '[7ms] 美国 - 紐約 - 20'
+  - '[7ms] 美国 - 紐約 - 21'
+  - '[8ms] 美国 - 紐約 - 19'
+  - '[8ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
+  - '[8ms] 美国 - 紐約 - 33'
+  - '[8ms] 🇺🇸US_15|1012KB/s'
+  - '[11ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
+  - '[16ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
+  - '[17ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
+  - '[18ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
+  - '[19ms] 13|US_speednode_0022'
+  - '[19ms] 美国 - Cheektowaga - 24'
+  - '[22ms] 美国 - South Fulton - 23'
+  - '[22ms] 美国 - South Fulton - 5'
+  - '[28ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
+  - '[29ms] 美国 - 迈阿密 - 11'
+  - '[33ms] 美国 - Flower Mound - 26'
+  - '[35ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
   - '[37ms] 美国 - 迈阿密 - 27'
   - '[37ms] 美国 - Aldine - 25'
   - '[39ms] 美国 - Flower Mound - 22'
-  - '[39ms] 13|US_speednode_0044'
   - '[39ms] 美国 - Flower Mound - 17'
-  - '[52ms] 美国 - 东洛杉矶 - 12'
-  - '[52ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
-  - '[55ms] 美国 - 天堂市 - 32'
-  - '[55ms] 美国 - 东洛杉矶 - 16'
-  - '[55ms] 🇺🇸US_9|1.2MB/s'
-  - '[55ms] 🇺🇸US_8|1.0MB/s'
-  - '[56ms] 🇺🇸US_7|1.4MB/s'
-  - '[56ms] 🇺🇸US_14|2.3MB/s'
-  - '[57ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
-  - '[57ms] 🇺🇸US_5|1.1MB/s'
-  - '[58ms] 11|🇺🇸 美国5|@ripaojiedian'
-  - '[60ms] 美国 - 洛杉矶 - 2'
-  - '[64ms] 12|美国4|@ripaojiedian'
-  - '[66ms] 11|🇺🇸 美国4|@ripaojiedian'
-  - '[66ms] 12|美国5|@ripaojiedian'
-  - '[66ms] 德国-001 |569KB/s'
-  - '[70ms] SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:989'
-  - '[70ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
-  - '[71ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
-  - '[73ms] 加拿大 - 列治文 - 1'
-  - '[74ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
-  - '[74ms] 加拿大 - 列治文 - 2'
-  - '[80ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
-  - '[81ms] 法国 - 奧奈叢林 - 1'
-  - '[82ms] 🇫🇷FR_2|1.1MB/s'
-  - '[84ms] 13|GB_speednode_0016'
-  - '[87ms] 🇳🇱NL_2|1.2MB/s'
-  - '[87ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
-  - '[87ms] 荷兰 - 阿姆斯特丹 - 1'
-  - '[88ms] 🇺🇸US_1|1.1MB/s'
-  - '[88ms] 🇳🇱NL_3|1.6MB/s'
-  - '[88ms] 🇺🇸US_6|1.8MB/s'
-  - '[88ms] 🇳🇱NL_1|1.5MB/s'
-  - '[89ms] 荷兰 - 阿姆斯特丹 - 4'
-  - '[89ms] 9|🛡️1@oneclickvpnkeys'
-  - '[89ms] 🇳🇱NL_5|1005KB/s'
-  - '[89ms] 德国 - 德赖艾希 - 8'
-  - '[90ms] 荷兰 - 阿姆斯特丹 - 5'
-  - '[90ms] 🇫🇷FR_3|2.2MB/s'
-  - '[90ms] 🇩🇪DE_13|2.1MB/s'
-  - '[90ms] 荷兰 - 阿姆斯特丹 - 2'
-  - '[90ms] 🇩🇪DE_12|3.2MB/s'
-  - '[91ms] 🇳🇱NL_4|1.7MB/s'
-  - '[91ms] 德国 - 德赖艾希 - 9'
-  - '[92ms] 13|US_speednode_0046'
-  - '[92ms] 🇩🇪DE_11|2.7MB/s'
+  - '[54ms] 美国 - 东洛杉矶 - 16'
+  - '[56ms] 美国 - 天堂市 - 32'
+  - '[57ms] 🇺🇸US_14|2.3MB/s'
+  - '[60ms] 🇺🇸US_7|1.4MB/s'
+  - '[64ms] 美国 - 东洛杉矶 - 12'
+  - '[64ms] 11|🇺🇸 美国4|@ripaojiedian'
+  - '[64ms] 🇺🇸US_5|1.1MB/s'
+  - '[64ms] 美国 - 洛杉矶 - 2'
+  - '[64ms] 🇺🇸US_9|1.2MB/s'
+  - '[65ms] 12|美国4|@ripaojiedian'
+  - '[65ms] 德国-001 |569KB/s'
+  - '[65ms] 11|🇺🇸 美国5|@ripaojiedian'
+  - '[65ms] 13|NN_speednode_0014'
+  - '[65ms] 加拿大 - 列治文 - 2'
+  - '[67ms] 12|美国5|@ripaojiedian'
+  - '[69ms] 美国 - 天堂市 - 13'
+  - '[69ms] 🇺🇸US_8|1.0MB/s'
+  - '[69ms] 加拿大 - 列治文 - 1'
+  - '[70ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
+  - '[70ms] 美国 - 天堂市 - 6'
+  - '[71ms] 13|US_speednode_0024'
+  - '[71ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
+  - '[74ms] 美国 - 天堂市 - 7'
+  - '[76ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
+  - '[78ms] 13|GB_speednode_0007'
+  - '[78ms] 13|GB_speednode_0006'
+  - '[79ms] 美国 - 天堂市 - 14'
+  - '[81ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
+  - '[85ms] 13|US_speednode_0021'
+  - '[86ms] 🇳🇱NL_5|1005KB/s'
+  - '[86ms] 🇫🇷FR_2|1.1MB/s'
+  - '[87ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
+  - '[88ms] 🇳🇱NL_2|1.2MB/s'
+  - '[89ms] 荷兰 - 阿姆斯特丹 - 3'
+  - '[89ms] 荷兰 - 阿姆斯特丹 - 5'
+  - '[90ms] 13|DE_speednode_0004'
+  - '[90ms] 德国 - 德赖艾希 - 9'
+  - '[91ms] 🇩🇪DE_11|2.7MB/s'
+  - '[92ms] 🇩🇪DE_16|1.2MB/s'
+  - '[93ms] 荷兰 - 阿姆斯特丹 - 1'
   - '[93ms] 德国 - 德赖艾希 - 10'
-  - '[93ms] 德国 - 諾德施泰特 - 11'
-  - '[93ms] 🇩🇪DE_15|1.3MB/s'
-  - '[93ms] 🇩🇪DE_1|1.4MB/s'
-  - '[94ms] 德国 - 德赖艾希 - 3'
-  - '[94ms] 🇩🇪DE_10|1.2MB/s'
-  - '[94ms] 🇩🇪DE_16|1.2MB/s'
+  - '[93ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
+  - '[94ms] 美国 - 波特蘭 - 1'
+  - '[94ms] 德国 - 諾德施泰特 - 11'
   - '[95ms] 德国 - 德赖艾希 - 5'
-  - '[95ms] 🇩🇪DE_9|2.1MB/s'
+  - '[95ms] 德国 - 德赖艾希 - 3'
+  - '[95ms] 🇫🇷FR_3|2.2MB/s'
+  - '[95ms] 🇳🇱NL_4|1.7MB/s'
+  - '[95ms] 🇩🇪DE_15|1.3MB/s'
   - '[95ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443'
-  - '[96ms] 德国 - 德赖艾希 - 7'
-  - '[96ms] 🇳🇱NL_6|2.0MB/s'
-  - '[97ms] 德国 - 德赖艾希 - 2'
+  - '[95ms] 🇩🇪DE_6|1.7MB/s'
+  - '[97ms] 🇩🇪DE_2|1.4MB/s'
   - '[97ms] 德国 - 德赖艾希 - 6'
-  - '[97ms] 13|AT_speednode_0001'
-  - '[98ms] 🇩🇪DE_8|1.1MB/s'
-  - '[98ms] 🇩🇪DE_14|1018KB/s'
-  - '[98ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
-  - '[98ms] 🇩🇪DE_2|1.4MB/s'
-  - '[98ms] 荷兰 - 阿姆斯特丹 - 3'
+  - '[97ms] 🇩🇪DE_13|2.1MB/s'
+  - '[98ms] 🇩🇪DE_1|1.4MB/s'
+  - '[99ms] 🇺🇸US_6|1.8MB/s'
+  - '[99ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
+  - '[99ms] 荷兰 - 阿姆斯特丹 - 2'
   - '[99ms] 德国 - 德赖艾希 - 4'
-  - '[101ms] 瑞典 - Steninge - 2'
-  - '[103ms] 13|US_speednode_0043'
-  - '[103ms] 🇸🇪SE_2|1.2MB/s'
-  - '[107ms] 🇸🇪SE_1|1.1MB/s'
-  - '[107ms] 🇩🇪DE_6|1.7MB/s'
+  - '[99ms] 🇳🇱NL_7|1.3MB/s'
+  - '[100ms] 🇩🇪DE_14|1018KB/s'
+  - '[100ms] 瑞典 - Steninge - 2'
+  - '[101ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
+  - '[101ms] 🇳🇱NL_6|2.0MB/s'
+  - '[101ms] 德国 - 德赖艾希 - 2'
+  - '[102ms] 瑞典 - Steninge - 1'
+  - '[102ms] 荷兰 - 阿姆斯特丹 - 4'
+  - '[102ms] 🇸🇪SE_2|1.2MB/s'
+  - '[102ms] 德国 - 德赖艾希 - 7'
+  - '[104ms] 🇩🇪DE_8|1.1MB/s'
+  - '[105ms] 🇳🇱NL_3|1.6MB/s'
+  - '[106ms] 🇸🇪SE_1|1.1MB/s'
+  - '[107ms] 🇳🇱NL_1|1.5MB/s'
   - '[110ms] 🇵🇱PL_1|1.8MB/s'
-  - '[111ms] 瑞典 - Steninge - 1'
-  - '[112ms] 瑞典 - Steninge - 4'
-  - '[112ms] 13|GB_speednode_0015'
-  - '[114ms] 🇳🇱NL_7|1.3MB/s'
-  - '[119ms] 美国 - 波特蘭 - 1'
-  - '[120ms] 13|GB_speednode_0014'
-  - '[125ms] 13|RO_speednode_0027'
-  - '[125ms] 罗马尼亚 - Voluntari - 1'
-  - '[130ms] 13|RU_speednode_0030'
-  - '[138ms] 巴拉圭 - 亞松森 - 1'
-  - '[139ms] 芬兰 - 赫尔辛基 - 1'
-  - '[141ms] 瑞典 - Steninge - 3'
-  - '[142ms] 拉脱维亚 - 里加 - 1'
-  - '[160ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
-  - '[163ms] 日本 - 成田市 - 1'
-  - '[165ms] 日本-003 |689KB/s'
-  - '[185ms] 13|US_speednode_0049'
-  - '[188ms] 韩国-007 |821KB/s'
-  - '[188ms] 🇰🇷KR_1|1010KB/s'
-  - '[188ms] 韩国 - Yeongdong-gun - 1'
-  - '[190ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
-  - '[204ms] 🇰🇷KR_2|1.4MB/s'
-  - '[207ms] 阿曼-001 |1.6MB/s'
-  - '[225ms] 日本 - 成田市 - 2'
-  - '[226ms] 13|SG_speednode_0032'
-  - '[227ms] 新加坡 - 新加坡 - 1'
-  - '[228ms] 新加坡 - 新加坡 - 2'
-  - '[238ms] 美国 - 天堂市 - 7'
-  - '[238ms] 美国 - 天堂市 - 14'
-  - '[256ms] 13|GB_speednode_0017'
-  - '[259ms] 13|RU_speednode_0029'
-  - '[274ms] 13|NN_speednode_0026'
-  - '[310ms] 13|SG_speednode_0031'
-  - '[521ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
-  - '[531ms] 13|US_speednode_0036'
-  - '[675ms] 13|KR_speednode_0022'
-  - '[1300ms] 美国 - 天堂市 - 6'
-  - '[2323ms] 美国 - 天堂市 - 13'
+  - '[120ms] 13|RO_speednode_0016'
+  - '[121ms] 罗马尼亚 - Voluntari - 1'
+  - '[137ms] 拉脱维亚 - 里加 - 1'
+  - '[141ms] 瑞典 - Steninge - 4'
+  - '[146ms] 芬兰 - 赫尔辛基 - 1'
+  - '[152ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
+  - '[158ms] 日本 - 成田市 - 1'
+  - '[164ms] 瑞典 - Steninge - 3'
+  - '[191ms] 韩国-007 |821KB/s'
+  - '[193ms] 韩国 - Yeongdong-gun - 1'
+  - '[194ms] 🇰🇷KR_1|1010KB/s'
+  - '[198ms] 🇺🇸US_1|1.1MB/s'
+  - '[200ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
+  - '[202ms] 13|KR_speednode_0008'
+  - '[206ms] 阿曼-001 |1.6MB/s'
+  - '[209ms] 13|KR_speednode_0010'
+  - '[224ms] 新加坡 - 新加坡 - 2'
+  - '[226ms] 日本 - 成田市 - 2'
+  - '[239ms] 新加坡 - 新加坡 - 1'
+  - '[252ms] 13|RU_speednode_0019'
+  - '[270ms] 13|GB_speednode_0005'
+  - '[483ms] 13|NL_speednode_0013'
+  - '[510ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
+  - '[1119ms] 法国 - 奧奈叢林 - 1'
+  - '[1177ms] 日本-003 |689KB/s'
+  - '[1224ms] 🇰🇷KR_2|1.4MB/s'
+  - '[2135ms] 🇩🇪DE_12|3.2MB/s'
 - name: ✅ 手动选择
   type: select
   proxies:
-  - '[5ms] 美国 - 聖荷西 - 18'
-  - '[5ms] 美国 - 聖荷西 - 31'
-  - '[5ms] 🇩🇪DE_4|1.6MB/s'
-  - '[5ms] 🇺🇸US_4|1.1MB/s'
-  - '[5ms] 🇩🇪DE_7|1.2MB/s'
-  - '[5ms] 美国 - 聖荷西 - 10'
-  - '[5ms] 美国 - 聖荷西 - 15'
-  - '[5ms] 美国 - 聖荷西 - 29'
-  - '[5ms] 美国 - 聖荷西 - 40'
-  - '[5ms] 🇨🇭CH_1|1.2MB/s'
-  - '[5ms] 美国 - 聖荷西 - 38'
-  - '[5ms] 美国 - 聖荷西 - 39'
-  - '[5ms] 美国 - 聖荷西 - 9'
-  - '[5ms] 🇺🇸US_12|1.1MB/s'
-  - '[5ms] 🇺🇸US_13|2.3MB/s'
-  - '[5ms] 美国 - Reston - 34'
-  - '[5ms] 美国 - 聖荷西 - 37'
-  - '[5ms] 美国 - 聖荷西 - 41'
-  - '[5ms] 🇺🇸US_11|2.4MB/s'
-  - '[5ms] 美国 - 聖荷西 - 36'
-  - '[6ms] 美国 - 聖荷西 - 8'
-  - '[6ms] 美国 - 聖荷西 - 30'
-  - '[6ms] 美国 - 聖荷西 - 35'
-  - '[6ms] 美国 - 聖荷西 - 4'
-  - '[6ms] 🇺🇸US_3|1.0MB/s'
-  - '[6ms] 美国 - Ashburn - 3'
-  - '[6ms] 🇺🇸US_2|1009KB/s'
-  - '[7ms] 🇩🇪DE_3|1.1MB/s'
-  - '[7ms] 美国 - Reston - 28'
-  - '[7ms] 13|US_speednode_0045'
-  - '[7ms] 🇸🇬SG_1|1.2MB/s'
-  - '[8ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
-  - '[8ms] 🇺🇸US_10|1.0MB/s'
-  - '[11ms] 美国 - 紐約 - 20'
-  - '[11ms] 美国 - 紐約 - 33'
-  - '[12ms] 🇺🇸US_15|1012KB/s'
-  - '[12ms] 美国 - 紐約 - 21'
-  - '[12ms] 美国 - 紐約 - 19'
-  - '[12ms] 13|NL_speednode_0025'
-  - '[12ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
-  - '[13ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
-  - '[13ms] 13|US_speednode_0038'
-  - '[13ms] 13|US_speednode_0042'
-  - '[14ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
-  - '[14ms] 13|US_speednode_0037'
-  - '[14ms] 13|GB_speednode_0019'
-  - '[14ms] 13|US_speednode_0039'
-  - '[18ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
-  - '[19ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
-  - '[20ms] 美国 - South Fulton - 5'
-  - '[20ms] 13|GB_speednode_0018'
-  - '[20ms] 13|US_speednode_0040'
-  - '[21ms] 美国 - South Fulton - 23'
-  - '[25ms] 13|CA_speednode_0002'
-  - '[25ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
-  - '[25ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
-  - '[25ms] 13|US_speednode_0041'
-  - '[27ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
-  - '[27ms] 美国 - Cheektowaga - 24'
-  - '[27ms] 13|US_speednode_0048'
-  - '[31ms] 美国 - 迈阿密 - 11'
-  - '[35ms] 美国 - Flower Mound - 26'
-  - '[37ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
+  - '[1ms] 🇨🇭CH_1|1.2MB/s'
+  - '[1ms] 🇩🇪DE_7|1.2MB/s'
+  - '[1ms] 美国 - 聖荷西 - 31'
+  - '[1ms] 🇺🇸US_12|1.1MB/s'
+  - '[1ms] 美国 - 聖荷西 - 8'
+  - '[1ms] 13|US_speednode_0026'
+  - '[1ms] 美国 - 聖荷西 - 35'
+  - '[1ms] 美国 - 聖荷西 - 37'
+  - '[1ms] 美国 - 聖荷西 - 9'
+  - '[1ms] 🇺🇸US_3|1.0MB/s'
+  - '[2ms] 美国 - 聖荷西 - 18'
+  - '[2ms] 美国 - 聖荷西 - 30'
+  - '[2ms] 🇺🇸US_4|1.1MB/s'
+  - '[2ms] 美国 - 聖荷西 - 10'
+  - '[2ms] 美国 - 聖荷西 - 15'
+  - '[2ms] 美国 - 聖荷西 - 36'
+  - '[2ms] 美国 - 聖荷西 - 39'
+  - '[2ms] 13|US_speednode_0025'
+  - '[2ms] 🇺🇸US_10|1.0MB/s'
+  - '[2ms] 🇺🇸US_11|2.4MB/s'
+  - '[2ms] 美国 - Reston - 34'
+  - '[2ms] 🇩🇪DE_3|1.1MB/s'
+  - '[2ms] 🇸🇬SG_1|1.2MB/s'
+  - '[2ms] 13|US_speednode_0023'
+  - '[2ms] 美国 - 聖荷西 - 38'
+  - '[2ms] 美国 - 聖荷西 - 40'
+  - '[2ms] 美国 - 聖荷西 - 41'
+  - '[2ms] 🇺🇸US_13|2.3MB/s'
+  - '[3ms] 美国 - 聖荷西 - 4'
+  - '[3ms] 🇩🇪DE_4|1.6MB/s'
+  - '[3ms] 美国 - Ashburn - 3'
+  - '[4ms] 美国 - 聖荷西 - 29'
+  - '[4ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
+  - '[5ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
+  - '[6ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
+  - '[7ms] 美国 - 紐約 - 20'
+  - '[7ms] 美国 - 紐約 - 21'
+  - '[8ms] 美国 - 紐約 - 19'
+  - '[8ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
+  - '[8ms] 美国 - 紐約 - 33'
+  - '[8ms] 🇺🇸US_15|1012KB/s'
+  - '[11ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
+  - '[16ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
+  - '[17ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
+  - '[18ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
+  - '[19ms] 13|US_speednode_0022'
+  - '[19ms] 美国 - Cheektowaga - 24'
+  - '[22ms] 美国 - South Fulton - 23'
+  - '[22ms] 美国 - South Fulton - 5'
+  - '[28ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
+  - '[29ms] 美国 - 迈阿密 - 11'
+  - '[33ms] 美国 - Flower Mound - 26'
+  - '[35ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
   - '[37ms] 美国 - 迈阿密 - 27'
   - '[37ms] 美国 - Aldine - 25'
   - '[39ms] 美国 - Flower Mound - 22'
-  - '[39ms] 13|US_speednode_0044'
   - '[39ms] 美国 - Flower Mound - 17'
-  - '[52ms] 美国 - 东洛杉矶 - 12'
-  - '[52ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
-  - '[55ms] 美国 - 天堂市 - 32'
-  - '[55ms] 美国 - 东洛杉矶 - 16'
-  - '[55ms] 🇺🇸US_9|1.2MB/s'
-  - '[55ms] 🇺🇸US_8|1.0MB/s'
-  - '[56ms] 🇺🇸US_7|1.4MB/s'
-  - '[56ms] 🇺🇸US_14|2.3MB/s'
-  - '[57ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
-  - '[57ms] 🇺🇸US_5|1.1MB/s'
-  - '[58ms] 11|🇺🇸 美国5|@ripaojiedian'
-  - '[60ms] 美国 - 洛杉矶 - 2'
-  - '[64ms] 12|美国4|@ripaojiedian'
-  - '[66ms] 11|🇺🇸 美国4|@ripaojiedian'
-  - '[66ms] 12|美国5|@ripaojiedian'
-  - '[66ms] 德国-001 |569KB/s'
-  - '[70ms] SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:989'
-  - '[70ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
-  - '[71ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
-  - '[73ms] 加拿大 - 列治文 - 1'
-  - '[74ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
-  - '[74ms] 加拿大 - 列治文 - 2'
-  - '[80ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
-  - '[81ms] 法国 - 奧奈叢林 - 1'
-  - '[82ms] 🇫🇷FR_2|1.1MB/s'
-  - '[84ms] 13|GB_speednode_0016'
-  - '[87ms] 🇳🇱NL_2|1.2MB/s'
-  - '[87ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
-  - '[87ms] 荷兰 - 阿姆斯特丹 - 1'
-  - '[88ms] 🇺🇸US_1|1.1MB/s'
-  - '[88ms] 🇳🇱NL_3|1.6MB/s'
-  - '[88ms] 🇺🇸US_6|1.8MB/s'
-  - '[88ms] 🇳🇱NL_1|1.5MB/s'
-  - '[89ms] 荷兰 - 阿姆斯特丹 - 4'
-  - '[89ms] 9|🛡️1@oneclickvpnkeys'
-  - '[89ms] 🇳🇱NL_5|1005KB/s'
-  - '[89ms] 德国 - 德赖艾希 - 8'
-  - '[90ms] 荷兰 - 阿姆斯特丹 - 5'
-  - '[90ms] 🇫🇷FR_3|2.2MB/s'
-  - '[90ms] 🇩🇪DE_13|2.1MB/s'
-  - '[90ms] 荷兰 - 阿姆斯特丹 - 2'
-  - '[90ms] 🇩🇪DE_12|3.2MB/s'
-  - '[91ms] 🇳🇱NL_4|1.7MB/s'
-  - '[91ms] 德国 - 德赖艾希 - 9'
-  - '[92ms] 13|US_speednode_0046'
-  - '[92ms] 🇩🇪DE_11|2.7MB/s'
+  - '[54ms] 美国 - 东洛杉矶 - 16'
+  - '[56ms] 美国 - 天堂市 - 32'
+  - '[57ms] 🇺🇸US_14|2.3MB/s'
+  - '[60ms] 🇺🇸US_7|1.4MB/s'
+  - '[64ms] 美国 - 东洛杉矶 - 12'
+  - '[64ms] 11|🇺🇸 美国4|@ripaojiedian'
+  - '[64ms] 🇺🇸US_5|1.1MB/s'
+  - '[64ms] 美国 - 洛杉矶 - 2'
+  - '[64ms] 🇺🇸US_9|1.2MB/s'
+  - '[65ms] 12|美国4|@ripaojiedian'
+  - '[65ms] 德国-001 |569KB/s'
+  - '[65ms] 11|🇺🇸 美国5|@ripaojiedian'
+  - '[65ms] 13|NN_speednode_0014'
+  - '[65ms] 加拿大 - 列治文 - 2'
+  - '[67ms] 12|美国5|@ripaojiedian'
+  - '[69ms] 美国 - 天堂市 - 13'
+  - '[69ms] 🇺🇸US_8|1.0MB/s'
+  - '[69ms] 加拿大 - 列治文 - 1'
+  - '[70ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
+  - '[70ms] 美国 - 天堂市 - 6'
+  - '[71ms] 13|US_speednode_0024'
+  - '[71ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
+  - '[74ms] 美国 - 天堂市 - 7'
+  - '[76ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
+  - '[78ms] 13|GB_speednode_0007'
+  - '[78ms] 13|GB_speednode_0006'
+  - '[79ms] 美国 - 天堂市 - 14'
+  - '[81ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
+  - '[85ms] 13|US_speednode_0021'
+  - '[86ms] 🇳🇱NL_5|1005KB/s'
+  - '[86ms] 🇫🇷FR_2|1.1MB/s'
+  - '[87ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
+  - '[88ms] 🇳🇱NL_2|1.2MB/s'
+  - '[89ms] 荷兰 - 阿姆斯特丹 - 3'
+  - '[89ms] 荷兰 - 阿姆斯特丹 - 5'
+  - '[90ms] 13|DE_speednode_0004'
+  - '[90ms] 德国 - 德赖艾希 - 9'
+  - '[91ms] 🇩🇪DE_11|2.7MB/s'
+  - '[92ms] 🇩🇪DE_16|1.2MB/s'
+  - '[93ms] 荷兰 - 阿姆斯特丹 - 1'
   - '[93ms] 德国 - 德赖艾希 - 10'
-  - '[93ms] 德国 - 諾德施泰特 - 11'
-  - '[93ms] 🇩🇪DE_15|1.3MB/s'
-  - '[93ms] 🇩🇪DE_1|1.4MB/s'
-  - '[94ms] 德国 - 德赖艾希 - 3'
-  - '[94ms] 🇩🇪DE_10|1.2MB/s'
-  - '[94ms] 🇩🇪DE_16|1.2MB/s'
+  - '[93ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
+  - '[94ms] 美国 - 波特蘭 - 1'
+  - '[94ms] 德国 - 諾德施泰特 - 11'
   - '[95ms] 德国 - 德赖艾希 - 5'
-  - '[95ms] 🇩🇪DE_9|2.1MB/s'
+  - '[95ms] 德国 - 德赖艾希 - 3'
+  - '[95ms] 🇫🇷FR_3|2.2MB/s'
+  - '[95ms] 🇳🇱NL_4|1.7MB/s'
+  - '[95ms] 🇩🇪DE_15|1.3MB/s'
   - '[95ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443'
-  - '[96ms] 德国 - 德赖艾希 - 7'
-  - '[96ms] 🇳🇱NL_6|2.0MB/s'
-  - '[97ms] 德国 - 德赖艾希 - 2'
+  - '[95ms] 🇩🇪DE_6|1.7MB/s'
+  - '[97ms] 🇩🇪DE_2|1.4MB/s'
   - '[97ms] 德国 - 德赖艾希 - 6'
-  - '[97ms] 13|AT_speednode_0001'
-  - '[98ms] 🇩🇪DE_8|1.1MB/s'
-  - '[98ms] 🇩🇪DE_14|1018KB/s'
-  - '[98ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
-  - '[98ms] 🇩🇪DE_2|1.4MB/s'
-  - '[98ms] 荷兰 - 阿姆斯特丹 - 3'
+  - '[97ms] 🇩🇪DE_13|2.1MB/s'
+  - '[98ms] 🇩🇪DE_1|1.4MB/s'
+  - '[99ms] 🇺🇸US_6|1.8MB/s'
+  - '[99ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
+  - '[99ms] 荷兰 - 阿姆斯特丹 - 2'
   - '[99ms] 德国 - 德赖艾希 - 4'
-  - '[101ms] 瑞典 - Steninge - 2'
-  - '[103ms] 13|US_speednode_0043'
-  - '[103ms] 🇸🇪SE_2|1.2MB/s'
-  - '[107ms] 🇸🇪SE_1|1.1MB/s'
-  - '[107ms] 🇩🇪DE_6|1.7MB/s'
+  - '[99ms] 🇳🇱NL_7|1.3MB/s'
+  - '[100ms] 🇩🇪DE_14|1018KB/s'
+  - '[100ms] 瑞典 - Steninge - 2'
+  - '[101ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
+  - '[101ms] 🇳🇱NL_6|2.0MB/s'
+  - '[101ms] 德国 - 德赖艾希 - 2'
+  - '[102ms] 瑞典 - Steninge - 1'
+  - '[102ms] 荷兰 - 阿姆斯特丹 - 4'
+  - '[102ms] 🇸🇪SE_2|1.2MB/s'
+  - '[102ms] 德国 - 德赖艾希 - 7'
+  - '[104ms] 🇩🇪DE_8|1.1MB/s'
+  - '[105ms] 🇳🇱NL_3|1.6MB/s'
+  - '[106ms] 🇸🇪SE_1|1.1MB/s'
+  - '[107ms] 🇳🇱NL_1|1.5MB/s'
   - '[110ms] 🇵🇱PL_1|1.8MB/s'
-  - '[111ms] 瑞典 - Steninge - 1'
-  - '[112ms] 瑞典 - Steninge - 4'
-  - '[112ms] 13|GB_speednode_0015'
-  - '[114ms] 🇳🇱NL_7|1.3MB/s'
-  - '[119ms] 美国 - 波特蘭 - 1'
-  - '[120ms] 13|GB_speednode_0014'
-  - '[125ms] 13|RO_speednode_0027'
-  - '[125ms] 罗马尼亚 - Voluntari - 1'
-  - '[130ms] 13|RU_speednode_0030'
-  - '[138ms] 巴拉圭 - 亞松森 - 1'
-  - '[139ms] 芬兰 - 赫尔辛基 - 1'
-  - '[141ms] 瑞典 - Steninge - 3'
-  - '[142ms] 拉脱维亚 - 里加 - 1'
-  - '[160ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
-  - '[163ms] 日本 - 成田市 - 1'
-  - '[165ms] 日本-003 |689KB/s'
-  - '[185ms] 13|US_speednode_0049'
-  - '[188ms] 韩国-007 |821KB/s'
-  - '[188ms] 🇰🇷KR_1|1010KB/s'
-  - '[188ms] 韩国 - Yeongdong-gun - 1'
-  - '[190ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
-  - '[204ms] 🇰🇷KR_2|1.4MB/s'
-  - '[207ms] 阿曼-001 |1.6MB/s'
-  - '[225ms] 日本 - 成田市 - 2'
-  - '[226ms] 13|SG_speednode_0032'
-  - '[227ms] 新加坡 - 新加坡 - 1'
-  - '[228ms] 新加坡 - 新加坡 - 2'
-  - '[238ms] 美国 - 天堂市 - 7'
-  - '[238ms] 美国 - 天堂市 - 14'
-  - '[256ms] 13|GB_speednode_0017'
-  - '[259ms] 13|RU_speednode_0029'
-  - '[274ms] 13|NN_speednode_0026'
-  - '[310ms] 13|SG_speednode_0031'
-  - '[521ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
-  - '[531ms] 13|US_speednode_0036'
-  - '[675ms] 13|KR_speednode_0022'
-  - '[1300ms] 美国 - 天堂市 - 6'
-  - '[2323ms] 美国 - 天堂市 - 13'
+  - '[120ms] 13|RO_speednode_0016'
+  - '[121ms] 罗马尼亚 - Voluntari - 1'
+  - '[137ms] 拉脱维亚 - 里加 - 1'
+  - '[141ms] 瑞典 - Steninge - 4'
+  - '[146ms] 芬兰 - 赫尔辛基 - 1'
+  - '[152ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
+  - '[158ms] 日本 - 成田市 - 1'
+  - '[164ms] 瑞典 - Steninge - 3'
+  - '[191ms] 韩国-007 |821KB/s'
+  - '[193ms] 韩国 - Yeongdong-gun - 1'
+  - '[194ms] 🇰🇷KR_1|1010KB/s'
+  - '[198ms] 🇺🇸US_1|1.1MB/s'
+  - '[200ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
+  - '[202ms] 13|KR_speednode_0008'
+  - '[206ms] 阿曼-001 |1.6MB/s'
+  - '[209ms] 13|KR_speednode_0010'
+  - '[224ms] 新加坡 - 新加坡 - 2'
+  - '[226ms] 日本 - 成田市 - 2'
+  - '[239ms] 新加坡 - 新加坡 - 1'
+  - '[252ms] 13|RU_speednode_0019'
+  - '[270ms] 13|GB_speednode_0005'
+  - '[483ms] 13|NL_speednode_0013'
+  - '[510ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
+  - '[1119ms] 法国 - 奧奈叢林 - 1'
+  - '[1177ms] 日本-003 |689KB/s'
+  - '[1224ms] 🇰🇷KR_2|1.4MB/s'
+  - '[2135ms] 🇩🇪DE_12|3.2MB/s'
 - name: 🌐 突破锁区
   type: select
   proxies:
@@ -2861,173 +2568,154 @@ proxy-groups:
 - name: 🇯🇵 日本
   type: select
   proxies:
-  - '[25ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
-  - '[163ms] 日本 - 成田市 - 1'
-  - '[165ms] 日本-003 |689KB/s'
-  - '[225ms] 日本 - 成田市 - 2'
+  - '[18ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
+  - '[158ms] 日本 - 成田市 - 1'
+  - '[226ms] 日本 - 成田市 - 2'
+  - '[1177ms] 日本-003 |689KB/s'
 - name: 🇺🇸 美国
   type: select
   proxies:
-  - '[5ms] 美国 - 聖荷西 - 18'
-  - '[5ms] 美国 - 聖荷西 - 31'
-  - '[5ms] 🇺🇸US_4|1.1MB/s'
-  - '[5ms] 美国 - 聖荷西 - 10'
-  - '[5ms] 美国 - 聖荷西 - 15'
-  - '[5ms] 美国 - 聖荷西 - 29'
-  - '[5ms] 美国 - 聖荷西 - 40'
-  - '[5ms] 美国 - 聖荷西 - 38'
-  - '[5ms] 美国 - 聖荷西 - 39'
-  - '[5ms] 美国 - 聖荷西 - 9'
-  - '[5ms] 🇺🇸US_12|1.1MB/s'
-  - '[5ms] 🇺🇸US_13|2.3MB/s'
-  - '[5ms] 美国 - Reston - 34'
-  - '[5ms] 美国 - 聖荷西 - 37'
-  - '[5ms] 美国 - 聖荷西 - 41'
-  - '[5ms] 🇺🇸US_11|2.4MB/s'
-  - '[5ms] 美国 - 聖荷西 - 36'
-  - '[6ms] 美国 - 聖荷西 - 8'
-  - '[6ms] 美国 - 聖荷西 - 30'
-  - '[6ms] 美国 - 聖荷西 - 35'
-  - '[6ms] 美国 - 聖荷西 - 4'
-  - '[6ms] 🇺🇸US_3|1.0MB/s'
-  - '[6ms] 美国 - Ashburn - 3'
-  - '[6ms] 🇺🇸US_2|1009KB/s'
-  - '[7ms] 美国 - Reston - 28'
-  - '[7ms] 13|US_speednode_0045'
-  - '[8ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
-  - '[8ms] 🇺🇸US_10|1.0MB/s'
-  - '[11ms] 美国 - 紐約 - 20'
-  - '[11ms] 美国 - 紐約 - 33'
-  - '[12ms] 🇺🇸US_15|1012KB/s'
-  - '[12ms] 美国 - 紐約 - 21'
-  - '[12ms] 美国 - 紐約 - 19'
-  - '[12ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
-  - '[13ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
-  - '[13ms] 13|US_speednode_0038'
-  - '[13ms] 13|US_speednode_0042'
-  - '[14ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
-  - '[14ms] 13|US_speednode_0037'
-  - '[14ms] 13|US_speednode_0039'
-  - '[18ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
-  - '[20ms] 美国 - South Fulton - 5'
-  - '[20ms] 13|US_speednode_0040'
-  - '[21ms] 美国 - South Fulton - 23'
-  - '[25ms] 13|US_speednode_0041'
-  - '[27ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
-  - '[27ms] 美国 - Cheektowaga - 24'
-  - '[27ms] 13|US_speednode_0048'
-  - '[31ms] 美国 - 迈阿密 - 11'
-  - '[35ms] 美国 - Flower Mound - 26'
-  - '[37ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
+  - '[1ms] 美国 - 聖荷西 - 31'
+  - '[1ms] 🇺🇸US_12|1.1MB/s'
+  - '[1ms] 美国 - 聖荷西 - 8'
+  - '[1ms] 13|US_speednode_0026'
+  - '[1ms] 美国 - 聖荷西 - 35'
+  - '[1ms] 美国 - 聖荷西 - 37'
+  - '[1ms] 美国 - 聖荷西 - 9'
+  - '[1ms] 🇺🇸US_3|1.0MB/s'
+  - '[2ms] 美国 - 聖荷西 - 18'
+  - '[2ms] 美国 - 聖荷西 - 30'
+  - '[2ms] 🇺🇸US_4|1.1MB/s'
+  - '[2ms] 美国 - 聖荷西 - 10'
+  - '[2ms] 美国 - 聖荷西 - 15'
+  - '[2ms] 美国 - 聖荷西 - 36'
+  - '[2ms] 美国 - 聖荷西 - 39'
+  - '[2ms] 13|US_speednode_0025'
+  - '[2ms] 🇺🇸US_10|1.0MB/s'
+  - '[2ms] 🇺🇸US_11|2.4MB/s'
+  - '[2ms] 美国 - Reston - 34'
+  - '[2ms] 13|US_speednode_0023'
+  - '[2ms] 美国 - 聖荷西 - 38'
+  - '[2ms] 美国 - 聖荷西 - 40'
+  - '[2ms] 美国 - 聖荷西 - 41'
+  - '[2ms] 🇺🇸US_13|2.3MB/s'
+  - '[3ms] 美国 - 聖荷西 - 4'
+  - '[3ms] 美国 - Ashburn - 3'
+  - '[4ms] 美国 - 聖荷西 - 29'
+  - '[4ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
+  - '[5ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
+  - '[6ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
+  - '[7ms] 美国 - 紐約 - 20'
+  - '[7ms] 美国 - 紐約 - 21'
+  - '[8ms] 美国 - 紐約 - 19'
+  - '[8ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
+  - '[8ms] 美国 - 紐約 - 33'
+  - '[8ms] 🇺🇸US_15|1012KB/s'
+  - '[11ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
+  - '[19ms] 13|US_speednode_0022'
+  - '[19ms] 美国 - Cheektowaga - 24'
+  - '[22ms] 美国 - South Fulton - 23'
+  - '[22ms] 美国 - South Fulton - 5'
+  - '[28ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
+  - '[29ms] 美国 - 迈阿密 - 11'
+  - '[33ms] 美国 - Flower Mound - 26'
   - '[37ms] 美国 - 迈阿密 - 27'
   - '[37ms] 美国 - Aldine - 25'
   - '[39ms] 美国 - Flower Mound - 22'
-  - '[39ms] 13|US_speednode_0044'
   - '[39ms] 美国 - Flower Mound - 17'
-  - '[52ms] 美国 - 东洛杉矶 - 12'
-  - '[52ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
-  - '[55ms] 美国 - 天堂市 - 32'
-  - '[55ms] 美国 - 东洛杉矶 - 16'
-  - '[55ms] 🇺🇸US_9|1.2MB/s'
-  - '[55ms] 🇺🇸US_8|1.0MB/s'
-  - '[56ms] 🇺🇸US_7|1.4MB/s'
-  - '[56ms] 🇺🇸US_14|2.3MB/s'
-  - '[57ms] 🇺🇸US_5|1.1MB/s'
-  - '[58ms] 11|🇺🇸 美国5|@ripaojiedian'
-  - '[60ms] 美国 - 洛杉矶 - 2'
-  - '[64ms] 12|美国4|@ripaojiedian'
-  - '[66ms] 11|🇺🇸 美国4|@ripaojiedian'
-  - '[66ms] 12|美国5|@ripaojiedian'
-  - '[70ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
-  - '[74ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
-  - '[80ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
-  - '[87ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
-  - '[88ms] 🇺🇸US_1|1.1MB/s'
-  - '[88ms] 🇺🇸US_6|1.8MB/s'
-  - '[92ms] 13|US_speednode_0046'
+  - '[54ms] 美国 - 东洛杉矶 - 16'
+  - '[56ms] 美国 - 天堂市 - 32'
+  - '[57ms] 🇺🇸US_14|2.3MB/s'
+  - '[60ms] 🇺🇸US_7|1.4MB/s'
+  - '[64ms] 美国 - 东洛杉矶 - 12'
+  - '[64ms] 11|🇺🇸 美国4|@ripaojiedian'
+  - '[64ms] 🇺🇸US_5|1.1MB/s'
+  - '[64ms] 美国 - 洛杉矶 - 2'
+  - '[64ms] 🇺🇸US_9|1.2MB/s'
+  - '[65ms] 12|美国4|@ripaojiedian'
+  - '[65ms] 11|🇺🇸 美国5|@ripaojiedian'
+  - '[67ms] 12|美国5|@ripaojiedian'
+  - '[69ms] 美国 - 天堂市 - 13'
+  - '[69ms] 🇺🇸US_8|1.0MB/s'
+  - '[70ms] 美国 - 天堂市 - 6'
+  - '[71ms] 13|US_speednode_0024'
+  - '[71ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
+  - '[74ms] 美国 - 天堂市 - 7'
+  - '[76ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
+  - '[79ms] 美国 - 天堂市 - 14'
+  - '[81ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
+  - '[85ms] 13|US_speednode_0021'
+  - '[87ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
+  - '[93ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
+  - '[94ms] 美国 - 波特蘭 - 1'
   - '[95ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443'
-  - '[103ms] 13|US_speednode_0043'
-  - '[119ms] 美国 - 波特蘭 - 1'
-  - '[160ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
-  - '[185ms] 13|US_speednode_0049'
-  - '[238ms] 美国 - 天堂市 - 7'
-  - '[238ms] 美国 - 天堂市 - 14'
-  - '[531ms] 13|US_speednode_0036'
-  - '[1300ms] 美国 - 天堂市 - 6'
-  - '[2323ms] 美国 - 天堂市 - 13'
+  - '[99ms] 🇺🇸US_6|1.8MB/s'
+  - '[99ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
+  - '[152ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
+  - '[198ms] 🇺🇸US_1|1.1MB/s'
 - name: 🇸🇬 新加坡
   type: select
   proxies:
-  - '[7ms] 🇸🇬SG_1|1.2MB/s'
-  - '[226ms] 13|SG_speednode_0032'
-  - '[227ms] 新加坡 - 新加坡 - 1'
-  - '[228ms] 新加坡 - 新加坡 - 2'
-  - '[310ms] 13|SG_speednode_0031'
+  - '[2ms] 🇸🇬SG_1|1.2MB/s'
+  - '[224ms] 新加坡 - 新加坡 - 2'
+  - '[239ms] 新加坡 - 新加坡 - 1'
 - name: 🇰🇷 韩国
   type: select
   proxies:
-  - '[188ms] 韩国-007 |821KB/s'
-  - '[188ms] 🇰🇷KR_1|1010KB/s'
-  - '[188ms] 韩国 - Yeongdong-gun - 1'
-  - '[190ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
-  - '[204ms] 🇰🇷KR_2|1.4MB/s'
-  - '[521ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
-  - '[675ms] 13|KR_speednode_0022'
+  - '[191ms] 韩国-007 |821KB/s'
+  - '[193ms] 韩国 - Yeongdong-gun - 1'
+  - '[194ms] 🇰🇷KR_1|1010KB/s'
+  - '[200ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
+  - '[202ms] 13|KR_speednode_0008'
+  - '[209ms] 13|KR_speednode_0010'
+  - '[510ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
+  - '[1224ms] 🇰🇷KR_2|1.4MB/s'
 - name: 🇬🇧 英国
   type: select
   proxies:
-  - '[14ms] 13|GB_speednode_0019'
-  - '[19ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
-  - '[20ms] 13|GB_speednode_0018'
-  - '[70ms] SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:989'
-  - '[71ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
-  - '[84ms] 13|GB_speednode_0016'
-  - '[112ms] 13|GB_speednode_0015'
-  - '[120ms] 13|GB_speednode_0014'
-  - '[256ms] 13|GB_speednode_0017'
+  - '[17ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
+  - '[70ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
+  - '[78ms] 13|GB_speednode_0007'
+  - '[78ms] 13|GB_speednode_0006'
+  - '[270ms] 13|GB_speednode_0005'
 - name: 🇩🇪 德国
   type: select
   proxies:
-  - '[5ms] 🇩🇪DE_4|1.6MB/s'
-  - '[5ms] 🇩🇪DE_7|1.2MB/s'
-  - '[7ms] 🇩🇪DE_3|1.1MB/s'
-  - '[12ms] 13|NL_speednode_0025'
-  - '[25ms] 13|CA_speednode_0002'
-  - '[66ms] 德国-001 |569KB/s'
-  - '[89ms] 德国 - 德赖艾希 - 8'
-  - '[90ms] 🇩🇪DE_13|2.1MB/s'
-  - '[90ms] 🇩🇪DE_12|3.2MB/s'
-  - '[91ms] 德国 - 德赖艾希 - 9'
-  - '[92ms] 🇩🇪DE_11|2.7MB/s'
+  - '[1ms] 🇩🇪DE_7|1.2MB/s'
+  - '[2ms] 🇩🇪DE_3|1.1MB/s'
+  - '[3ms] 🇩🇪DE_4|1.6MB/s'
+  - '[65ms] 德国-001 |569KB/s'
+  - '[65ms] 13|NN_speednode_0014'
+  - '[90ms] 13|DE_speednode_0004'
+  - '[90ms] 德国 - 德赖艾希 - 9'
+  - '[91ms] 🇩🇪DE_11|2.7MB/s'
+  - '[92ms] 🇩🇪DE_16|1.2MB/s'
   - '[93ms] 德国 - 德赖艾希 - 10'
-  - '[93ms] 德国 - 諾德施泰特 - 11'
-  - '[93ms] 🇩🇪DE_15|1.3MB/s'
-  - '[93ms] 🇩🇪DE_1|1.4MB/s'
-  - '[94ms] 德国 - 德赖艾希 - 3'
-  - '[94ms] 🇩🇪DE_10|1.2MB/s'
-  - '[94ms] 🇩🇪DE_16|1.2MB/s'
+  - '[94ms] 德国 - 諾德施泰特 - 11'
   - '[95ms] 德国 - 德赖艾希 - 5'
-  - '[95ms] 🇩🇪DE_9|2.1MB/s'
-  - '[96ms] 德国 - 德赖艾希 - 7'
-  - '[97ms] 德国 - 德赖艾希 - 2'
+  - '[95ms] 德国 - 德赖艾希 - 3'
+  - '[95ms] 🇩🇪DE_15|1.3MB/s'
+  - '[95ms] 🇩🇪DE_6|1.7MB/s'
+  - '[97ms] 🇩🇪DE_2|1.4MB/s'
   - '[97ms] 德国 - 德赖艾希 - 6'
-  - '[97ms] 13|AT_speednode_0001'
-  - '[98ms] 🇩🇪DE_8|1.1MB/s'
-  - '[98ms] 🇩🇪DE_14|1018KB/s'
-  - '[98ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
-  - '[98ms] 🇩🇪DE_2|1.4MB/s'
+  - '[97ms] 🇩🇪DE_13|2.1MB/s'
+  - '[98ms] 🇩🇪DE_1|1.4MB/s'
   - '[99ms] 德国 - 德赖艾希 - 4'
-  - '[107ms] 🇩🇪DE_6|1.7MB/s'
-  - '[125ms] 13|RO_speednode_0027'
-  - '[130ms] 13|RU_speednode_0030'
-  - '[259ms] 13|RU_speednode_0029'
-  - '[274ms] 13|NN_speednode_0026'
+  - '[100ms] 🇩🇪DE_14|1018KB/s'
+  - '[101ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
+  - '[101ms] 德国 - 德赖艾希 - 2'
+  - '[102ms] 德国 - 德赖艾希 - 7'
+  - '[104ms] 🇩🇪DE_8|1.1MB/s'
+  - '[120ms] 13|RO_speednode_0016'
+  - '[252ms] 13|RU_speednode_0019'
+  - '[483ms] 13|NL_speednode_0013'
+  - '[2135ms] 🇩🇪DE_12|3.2MB/s'
 - name: 🇫🇷 法国
   type: select
   proxies:
-  - '[81ms] 法国 - 奧奈叢林 - 1'
-  - '[82ms] 🇫🇷FR_2|1.1MB/s'
-  - '[90ms] 🇫🇷FR_3|2.2MB/s'
+  - '[86ms] 🇫🇷FR_2|1.1MB/s'
+  - '[95ms] 🇫🇷FR_3|2.2MB/s'
+  - '[1119ms] 法国 - 奧奈叢林 - 1'
 - name: 🇷🇺 俄罗斯
   type: select
   proxies:
@@ -3035,20 +2723,20 @@ proxy-groups:
 - name: 🇨🇦 加拿大
   type: select
   proxies:
-  - '[25ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
-  - '[73ms] 加拿大 - 列治文 - 1'
-  - '[74ms] 加拿大 - 列治文 - 2'
+  - '[35ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
+  - '[65ms] 加拿大 - 列治文 - 2'
+  - '[69ms] 加拿大 - 列治文 - 1'
 - name: 🇦🇺 澳大利亚
   type: select
   proxies:
-  - '[57ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
+  - '[16ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
 - name: 🇮🇳 印度
   type: select
   proxies:
-  - '[101ms] 瑞典 - Steninge - 2'
-  - '[111ms] 瑞典 - Steninge - 1'
-  - '[112ms] 瑞典 - Steninge - 4'
-  - '[141ms] 瑞典 - Steninge - 3'
+  - '[100ms] 瑞典 - Steninge - 2'
+  - '[102ms] 瑞典 - Steninge - 1'
+  - '[141ms] 瑞典 - Steninge - 4'
+  - '[164ms] 瑞典 - Steninge - 3'
 - name: 🇧🇷 巴西
   type: select
   proxies:
