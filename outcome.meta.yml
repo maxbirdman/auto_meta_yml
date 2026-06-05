@@ -1,4 +1,4 @@
-# Update: 2026-06-04 19:27
+# Update: 2026-06-05 19:01
 allow-lan: false
 dns:
   enable: true
@@ -18,25 +18,42 @@ log-level: warning
 mixed-port: 7890
 mode: rule
 proxies:
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.bgqmvppyqaHyHPHZXMTlM49okx_O5AWML7IZkg1UZSs
-  name: '[17ms] 🇩🇪DE_5|1.1MB/s'
-  network: xhttp
+- encryption: none
+  name: '[1ms] 🇩🇪DE_3|1.1MB/s'
+  network: ws
+  packet-encoding: xudp
+  port: 80
+  server: 104.25.122.72
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6cd78ec7-b715-471c-92b4-0c3842caea4b
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: billowing-cloud-d339.sospanel.workers.dev
+    max-early-data: 2560
+    path: /eyJqdW5rIjoiVXRIT2UwaDUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: '[2ms] 🇩🇪DE_5|1.0MB/s'
+  network: ws
   port: 443
-  server: 104.19.229.21
+  server: 192.200.160.3
   tls: true
   type: vless
   udp: true
-  uuid: 58225ed2-9017-4204-8852-1b5cc1311fb8
-  xhttp-opts:
-    mode: auto
-    path: /c544c1d5248bf014e3a8
+  uuid: 5b6be23b-dff4-428f-8a60-4f11568abe12
+  ws-opts:
+    headers:
+      Host: sync.amordad.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /api/v1/stream
   xudp: true
-  servername: 1-cloudflare.lapis-lazuli.tech
-- name: '[17ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
+  servername: sync.amordad.xyz
+- name: '[2ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
   type: trojan
   network: ws
   server: 160.153.136.238
@@ -46,75 +63,7 @@ proxies:
   sni: snippets.kkii.eu.org
   ws-opts:
     path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
-- client-fingerprint: randomized
-  name: '[17ms] 🇺🇸US_2|1.1MB/s'
-  network: ws
-  password: d0298536-d670-4045-bbb1-ddd5ea68683e
-  port: 443
-  server: 104.19.174.68
-  skip-cert-verify: false
-  sni: azadnet-5vk.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36
-    path: /azadnet-5vk.pages.dev/?PROT_TYPE=trojan
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2560
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: '[18ms] 🇬🇧GB_1|1.4MB/s'
-  network: xhttp
-  port: 443
-  server: 104.17.121.71
-  tls: true
-  type: vless
-  udp: true
-  uuid: d644824c-7f7c-4b48-87da-d988722082cb
-  xhttp-opts:
-    host: sabkpo.tll-far.ir
-    mode: auto
-    path: /Telegram-Zedmodeon
-    x-padding-bytes: 100-1000
-  xudp: true
-  servername: sabkpo.tll-far.ir
-- name: '[18ms] 荷兰 - 阿姆斯特丹 - 1'
-  server: 188.114.97.6
-  port: 443
-  type: trojan
-  password: mitivpn
-  sni: www.mitivpn.in.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: www.mitivpn.in.net
-  udp: true
-  delay: 1097
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.bgqmvppyqaHyHPHZXMTlM49okx_O5AWML7IZkg1UZSs
-  name: '[18ms] 🇩🇪DE_6|1.5MB/s'
-  network: xhttp
-  port: 443
-  server: 66.81.247.104
-  tls: true
-  type: vless
-  udp: true
-  uuid: 58225ed2-9017-4204-8852-1b5cc1311fb8
-  xhttp-opts:
-    mode: auto
-    path: /c544c1d5248bf014e3a8
-  xudp: true
-  servername: 1-cloudflare.lapis-lazuli.tech
-- name: '[18ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
+- name: '[2ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
   type: trojan
   network: ws
   server: 188.244.122.238
@@ -131,263 +80,106 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: '[18ms] 🇩🇪DE_2|2.1MB/s'
-  network: xhttp
+  name: '[2ms] 🇺🇸US_3|2.1MB/s'
+  network: ws
   port: 443
-  server: 63.141.128.25
+  server: 45.130.125.76
   tls: true
   type: vless
   udp: true
-  uuid: '@JynMarket'
-  xhttp-opts:
-    host: a.pedramdns.shop
-    mode: packet-up
-    path: /JynMarket
-    x-padding-bytes: 100-1000
+  uuid: 48083240-0059-4636-9092-a0dd611ed5b7
+  ws-opts:
+    headers:
+      Host: meh.dorostify.com
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+    path: /
   xudp: true
-  servername: a.pedramdns.shop
+  servername: meh.dorostify.com
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: '[19ms] 🇫🇮FI_2|2.5MB/s'
+  name: '[2ms] 🇬🇧GB_2|1.3MB/s'
   network: xhttp
   port: 443
-  server: 198.62.62.18
+  server: 104.17.121.71
   tls: true
   type: vless
   udp: true
-  uuid: 5e5608a2-9893-4eaa-b90a-e202bacef5b6
+  uuid: d644824c-7f7c-4b48-87da-d988722082cb
   xhttp-opts:
-    host: cdn.safev2ray.store
+    host: sabkpo.tll-far.ir
     mode: auto
-    path: /kir
+    path: /Telegram-Zedmodeon
     x-padding-bytes: 100-1000
   xudp: true
-  servername: cdn.safev2ray.store
-- name: '[23ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
-  type: ssr
-  server: 107.151.182.253
-  port: 8080
-  password: 14fFPrbezE3HDZzsMOr6
-  cipher: rc4-md5
-  protocol: origin
-  obfs: plain
-- name: '[23ms] 德国-001 |569KB/s'
-  type: vmess
-  network: tcp
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  server: 82.198.246.97
-  servername: 4120-BE04-13ef56096989.457.PP.ua
-  port: 180
+  servername: sabkpo.tll-far.ir
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: '[2ms] 🇺🇸US_1|1.4MB/s'
+  network: xhttp
+  port: 443
+  server: 104.19.229.21
+  tls: true
+  type: vless
+  udp: true
+  uuid: bdd885ff-1b3b-40fd-93d5-ac2b29b90f8b
+  xhttp-opts:
+    host: www.middle.cc.cd
+    mode: stream-one
+    path: /settings----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE
+  xudp: true
+  servername: www.middle.cc.cd
+- encryption: none
+  name: '[2ms] 🇺🇸US_2|1.3MB/s'
+  network: ws
+  packet-encoding: xudp
+  port: 80
+  server: 162.159.81.57
   skip-cert-verify: false
   tls: false
+  type: vless
   udp: true
-  xudp: true
-  alterId: 0
-  cipher: auto
-- name: '[24ms] 美国 - 洛杉矶 - 1'
-  server: 82.198.246.37
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-  delay: 2448
-- multiplexing: MULTIPLEXING_LOW
-  name: '[30ms] 🇺🇸US_1|2.2MB/s'
-  password: dongtaiwang.com
-  port: 34567
-  server: 157.254.223.44
-  transport: TCP
-  type: mieru
-  username: dongtaiwang.com
-- name: '[35ms] 加纳 - 阿克拉 - 2'
-  server: 155.117.198.83
-  port: 48697
-  type: trojan
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: gh.01.naiun.bilibili.com
-  skip-cert-verify: true
-  udp: true
-  delay: 1112
-- name: '[35ms] 加纳 - 阿克拉 - 3'
-  server: 155.117.198.82
-  type: trojan
-  port: 48697
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: gh.01.naiun.bilibili.com
-  skip-cert-verify: true
-  udp: true
-  delay: 1235
-- name: '[41ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
-  type: ss
-  server: 71.19.148.143
-  port: 443
-  password: p78naCf2EfOlRSLTX0wFVx
-  cipher: chacha20-ietf-poly1305
-- name: '[42ms] 加拿大 - 多伦多 - 1'
-  server: 3.96.152.83
-  type: ss
-  port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-  delay: 543
-- name: '[42ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
-  type: ss
-  server: 45.154.204.7
-  port: 990
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  cipher: chacha20-ietf-poly1305
-- name: '[43ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
-  type: ss
-  server: 23.95.76.59
-  port: 990
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  cipher: chacha20-ietf-poly1305
-- name: '[43ms] 加拿大 - 多伦多 - 2'
-  server: 15.223.63.40
-  type: ss
-  port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-  delay: 552
-- name: '[46ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
-  type: vmess
-  server: cg1c14.waimaojd.com
-  port: 443
-  uuid: be8e3136-b874-4085-bd23-ec3699300490
-  alterId: 0
-  cipher: auto
-  network: ws
-  servername: cg1c14.waimaojd.com
-  http-opts: {}
-  h2-opts: {}
-  tls: true
-  skip-cert-verify: true
+  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
   ws-opts:
-    path: /api/v1/graphql
     headers:
-      HOST: cg1c14.waimaojd.com
-- name: '[48ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
+      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
+    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
+  xudp: true
+- encryption: none
+  name: '[2ms] 🇩🇪DE_4|2.1MB/s'
+  network: ws
+  packet-encoding: xudp
+  port: 8443
+  server: 190.93.247.250
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b1766da2-40c0-4a41-817e-e60850f85ab5
+  ws-opts:
+    headers:
+      Host: mers.dorebaba.ir
+    path: /@shopcar?ed
+  servername: mers2.dorebaba.ir
+- name: '[2ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
   type: ss
   server: 15.204.247.49
   port: 12000
   password: 8JCsPssfgS8tiRwiMlhARg==
   cipher: aes-256-gcm
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: '[48ms] 🇩🇪DE_1|2.8MB/s'
-  network: xhttp
-  port: 8443
-  server: ns2.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0de0be25-c106-4833-bddb-6fdebb7eaeea
-  xhttp-opts:
-    host: de1.cfarous.online
-    mode: auto
-    path: /random
-    x-padding-bytes: 100-1000
-  xudp: true
-  servername: de1.cfarous.online
-- name: '[50ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
-  type: ss
-  server: 144.217.164.29
-  port: 12000
-  password: 8JCsPssfgS8tiRwiMlhARg==
-  cipher: aes-256-gcm
-- name: '[50ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
+- name: '[6ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
   type: ss
   server: 23.95.75.146
   port: 443
   password: NDRySIABARbErNIVsCNVkyYAHiBzhveT
   cipher: chacha20-ietf-poly1305
-- name: '[54ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
-  type: vmess
-  server: support.zoom.us
-  port: 8080
-  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
-  alterId: 0
-  cipher: auto
-  network: ws
-  servername: node4.rtxconfigz.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-  ws-opts:
-    path: /@Malinda6104
-    headers:
-      HOST: node4.rtxconfigz.com
-- name: '[55ms] 美国 - Secaucus - 3'
-  server: 69.164.240.83
-  port: 10878
-  type: ss
-  country: 🇺🇸 US
-  password: t6d26id0pjzdo3x5wtlf
-  cipher: aes-128-gcm
-  delay: 1544
-- name: '[55ms] 美国 - Secaucus - 4'
-  server: 69.164.240.86
-  type: ss
-  country: 🇺🇸US
-  port: 10880
-  password: 3px0wmx0e81145g568ga
-  cipher: aes-128-gcm
-  delay: 533
-- name: '[55ms] 美国 - Secaucus - 2'
-  server: 174.138.187.118
-  type: ss
-  country: 🇺🇸US
-  port: 10875
-  password: lioxj6qx5wj7hz4m9pom
-  cipher: aes-128-gcm
-  delay: 1502
-- name: '[56ms] 加拿大 - 多伦多 - 3'
-  server: 35.183.93.91
-  type: ss
-  port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-  delay: 579
-- name: '[56ms] 加拿大 - 多伦多 - 4'
-  server: 52.60.99.199
-  type: ss
-  port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-  delay: 566
-- cipher: aes-256-cfb
-  name: '[58ms] 🇨🇦CA_2|1.0MB/s'
-  password: amazonskr05
-  port: 443
-  server: 3.99.174.90
-  skip-cert-verify: false
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: '[58ms] 🇨🇦CA_1|1.2MB/s'
-  password: amazonskr05
-  port: 443
-  server: 35.183.93.91
-  skip-cert-verify: false
-  type: ss
-  udp: false
-- name: '[59ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
-  type: ss
-  server: 79.127.233.170
-  port: 990
-  password: f8f7aCzcPKbsF8p3
-  cipher: chacha20-ietf-poly1305
-- name: '[63ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
+- name: '[11ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
   type: vmess
   server: sy4.620720.xyz
   port: 443
@@ -403,24 +195,7 @@ proxies:
     path: /
     headers:
       Host: sy4.620720.xyz
-- name: '[66ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
-  type: vmess
-  server: hgtrojan.zabc.net
-  port: 2083
-  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
-  alterId: 0
-  cipher: auto
-  network: ws
-  servername: hgtrojan.zabc.net
-  http-opts: {}
-  h2-opts: {}
-  tls: true
-  skip-cert-verify: true
-  ws-opts:
-    path: /e6395c20
-    headers:
-      HOST: hgtrojan.zabc.net
-- name: '[72ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
+- name: '[12ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
   type: vmess
   server: t1.620720.xyz
   port: 8443
@@ -436,23 +211,136 @@ proxies:
     path: /
     headers:
       Host: t1.620720.xyz
-- name: '[80ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
-  type: vmess
-  server: cg1c01.waimaojd.com
+- name: '[15ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
+  type: ss
+  server: 144.217.164.29
+  port: 12000
+  password: 8JCsPssfgS8tiRwiMlhARg==
+  cipher: aes-256-gcm
+- name: '[15ms] 加拿大 - 多伦多 - 2'
+  server: 3.96.152.83
+  type: ss
   port: 443
-  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  password: amazonskr05
+  cipher: aes-256-cfb
+  delay: 557
+- name: '[15ms] 加拿大 - 多伦多 - 1'
+  server: 52.60.99.199
+  type: ss
+  port: 443
+  password: amazonskr05
+  cipher: aes-256-cfb
+  delay: 543
+- name: '[21ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
+  type: ss
+  server: 45.154.204.7
+  port: 990
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  cipher: chacha20-ietf-poly1305
+- name: '[21ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
+  type: ss
+  server: 23.95.76.59
+  port: 990
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  cipher: chacha20-ietf-poly1305
+- name: '[35ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
+  type: vmess
+  server: support.zoom.us
+  port: 8080
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
   alterId: 0
   cipher: auto
   network: ws
-  servername: cg1c01.waimaojd.com
+  servername: node4.rtxconfigz.com
   http-opts: {}
   h2-opts: {}
-  tls: true
+  skip-cert-verify: true
   ws-opts:
-    path: /api/v1/graphql
+    path: /@Malinda6104
     headers:
-      Host: cg1c01.waimaojd.com
-- name: '[81ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
+      HOST: node4.rtxconfigz.com
+- name: '[54ms] 法国 - 巴黎 - 3'
+  server: 155.117.198.86
+  type: trojan
+  port: 45619
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: fr.01.naiun.bilibili.com
+  skip-cert-verify: true
+  udp: true
+  delay: 1012
+- name: '[55ms] 阿塞拜疆 - 巴库 - 2'
+  server: 155.117.198.87
+  type: trojan
+  port: 41943
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: az.01.naiun.bilibili.com
+  skip-cert-verify: true
+  delay: 1011
+- alterId: 0
+  cipher: auto
+  name: '[60ms] 11|🇺🇸 美国4|@ripaojiedian'
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: '[60ms] 法国 - 巴黎 - 2'
+  server: 155.117.198.83
+  type: trojan
+  country: 🇺🇸US
+  port: 45619
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: fr.01.naiun.bilibili.com
+  skip-cert-verify: true
+  udp: true
+  delay: 1047
+- name: '[61ms] 德国-001 |569KB/s'
+  type: vmess
+  network: tcp
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 82.198.246.97
+  servername: 4120-BE04-13ef56096989.457.PP.ua
+  port: 180
+  skip-cert-verify: false
+  tls: false
+  udp: true
+  xudp: true
+  alterId: 0
+  cipher: auto
+- alterId: 0
+  cipher: auto
+  name: '[61ms] 12|美国4|@ripaojiedian'
+  network: tcp
+  port: '180'
+  server: 82.198.246.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: '[62ms] 🇩🇪DE_2|1016KB/s'
+  network: tcp
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 46424
+  server: 155.117.198.83
+  skip-cert-verify: true
+  sni: de.01.naiun.bilibili.com
+  type: trojan
+- name: '[64ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
+  type: ssr
+  server: 107.151.182.253
+  port: 8080
+  password: 14fFPrbezE3HDZzsMOr6
+  cipher: rc4-md5
+  protocol: origin
+  obfs: plain
+- name: '[70ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
+  type: ss
+  server: 71.19.148.143
+  port: 443
+  password: p78naCf2EfOlRSLTX0wFVx
+  cipher: chacha20-ietf-poly1305
+- name: '[73ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
   type: vmess
   server: cg1c04.waimaojd.com
   port: 443
@@ -469,7 +357,140 @@ proxies:
     path: /api/v1/graphql
     headers:
       HOST: cg1c04.waimaojd.com
-- name: '[91ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443'
+- client-fingerprint: chrome
+  name: '[76ms] 🇬🇧GB_1|1.5MB/s'
+  network: ws
+  port: 52014
+  server: 57.129.130.211
+  tls: true
+  type: vless
+  udp: true
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-opts:
+    headers:
+      Host: ooa858iqkhza12.mesa.ip-ddns.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /@Marisa_kristifp=chrome
+  xudp: true
+  servername: ooa858iqkhza12.mesa.ip-ddns.com
+- name: '[80ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
+  type: ss
+  server: pupas-shirting-unsung.freesocks.work
+  port: 443
+  password: p78naCf2EfOlRSLTX0wFVx
+  cipher: chacha20-ietf-poly1305
+- name: '[82ms] 荷兰 - 阿姆斯特丹 - 2'
+  server: 95.179.187.188
+  type: vmess
+  country: 🇳🇱NL
+  port: 57220
+  uuid: 13a400f3-e4d6-4cc6-840e-8cc9c52e9c25
+  alterId: 0
+  cipher: auto
+  network: tcp
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+  delay: 1876
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '[83ms] 13|RU_speednode_0040'
+  port: 443
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '[83ms] 13|RU_speednode_0043'
+  port: 22231
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- flow: xtls-rprx-vision
+  name: '[84ms] 13|RU_speednode_0042'
+  port: 443
+  reality-opts:
+    public-key: c9eCHF41FReFLIdarpg8M5edw4_E133EJBzrvYS02Ck
+    short-id: cd9a5f0edff48da4
+  server: 213.108.2.130
+  servername: cloudflare.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5e8ee155-0962-4307-98f2-b65f6bbbd5bb
+- name: '[87ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
+  type: vmess
+  server: hgtrojan.zabc.net
+  port: 2083
+  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: hgtrojan.zabc.net
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+  ws-opts:
+    path: /e6395c20
+    headers:
+      HOST: hgtrojan.zabc.net
+- name: '[88ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
+  type: ss
+  server: 79.127.233.170
+  port: 990
+  password: f8f7aCzcPKbsF8p3
+  cipher: chacha20-ietf-poly1305
+- name: '[89ms] 9|@tootffarangi🍓'
+  obfs: salamander
+  obfs-password: masir_sefid
+  password: masir_sefid
+  port: 443
+  ports: 500-56000
+  server: 3.121.136.75
+  skip-cert-verify: false
+  sni: content.masir-sefid.shop
+  tls: false
+  type: hysteria2
+- cipher: aes-256-cfb
+  name: '[89ms] 🇩🇪DE_1|1.0MB/s'
+  password: amazonskr05
+  port: 443
+  server: 3.79.104.163
+  skip-cert-verify: false
+  type: ss
+  udp: false
+- name: '[90ms] 德国 - 法兰克福 - 2'
+  server: 103.244.145.247
+  type: ss
+  country: 🇦🇫AF
+  port: 28893
+  password: V6_RXT2UlL5ONSD3Fmvd9XqBGNmespBu
+  cipher: chacha20-ietf-poly1305
+  delay: 739
+- flow: xtls-rprx-vision
+  name: '[92ms] 13|GB_speednode_0014'
+  port: 443
+  reality-opts:
+    public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
+    short-id: 7a3f9e2b1c8d4f6a
+  server: 31.76.113.26
+  servername: it.s3-cloud.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+- name: '[94ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443'
   type: vmess
   server: cg1c07.waimaojd.com
   port: 443
@@ -485,62 +506,230 @@ proxies:
     path: /api/v1/graphql
     headers:
       Host: cg1c07.waimaojd.com
-- name: '[92ms] 加拿大 - 蒙特利尔 - 5'
-  server: ssca.irundns.net
+- name: '[98ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
+  type: vmess
+  server: cg1c14.waimaojd.com
   port: 443
-  type: ssr
-  cipher: aes-128-cfb
-  password: $$Turb0VPN$$
-  protocol: auth_aes128_md5
-  obfs: http_post
-  protocol-param: ''
-  obfs-param: ''
-  udp: true
-  delay: 702
-- name: '[101ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: cg1c14.waimaojd.com
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      HOST: cg1c14.waimaojd.com
+- name: '[99ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
+  type: trojan
+  network: ws
+  server: 202.61.254.159
+  port: 443
+  password: 5a2c16f9
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
+- name: '[99ms] 荷兰 - 阿姆斯特丹 - 1'
+  server: 82.38.31.192
   type: ss
-  server: pupas-shirting-unsung.freesocks.work
-  port: 443
-  password: p78naCf2EfOlRSLTX0wFVx
+  country: 🇬🇧GB
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
   cipher: chacha20-ietf-poly1305
-- name: '[111ms] 加纳 - 阿克拉 - 1'
-  server: 90081bb25c.node.tro.cac.cab
-  port: 48697
-  type: trojan
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: gh.01.naiun.bilibili.com
-  skip-cert-verify: true
+  delay: 1113
+- flow: xtls-rprx-vision
+  name: '[100ms] 13|GB_speednode_0015'
+  port: 443
+  reality-opts:
+    public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
+    short-id: 7a3f9e2b1c8d4f6a
+  server: 31.76.113.91
+  servername: it.s3-cloud.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-  delay: 1088
-- name: '[119ms] 爱尔兰 - 都柏林 - 1'
-  server: 146.70.90.195
-  type: trojan
-  country: 🇷🇴RO
-  port: 57452
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+- flow: xtls-rprx-vision
+  name: '[100ms] 13|GB_speednode_0013'
+  port: 443
+  reality-opts:
+    public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
+    short-id: 7a3f9e2b1c8d4f6a
+  server: 31.76.113.30
+  servername: it.s3-cloud.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-  password: t1k169n5zmvvwn96r9ft
-  sni: api-yandex.maps.ru
-  skip-cert-verify: true
-  delay: 754
-- name: '[120ms] 爱尔兰 - 都柏林 - 2'
-  server: 146.70.90.198
-  type: trojan
-  country: 🇷🇴RO
-  port: 57452
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+- name: '[104ms] 13|US_speednode_0045'
+  port: 443
+  reality-opts:
+    public-key: HlxgAXuwwby0lujjT2LKBPF0udWK4SVjtMPyKtiNdEw
+    short-id: 232cd9a21e42
+  server: 31.207.5.73
+  servername: www.amd.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-  password: t1k169n5zmvvwn96r9ft
-  skip-cert-verify: true
-  delay: 2440
-- name: '[120ms] 爱尔兰 - 都柏林 - 3'
-  server: 146.70.90.197
-  type: trojan
-  country: 🇷🇴RO
-  port: 57452
+  uuid: 6d088fbd-528d-4f2a-be26-317dcda3c6ee
+- name: '[104ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
+  type: vmess
+  server: cg1c01.waimaojd.com
+  port: 443
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: cg1c01.waimaojd.com
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c01.waimaojd.com
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - nobitex.nets3.ninifile.com
+    path:
+    - /
+  name: '[114ms] 🇫🇮FI_1|1.2MB/s'
+  network: http
+  port: 49886
+  server: ::ffff:416c:99da
+  type: vless
   udp: true
-  password: t1k169n5zmvvwn96r9ft
+  uuid: 2104fdd3-d334-0fb0-89df-cf7929346d72
+  xudp: true
+- name: '[114ms] 13|DE_speednode_0011'
+  password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
+  port: 9443
+  server: de-1.hysteria.ltd
+  skip-cert-verify: false
+  sni: de-1.hysteria.ltd
+  type: trojan
+  udp: true
+- name: '[119ms] 俄罗斯 - 圣彼得堡 - 1'
+  server: 195.58.49.104
+  type: ss
+  country: 🇨🇿CZ
+  port: 20129
+  password: fbaf33bcffe53cf9
+  cipher: aes-256-gcm
+  delay: 585
+- name: '[120ms] 13|RO_speednode_0036'
+  port: 9002
+  server: 84.239.14.146
   skip-cert-verify: true
-  delay: 855
-- name: '[126ms] 日本-003 |689KB/s'
+  tls: true
+  type: http
+  udp: true
+- name: '[120ms] 13|RO_speednode_0035'
+  port: 9002
+  server: 84.239.49.154
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: '[120ms] 13|RO_speednode_0032'
+  port: 9002
+  server: 84.239.49.201
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: '[121ms] 13|RO_speednode_0031'
+  port: 9002
+  server: 84.239.14.158
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: '[121ms] 13|RO_speednode_0033'
+  port: 9002
+  server: 84.239.49.239
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: '[121ms] 13|RO_speednode_0037'
+  port: 9002
+  server: 84.239.49.175
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: '[121ms] 13|RO_speednode_0034'
+  port: 9002
+  server: 84.239.49.185
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: '[128ms] 俄罗斯 - 莫斯科 - 3'
+  server: 45.140.169.244
+  type: ss
+  country: 🇷🇺RU
+  port: 20981
+  password: cfe685726eea2c4b
+  cipher: aes-256-gcm
+  delay: 652
+- name: '[150ms] 9|JP-@VPNine1'
+  password: 9d0f6021-e1e3-47cd-a18e-722dd7f1c2ee
+  port: 443
+  server: 154.85.18.134
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- flow: xtls-rprx-vision
+  name: '[152ms] 13|US_speednode_0046'
+  packet-encoding: xudp
+  port: 443
+  reality-opts:
+    public-key: M1a5zeQ6Ckoo1UybbRYD8696xaWb-fRcCY-7iaQ4wCA
+    short-id: fd3f0f2bce8083fe
+  server: nld02.helpbot.click
+  servername: nld02.helpbot.click
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b95e6017-d54e-4016-b651-91c86aeaa463
+- name: '[168ms] 13|NN_speednode_0020'
+  network: ws
+  port: 17512
+  server: 142.248.151.249
+  servername: qi4rysu2u-e8j2zzhk.bsld.de5.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-opts:
+    headers:
+      Host: qi4rysu2u-e8j2zzhk.bsld.de5.net
+    path: /@Marisa_kristi
+- name: '[172ms] 13|US_speednode_0048'
+  password: f13f964e-f06c-11ec-a858-f23c91cfbbc9
+  port: 443
+  server: 3c3915de-t9zts0-ta5i1s-1j61y.jp.oshuawei.com
+  tls: true
+  type: http
+  udp: true
+  username: f13f964e-f06c-11ec-a858-f23c91cfbbc9
+- name: '[174ms] 日本-003 |689KB/s'
   type: trojan
   network: ws
   server: 168.138.46.67
@@ -554,53 +743,58 @@ proxies:
       User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
     path: /Telegram🇨🇳WangCai2
   client-fingerprint: chrome
-- name: '[127ms] 德国 - Frankfurt am Main - 1'
-  server: 18.159.210.129
-  type: ss
-  port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-  delay: 578
-- name: '[132ms] 德国 - Frankfurt am Main - 2'
-  server: 3.79.104.163
-  type: ss
-  port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-  delay: 468
-- name: '[137ms] 瑞士 - 苏黎世 - 1'
-  server: 86.106.84.198
-  type: ss
-  country: 🇷🇴RO
-  port: 13265
-  password: phizo046s4oqsm33sfvm
-  cipher: aes-128-gcm
-  delay: 485
-- name: '[141ms] 瑞士 - 苏黎世 - 2'
-  server: 86.106.84.195
-  port: 13262
-  type: ss
-  country: 🇷🇴 RO
-  password: kfuzkwdg4oynv495aywc
-  cipher: aes-128-gcm
-  delay: 481
-- name: '[142ms] 韩国 - 水原市 - 2'
-  server: 121.169.46.116
-  port: 1090
-  type: socks5
-  username: T2clM0QlM0Q6
-  skip-cert-verify: true
-  udp: true
-  delay: 513
-- name: '[142ms] 韩国 - Gasan-dong - 1'
-  server: 27.255.82.135
+- name: '[176ms] 德国 - 兰河畔林堡 - 1'
+  server: de5.niekotin.de
+  type: vmess
+  port: 80
+  uuid: 85bf5801-4658-441c-a2e5-842c6c71a521
+  alterId: 0
+  cipher: auto
+  network: ws
+  http-opts: {}
+  h2-opts: {}
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: de5.niekotin.de
+  delay: 794
+- name: '[183ms] 韩国 - Geumcheon-gu - 2'
+  server: 221.150.109.20
   type: ss
   country: 🇰🇷KR
-  port: 10727
+  port: 55104
   password: qwerREWQ@@
   cipher: aes-256-cfb
   delay: 589
-- name: '[146ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
+- name: '[187ms] 韩国 - Guro-gu - 3'
+  server: 218.50.149.114
+  type: ss
+  country: 🇰🇷KR
+  port: 43034
+  password: qwerREWQ@@
+  cipher: aes-256-cfb
+  delay: 548
+- name: '[188ms] 韩国-007 |821KB/s'
+  type: socks5
+  server: 121.169.46.116
+  port: 1090
+  skip-cert-verify: true
+  udp: true
+  client-fingerprint: chrome
+- name: '[189ms] 13|KR_speednode_0018'
+  port: 1090
+  server: 121.169.46.116
+  type: socks5
+  udp: true
+  username: T2clM0QlM0Q6
+- name: '[190ms] 阿曼-001 |1.6MB/s'
+  type: ss
+  server: 154.205.147.105
+  port: 11201
+  password: 4f53937e66f3d673
+  udp: true
+  cipher: chacha20-ietf-poly1305
+- name: '[191ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
   type: trojan
   network: ws
   server: 211.48.77.114
@@ -612,246 +806,181 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
-- name: '[153ms] 西班牙 - 圣塞瓦斯提安 - 1'
-  server: 193.148.19.210
-  type: trojan
-  country: 🇪🇸ES
-  port: 52794
-  udp: true
-  password: 2eutknankxtbgkwcajzt
-  skip-cert-verify: true
-  delay: 879
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - nobitex.nets3.ninifile.com
-    path:
-    - /
-  name: '[157ms] 🇫🇮FI_1|2.3MB/s'
-  network: http
-  port: 49886
-  server: ::ffff:416c:99da
-  type: vless
-  udp: true
-  uuid: 2104fdd3-d334-0fb0-89df-cf7929346d72
-  xudp: true
-- name: '[162ms] 罗马尼亚 - Voluntari - 3'
-  server: 84.239.49.185
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  delay: 1690
-- name: '[162ms] 罗马尼亚 - Voluntari - 2'
-  server: 84.239.49.239
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  delay: 1244
-- fingerprint: ''
-  name: '[163ms] 🇸🇬SG_1|3.4MB/s'
-  password: 6a267720-68db-49c6-8f35-a62fde6bc2c5
-  port: 12002
-  server: 43.198.90.48
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: anytls
-  udp: true
-  username: 6a267720-68db-49c6-8f35-a62fde6bc2c5
-- name: '[164ms] 罗马尼亚 - Voluntari - 5'
-  server: 84.239.49.175
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  delay: 2183
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  encryption: none
-  name: '[164ms] 🇩🇪DE_4|1.8MB/s'
-  network: xhttp
-  port: 443
-  server: dey.lnmarketplace.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  xhttp-opts:
-    host: dey.lnmarketplace.net
-    mode: stream-one
-    path: /kavir
-  xudp: true
-  servername: dey.lnmarketplace.net
-- name: '[165ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
-  type: trojan
-  network: ws
-  server: 202.61.254.159
-  port: 443
-  password: 5a2c16f9
-  skip-cert-verify: true
-  sni: snippets.kkii.eu.org
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
-- name: '[167ms] 罗马尼亚 - Voluntari - 4'
-  server: 84.239.14.146
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  delay: 1697
-- client-fingerprint: chrome
-  encryption: none
-  name: '[170ms] 🇳🇱NL_2|1.6MB/s'
-  network: tcp
-  port: 8443
-  server: 213.171.30.169
-  tls: true
-  type: vless
-  udp: true
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-  xudp: true
-  servername: cdn3-87.vk-cdnvideo.com
-- name: '[175ms] 罗马尼亚 - Voluntari - 1'
-  server: 84.239.14.158
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  delay: 2437
-- client-fingerprint: chrome
-  encryption: none
-  name: '[182ms] 🇳🇱NL_3|1.6MB/s'
-  network: tcp
-  port: 8443
-  server: 82.202.156.197
-  tls: true
-  type: vless
-  udp: true
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-  xudp: true
-  servername: cdn3-87.vk-cdnvideo.com
-- name: '[185ms] 日本 - 东京 - 1'
-  server: 3c3915de-t9zts0-ta5i1s-1j61y.jp.oshuawei.com
-  port: 443
-  type: http
-  username: f13f964e-f06c-11ec-a858-f23c91cfbbc9
-  password: f13f964e-f06c-11ec-a858-f23c91cfbbc9
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  delay: 1556
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: '[186ms] 🇳🇱NL_1|1.4MB/s'
-  network: xhttp
-  port: 2096
-  server: client.ronixgames.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94a981c4-eb75-443c-b855-6e93d8143719
-  xhttp-opts:
-    host: nl2.ronixgames.ir
-    mode: auto
-    path: /
-    x-padding-bytes: 100-1000
-  xudp: true
-  servername: cl2.ronixgames.ir
-- name: '[235ms] 新加坡 - 新加坡 - 1'
-  server: bgroup.node3.s2.nodelist-airport.com
+- name: '[193ms] 韩国 - Geumcheon-gu - 1'
+  server: 221.150.109.19
   type: ss
-  country: 🇺🇸US
-  port: 54612
-  password: 504cb0be-b285-4ec5-9561-bc289aea0d46
-  cipher: aes-256-gcm
-  delay: 621
-- name: '[238ms] 阿曼-001 |1.6MB/s'
-  type: ss
-  server: 154.205.147.105
-  port: 11201
-  password: 4f53937e66f3d673
+  country: 🇰🇷KR
+  port: 3417
+  password: qwerREWQ@@
+  cipher: aes-256-cfb
+  delay: 1312
+- name: '[196ms] 13|US_speednode_0047'
+  password: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
+  port: 443
+  server: 8e2d06c5-teisg0-ts3rye-mrtr.jp.oshuawei.com
+  tls: true
+  type: http
   udp: true
-  cipher: chacha20-ietf-poly1305
-- name: '[264ms] 南非 - 约翰内斯堡 - 1'
-  server: 20.164.45.116
+  username: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
+- name: '[225ms] 南非 - 约翰内斯堡 - 1'
+  server: 20.87.212.31
   type: ss
   country: 🇺🇸US
   port: 443
-  password: loA6saIct2REv8w5
+  password: 0FXkHNQO6q1s9KQX
   cipher: chacha20-ietf-poly1305
-  delay: 536
-- name: '[266ms] 南非 - 约翰内斯堡 - 2'
-  server: 20.164.45.116
-  type: ss
-  country: 🇺🇸US
-  port: 443
-  password: 7Gm1sdCSRWB46CrO
-  cipher: chacha20-ietf-poly1305
-  delay: 537
-- name: '[269ms] 新加坡 - 新加坡 - 3'
-  server: b5eb2edf-te8ao0-tfnl0i-au6.fourtwo.cdnbytescm.com
-  port: 3233
-  type: http
-  username: 1b609740-eec2-11ef-8543-f23c93136cb3
-  password: 1b609740-eec2-11ef-8543-f23c93136cb3
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  delay: 1162
-- name: '[287ms] 新加坡 - 新加坡 - 2'
-  server: 4b41083b-tea5c0-tequ5b-dnss.fourtwo.cdnbytescm.com
-  port: 3233
-  type: http
-  username: 16955d72-1794-11f0-a035-f23c95b6f51d
+  delay: 529
+- name: '[236ms] 🇸🇬SG_1|1.1MB/s'
   password: 16955d72-1794-11f0-a035-f23c95b6f51d
+  port: 3233
+  server: 4b41083b-tea5c0-tequ5b-dnss.fourtwo.cdnbytescm.com
   tls: true
+  type: http
+  udp: true
+  username: 16955d72-1794-11f0-a035-f23c95b6f51d
+  sni: 4b41083b-tea5c0-tequ5b-dnss.fourtwo.cdnbytescm.com
+- name: '[242ms] 13|NN_speednode_0025'
+  password: 91df5a86-fcdd-11ef-94aa-f23c913c8d2b
+  port: 5228
+  server: 19b7ea9d-t9zts0-tbnk1n-ueq.cm4.oshuawei.com
+  tls: true
+  type: http
+  udp: true
+  username: 91df5a86-fcdd-11ef-94aa-f23c913c8d2b
+- name: '[244ms] 13|NN_speednode_0026'
+  password: 22308988-8548-11ea-a22e-f23c91cfbbc9
+  port: 5228
+  server: b21cad55-t9zts0-tiaexf-ufc0.cm4.oshuawei.com
+  tls: true
+  type: http
+  udp: true
+  username: 22308988-8548-11ea-a22e-f23c91cfbbc9
+- name: '[246ms] 13|NN_speednode_0029'
+  password: 1ec223c0-1ed9-11ec-a8bf-f23c91cfbbc9
+  port: 5228
+  server: a18418b5-t9zts0-tsjk4v-1atkp.cm4.oshuawei.com
+  tls: true
+  type: http
+  udp: true
+  username: 1ec223c0-1ed9-11ec-a8bf-f23c91cfbbc9
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: '[247ms] ❓Other_1|1.3MB/s'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM
+    short-id: 473277e2
+  server: tw3.miyazono-kaori.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: bce38beb-a6d0-41d7-9c0a-26eed9a6634d
+  xudp: true
+  servername: dlcdnets.asus.com
+- name: '[248ms] 13|NN_speednode_0028'
+  password: 520b9126-9870-11ef-81b0-f23c9164ca5d
+  port: 5228
+  server: 64a99740-t9zts0-tipjoa-1slop.cm4.oshuawei.com
+  tls: true
+  type: http
+  udp: true
+  username: 520b9126-9870-11ef-81b0-f23c9164ca5d
+- name: '[249ms] 13|NN_speednode_0027'
+  password: ae5338ae-9a70-58c9-3d47-7d54a5675715
+  port: 5228
+  server: 1d603f3e-t9zts0-tc9wl2-py5w.cm4.oshuawei.com
+  tls: true
+  type: http
+  udp: true
+  username: ae5338ae-9a70-58c9-3d47-7d54a5675715
+- name: '[254ms] 13|NN_speednode_0021'
+  password: 16955d72-1794-11f0-a035-f23c95b6f51d
+  port: 3233
+  server: 4b41083b-tea5c0-tequ5b-dnss.fourtwo.cdnbytescm.com
+  tls: true
+  type: http
+  udp: true
+  username: 16955d72-1794-11f0-a035-f23c95b6f51d
+- name: '[257ms] 13|NN_speednode_0023'
+  password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  port: 5228
+  server: 2de0e51d-teisg0-tg0j4k-gacy.cm4.oshuawei.com
+  tls: true
+  type: http
+  udp: true
+  username: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+- name: '[313ms] 法国 - 巴黎 - 1'
+  server: 90081bb25c.node.tro.cac.cab
+  type: trojan
+  country: 🇺🇸US
+  port: 45619
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: fr.01.naiun.bilibili.com
   skip-cert-verify: true
   udp: true
-  delay: 1459
-- alterId: 0
-  cipher: auto
-  name: '[295ms] 如有需要，自行搭建'
-  network: tcp
-  port: '443'
-  server: web.51.la
-  servername: web.51.la
+  delay: 1808
+- name: '[323ms] 13|NN_speednode_0030'
+  password: de629d50-1711-11ed-bd7c-f23c913c8d2b
+  port: 5228
+  server: c4c796bb-t9zts0-tlpfci-1jdha.cm4.oshuawei.com
   tls: true
-  type: vmess
-  uuid: e0c6b3b7-9f5b-4bd6-9abf-260663aa4f1b
-- alterId: 0
-  cipher: auto
-  name: '[300ms] 敏感时期，更新暂停'
-  network: tcp
-  port: '443'
-  server: web.51.la
-  servername: web.51.la
+  type: http
+  udp: true
+  username: de629d50-1711-11ed-bd7c-f23c913c8d2b
+- name: '[329ms] 13|NN_speednode_0022'
+  password: 1b609740-eec2-11ef-8543-f23c93136cb3
+  port: 3233
+  server: b5eb2edf-te8ao0-tfnl0i-au6.fourtwo.cdnbytescm.com
   tls: true
-  type: vmess
-  uuid: c6e84072-2e69-4928-90af-436b3fcd0663
-- alterId: 0
-  cipher: auto
-  name: '[300ms] 庆祝亚冬会胜利召开'
-  network: tcp
-  port: '443'
-  server: web.51.la
-  servername: web.51.la
+  type: http
+  udp: true
+  username: 1b609740-eec2-11ef-8543-f23c93136cb3
+- name: '[332ms] 🇸🇬SG_2|1.3MB/s'
+  password: 6286105c-fb6d-11ef-be96-f23c93136cb3
+  port: 3234
+  server: b23bd7c6-tea5c0-telzv3-4550.fourtwo.cdnbytescm.com
   tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- name: '[453ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
+  type: http
+  username: 6286105c-fb6d-11ef-be96-f23c93136cb3
+  sni: b23bd7c6-tea5c0-telzv3-4550.fourtwo.cdnbytescm.com
+- name: '[339ms] 13|NN_speednode_0024'
+  password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
+  port: 5228
+  server: 9ae34110-t9zts0-tb592v-4lg6.cm4.oshuawei.com
+  tls: true
+  type: http
+  udp: true
+  username: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
+- name: '[348ms] 新加坡 - 新加坡 - 1'
+  server: ss.050.node-for-bigairport.win
+  type: ss
+  port: 19001
+  password: 792e0bdb-01db-450c-94c4-925151eb396e
+  cipher: chacha20-ietf-poly1305
+  delay: 957
+- name: '[351ms] 阿塞拜疆 - 巴库 - 1'
+  server: 90081bb25c.node.tro.cac.cab
+  type: trojan
+  country: 🇺🇸US
+  port: 41943
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: az.01.naiun.bilibili.com
+  skip-cert-verify: true
+  udp: true
+  delay: 1907
+- flow: xtls-rprx-vision
+  name: '[463ms] 13|RU_speednode_0039'
+  port: 22231
+  server: r1.mizulina.top
+  servername: r1.mizulina.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- name: '[488ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
   type: trojan
   network: ws
   server: 121.159.68.210
@@ -863,29 +992,6 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
-- client-fingerprint: chrome
-  name: '[491ms] 🇩🇪DE_3|1.2MB/s'
-  network: ws
-  port: 443
-  server: www.visa.cn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    headers:
-      Host: 7xbq35vdydie5sgv.cctg.xx.kg
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
-    path: /@Marisa_kristifp=chrome
-  xudp: true
-  servername: 7xbq35vdydie5sgv.cctg.xx.kg
-- name: '[1169ms] 韩国-007 |821KB/s'
-  type: socks5
-  server: 121.169.46.116
-  port: 1090
-  skip-cert-verify: true
-  udp: true
-  client-fingerprint: chrome
 proxy-groups:
 - name: 🚀 选择代理
   type: select
@@ -899,255 +1005,294 @@ proxy-groups:
   url: https://www.google.com/
   interval: 300
   proxies:
-  - '[17ms] 🇩🇪DE_5|1.1MB/s'
-  - '[17ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
-  - '[17ms] 🇺🇸US_2|1.1MB/s'
-  - '[18ms] 🇬🇧GB_1|1.4MB/s'
-  - '[18ms] 荷兰 - 阿姆斯特丹 - 1'
-  - '[18ms] 🇩🇪DE_6|1.5MB/s'
-  - '[18ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
-  - '[18ms] 🇩🇪DE_2|2.1MB/s'
-  - '[19ms] 🇫🇮FI_2|2.5MB/s'
-  - '[23ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
-  - '[23ms] 德国-001 |569KB/s'
-  - '[24ms] 美国 - 洛杉矶 - 1'
-  - '[30ms] 🇺🇸US_1|2.2MB/s'
-  - '[35ms] 加纳 - 阿克拉 - 2'
-  - '[35ms] 加纳 - 阿克拉 - 3'
-  - '[41ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
-  - '[42ms] 加拿大 - 多伦多 - 1'
-  - '[42ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
-  - '[43ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
-  - '[43ms] 加拿大 - 多伦多 - 2'
-  - '[46ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
-  - '[48ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
-  - '[48ms] 🇩🇪DE_1|2.8MB/s'
-  - '[50ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
-  - '[50ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
-  - '[54ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
-  - '[55ms] 美国 - Secaucus - 3'
-  - '[55ms] 美国 - Secaucus - 4'
-  - '[55ms] 美国 - Secaucus - 2'
-  - '[56ms] 加拿大 - 多伦多 - 3'
-  - '[56ms] 加拿大 - 多伦多 - 4'
-  - '[58ms] 🇨🇦CA_2|1.0MB/s'
-  - '[58ms] 🇨🇦CA_1|1.2MB/s'
-  - '[59ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
-  - '[63ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
-  - '[66ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
-  - '[72ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
-  - '[80ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
-  - '[81ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
-  - '[91ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443'
-  - '[92ms] 加拿大 - 蒙特利尔 - 5'
-  - '[101ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
-  - '[111ms] 加纳 - 阿克拉 - 1'
-  - '[119ms] 爱尔兰 - 都柏林 - 1'
-  - '[120ms] 爱尔兰 - 都柏林 - 2'
-  - '[120ms] 爱尔兰 - 都柏林 - 3'
-  - '[126ms] 日本-003 |689KB/s'
-  - '[127ms] 德国 - Frankfurt am Main - 1'
-  - '[132ms] 德国 - Frankfurt am Main - 2'
-  - '[137ms] 瑞士 - 苏黎世 - 1'
-  - '[141ms] 瑞士 - 苏黎世 - 2'
-  - '[142ms] 韩国 - 水原市 - 2'
-  - '[142ms] 韩国 - Gasan-dong - 1'
-  - '[146ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
-  - '[153ms] 西班牙 - 圣塞瓦斯提安 - 1'
-  - '[157ms] 🇫🇮FI_1|2.3MB/s'
-  - '[162ms] 罗马尼亚 - Voluntari - 3'
-  - '[162ms] 罗马尼亚 - Voluntari - 2'
-  - '[163ms] 🇸🇬SG_1|3.4MB/s'
-  - '[164ms] 罗马尼亚 - Voluntari - 5'
-  - '[164ms] 🇩🇪DE_4|1.8MB/s'
-  - '[165ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
-  - '[167ms] 罗马尼亚 - Voluntari - 4'
-  - '[170ms] 🇳🇱NL_2|1.6MB/s'
-  - '[175ms] 罗马尼亚 - Voluntari - 1'
-  - '[182ms] 🇳🇱NL_3|1.6MB/s'
-  - '[185ms] 日本 - 东京 - 1'
-  - '[186ms] 🇳🇱NL_1|1.4MB/s'
-  - '[235ms] 新加坡 - 新加坡 - 1'
-  - '[238ms] 阿曼-001 |1.6MB/s'
-  - '[264ms] 南非 - 约翰内斯堡 - 1'
-  - '[266ms] 南非 - 约翰内斯堡 - 2'
-  - '[269ms] 新加坡 - 新加坡 - 3'
-  - '[287ms] 新加坡 - 新加坡 - 2'
-  - '[295ms] 如有需要，自行搭建'
-  - '[300ms] 敏感时期，更新暂停'
-  - '[300ms] 庆祝亚冬会胜利召开'
-  - '[453ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
-  - '[491ms] 🇩🇪DE_3|1.2MB/s'
-  - '[1169ms] 韩国-007 |821KB/s'
+  - '[1ms] 🇩🇪DE_3|1.1MB/s'
+  - '[2ms] 🇩🇪DE_5|1.0MB/s'
+  - '[2ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
+  - '[2ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
+  - '[2ms] 🇺🇸US_3|2.1MB/s'
+  - '[2ms] 🇬🇧GB_2|1.3MB/s'
+  - '[2ms] 🇺🇸US_1|1.4MB/s'
+  - '[2ms] 🇺🇸US_2|1.3MB/s'
+  - '[2ms] 🇩🇪DE_4|2.1MB/s'
+  - '[2ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
+  - '[6ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
+  - '[11ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
+  - '[12ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
+  - '[15ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
+  - '[15ms] 加拿大 - 多伦多 - 2'
+  - '[15ms] 加拿大 - 多伦多 - 1'
+  - '[21ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
+  - '[21ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
+  - '[35ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
+  - '[54ms] 法国 - 巴黎 - 3'
+  - '[55ms] 阿塞拜疆 - 巴库 - 2'
+  - '[60ms] 11|🇺🇸 美国4|@ripaojiedian'
+  - '[60ms] 法国 - 巴黎 - 2'
+  - '[61ms] 德国-001 |569KB/s'
+  - '[61ms] 12|美国4|@ripaojiedian'
+  - '[62ms] 🇩🇪DE_2|1016KB/s'
+  - '[64ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
+  - '[70ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
+  - '[73ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
+  - '[76ms] 🇬🇧GB_1|1.5MB/s'
+  - '[80ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
+  - '[82ms] 荷兰 - 阿姆斯特丹 - 2'
+  - '[83ms] 13|RU_speednode_0040'
+  - '[83ms] 13|RU_speednode_0043'
+  - '[84ms] 13|RU_speednode_0042'
+  - '[87ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
+  - '[88ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
+  - '[89ms] 9|@tootffarangi🍓'
+  - '[89ms] 🇩🇪DE_1|1.0MB/s'
+  - '[90ms] 德国 - 法兰克福 - 2'
+  - '[92ms] 13|GB_speednode_0014'
+  - '[94ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443'
+  - '[98ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
+  - '[99ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
+  - '[99ms] 荷兰 - 阿姆斯特丹 - 1'
+  - '[100ms] 13|GB_speednode_0015'
+  - '[100ms] 13|GB_speednode_0013'
+  - '[104ms] 13|US_speednode_0045'
+  - '[104ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
+  - '[114ms] 🇫🇮FI_1|1.2MB/s'
+  - '[114ms] 13|DE_speednode_0011'
+  - '[119ms] 俄罗斯 - 圣彼得堡 - 1'
+  - '[120ms] 13|RO_speednode_0036'
+  - '[120ms] 13|RO_speednode_0035'
+  - '[120ms] 13|RO_speednode_0032'
+  - '[121ms] 13|RO_speednode_0031'
+  - '[121ms] 13|RO_speednode_0033'
+  - '[121ms] 13|RO_speednode_0037'
+  - '[121ms] 13|RO_speednode_0034'
+  - '[128ms] 俄罗斯 - 莫斯科 - 3'
+  - '[150ms] 9|JP-@VPNine1'
+  - '[152ms] 13|US_speednode_0046'
+  - '[168ms] 13|NN_speednode_0020'
+  - '[172ms] 13|US_speednode_0048'
+  - '[174ms] 日本-003 |689KB/s'
+  - '[176ms] 德国 - 兰河畔林堡 - 1'
+  - '[183ms] 韩国 - Geumcheon-gu - 2'
+  - '[187ms] 韩国 - Guro-gu - 3'
+  - '[188ms] 韩国-007 |821KB/s'
+  - '[189ms] 13|KR_speednode_0018'
+  - '[190ms] 阿曼-001 |1.6MB/s'
+  - '[191ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
+  - '[193ms] 韩国 - Geumcheon-gu - 1'
+  - '[196ms] 13|US_speednode_0047'
+  - '[225ms] 南非 - 约翰内斯堡 - 1'
+  - '[236ms] 🇸🇬SG_1|1.1MB/s'
+  - '[242ms] 13|NN_speednode_0025'
+  - '[244ms] 13|NN_speednode_0026'
+  - '[246ms] 13|NN_speednode_0029'
+  - '[247ms] ❓Other_1|1.3MB/s'
+  - '[248ms] 13|NN_speednode_0028'
+  - '[249ms] 13|NN_speednode_0027'
+  - '[254ms] 13|NN_speednode_0021'
+  - '[257ms] 13|NN_speednode_0023'
+  - '[313ms] 法国 - 巴黎 - 1'
+  - '[323ms] 13|NN_speednode_0030'
+  - '[329ms] 13|NN_speednode_0022'
+  - '[332ms] 🇸🇬SG_2|1.3MB/s'
+  - '[339ms] 13|NN_speednode_0024'
+  - '[348ms] 新加坡 - 新加坡 - 1'
+  - '[351ms] 阿塞拜疆 - 巴库 - 1'
+  - '[463ms] 13|RU_speednode_0039'
+  - '[488ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
 - name: 🔰 延迟最低
   type: url-test
   url: https://www.google.com/
   interval: 300
   tolerance: 20
   proxies:
-  - '[17ms] 🇩🇪DE_5|1.1MB/s'
-  - '[17ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
-  - '[17ms] 🇺🇸US_2|1.1MB/s'
-  - '[18ms] 🇬🇧GB_1|1.4MB/s'
-  - '[18ms] 荷兰 - 阿姆斯特丹 - 1'
-  - '[18ms] 🇩🇪DE_6|1.5MB/s'
-  - '[18ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
-  - '[18ms] 🇩🇪DE_2|2.1MB/s'
-  - '[19ms] 🇫🇮FI_2|2.5MB/s'
-  - '[23ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
-  - '[23ms] 德国-001 |569KB/s'
-  - '[24ms] 美国 - 洛杉矶 - 1'
-  - '[30ms] 🇺🇸US_1|2.2MB/s'
-  - '[35ms] 加纳 - 阿克拉 - 2'
-  - '[35ms] 加纳 - 阿克拉 - 3'
-  - '[41ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
-  - '[42ms] 加拿大 - 多伦多 - 1'
-  - '[42ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
-  - '[43ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
-  - '[43ms] 加拿大 - 多伦多 - 2'
-  - '[46ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
-  - '[48ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
-  - '[48ms] 🇩🇪DE_1|2.8MB/s'
-  - '[50ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
-  - '[50ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
-  - '[54ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
-  - '[55ms] 美国 - Secaucus - 3'
-  - '[55ms] 美国 - Secaucus - 4'
-  - '[55ms] 美国 - Secaucus - 2'
-  - '[56ms] 加拿大 - 多伦多 - 3'
-  - '[56ms] 加拿大 - 多伦多 - 4'
-  - '[58ms] 🇨🇦CA_2|1.0MB/s'
-  - '[58ms] 🇨🇦CA_1|1.2MB/s'
-  - '[59ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
-  - '[63ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
-  - '[66ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
-  - '[72ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
-  - '[80ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
-  - '[81ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
-  - '[91ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443'
-  - '[92ms] 加拿大 - 蒙特利尔 - 5'
-  - '[101ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
-  - '[111ms] 加纳 - 阿克拉 - 1'
-  - '[119ms] 爱尔兰 - 都柏林 - 1'
-  - '[120ms] 爱尔兰 - 都柏林 - 2'
-  - '[120ms] 爱尔兰 - 都柏林 - 3'
-  - '[126ms] 日本-003 |689KB/s'
-  - '[127ms] 德国 - Frankfurt am Main - 1'
-  - '[132ms] 德国 - Frankfurt am Main - 2'
-  - '[137ms] 瑞士 - 苏黎世 - 1'
-  - '[141ms] 瑞士 - 苏黎世 - 2'
-  - '[142ms] 韩国 - 水原市 - 2'
-  - '[142ms] 韩国 - Gasan-dong - 1'
-  - '[146ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
-  - '[153ms] 西班牙 - 圣塞瓦斯提安 - 1'
-  - '[157ms] 🇫🇮FI_1|2.3MB/s'
-  - '[162ms] 罗马尼亚 - Voluntari - 3'
-  - '[162ms] 罗马尼亚 - Voluntari - 2'
-  - '[163ms] 🇸🇬SG_1|3.4MB/s'
-  - '[164ms] 罗马尼亚 - Voluntari - 5'
-  - '[164ms] 🇩🇪DE_4|1.8MB/s'
-  - '[165ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
-  - '[167ms] 罗马尼亚 - Voluntari - 4'
-  - '[170ms] 🇳🇱NL_2|1.6MB/s'
-  - '[175ms] 罗马尼亚 - Voluntari - 1'
-  - '[182ms] 🇳🇱NL_3|1.6MB/s'
-  - '[185ms] 日本 - 东京 - 1'
-  - '[186ms] 🇳🇱NL_1|1.4MB/s'
-  - '[235ms] 新加坡 - 新加坡 - 1'
-  - '[238ms] 阿曼-001 |1.6MB/s'
-  - '[264ms] 南非 - 约翰内斯堡 - 1'
-  - '[266ms] 南非 - 约翰内斯堡 - 2'
-  - '[269ms] 新加坡 - 新加坡 - 3'
-  - '[287ms] 新加坡 - 新加坡 - 2'
-  - '[295ms] 如有需要，自行搭建'
-  - '[300ms] 敏感时期，更新暂停'
-  - '[300ms] 庆祝亚冬会胜利召开'
-  - '[453ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
-  - '[491ms] 🇩🇪DE_3|1.2MB/s'
-  - '[1169ms] 韩国-007 |821KB/s'
+  - '[1ms] 🇩🇪DE_3|1.1MB/s'
+  - '[2ms] 🇩🇪DE_5|1.0MB/s'
+  - '[2ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
+  - '[2ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
+  - '[2ms] 🇺🇸US_3|2.1MB/s'
+  - '[2ms] 🇬🇧GB_2|1.3MB/s'
+  - '[2ms] 🇺🇸US_1|1.4MB/s'
+  - '[2ms] 🇺🇸US_2|1.3MB/s'
+  - '[2ms] 🇩🇪DE_4|2.1MB/s'
+  - '[2ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
+  - '[6ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
+  - '[11ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
+  - '[12ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
+  - '[15ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
+  - '[15ms] 加拿大 - 多伦多 - 2'
+  - '[15ms] 加拿大 - 多伦多 - 1'
+  - '[21ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
+  - '[21ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
+  - '[35ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
+  - '[54ms] 法国 - 巴黎 - 3'
+  - '[55ms] 阿塞拜疆 - 巴库 - 2'
+  - '[60ms] 11|🇺🇸 美国4|@ripaojiedian'
+  - '[60ms] 法国 - 巴黎 - 2'
+  - '[61ms] 德国-001 |569KB/s'
+  - '[61ms] 12|美国4|@ripaojiedian'
+  - '[62ms] 🇩🇪DE_2|1016KB/s'
+  - '[64ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
+  - '[70ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
+  - '[73ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
+  - '[76ms] 🇬🇧GB_1|1.5MB/s'
+  - '[80ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
+  - '[82ms] 荷兰 - 阿姆斯特丹 - 2'
+  - '[83ms] 13|RU_speednode_0040'
+  - '[83ms] 13|RU_speednode_0043'
+  - '[84ms] 13|RU_speednode_0042'
+  - '[87ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
+  - '[88ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
+  - '[89ms] 9|@tootffarangi🍓'
+  - '[89ms] 🇩🇪DE_1|1.0MB/s'
+  - '[90ms] 德国 - 法兰克福 - 2'
+  - '[92ms] 13|GB_speednode_0014'
+  - '[94ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443'
+  - '[98ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
+  - '[99ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
+  - '[99ms] 荷兰 - 阿姆斯特丹 - 1'
+  - '[100ms] 13|GB_speednode_0015'
+  - '[100ms] 13|GB_speednode_0013'
+  - '[104ms] 13|US_speednode_0045'
+  - '[104ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
+  - '[114ms] 🇫🇮FI_1|1.2MB/s'
+  - '[114ms] 13|DE_speednode_0011'
+  - '[119ms] 俄罗斯 - 圣彼得堡 - 1'
+  - '[120ms] 13|RO_speednode_0036'
+  - '[120ms] 13|RO_speednode_0035'
+  - '[120ms] 13|RO_speednode_0032'
+  - '[121ms] 13|RO_speednode_0031'
+  - '[121ms] 13|RO_speednode_0033'
+  - '[121ms] 13|RO_speednode_0037'
+  - '[121ms] 13|RO_speednode_0034'
+  - '[128ms] 俄罗斯 - 莫斯科 - 3'
+  - '[150ms] 9|JP-@VPNine1'
+  - '[152ms] 13|US_speednode_0046'
+  - '[168ms] 13|NN_speednode_0020'
+  - '[172ms] 13|US_speednode_0048'
+  - '[174ms] 日本-003 |689KB/s'
+  - '[176ms] 德国 - 兰河畔林堡 - 1'
+  - '[183ms] 韩国 - Geumcheon-gu - 2'
+  - '[187ms] 韩国 - Guro-gu - 3'
+  - '[188ms] 韩国-007 |821KB/s'
+  - '[189ms] 13|KR_speednode_0018'
+  - '[190ms] 阿曼-001 |1.6MB/s'
+  - '[191ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
+  - '[193ms] 韩国 - Geumcheon-gu - 1'
+  - '[196ms] 13|US_speednode_0047'
+  - '[225ms] 南非 - 约翰内斯堡 - 1'
+  - '[236ms] 🇸🇬SG_1|1.1MB/s'
+  - '[242ms] 13|NN_speednode_0025'
+  - '[244ms] 13|NN_speednode_0026'
+  - '[246ms] 13|NN_speednode_0029'
+  - '[247ms] ❓Other_1|1.3MB/s'
+  - '[248ms] 13|NN_speednode_0028'
+  - '[249ms] 13|NN_speednode_0027'
+  - '[254ms] 13|NN_speednode_0021'
+  - '[257ms] 13|NN_speednode_0023'
+  - '[313ms] 法国 - 巴黎 - 1'
+  - '[323ms] 13|NN_speednode_0030'
+  - '[329ms] 13|NN_speednode_0022'
+  - '[332ms] 🇸🇬SG_2|1.3MB/s'
+  - '[339ms] 13|NN_speednode_0024'
+  - '[348ms] 新加坡 - 新加坡 - 1'
+  - '[351ms] 阿塞拜疆 - 巴库 - 1'
+  - '[463ms] 13|RU_speednode_0039'
+  - '[488ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
 - name: ✅ 手动选择
   type: select
   proxies:
-  - '[17ms] 🇩🇪DE_5|1.1MB/s'
-  - '[17ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
-  - '[17ms] 🇺🇸US_2|1.1MB/s'
-  - '[18ms] 🇬🇧GB_1|1.4MB/s'
-  - '[18ms] 荷兰 - 阿姆斯特丹 - 1'
-  - '[18ms] 🇩🇪DE_6|1.5MB/s'
-  - '[18ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
-  - '[18ms] 🇩🇪DE_2|2.1MB/s'
-  - '[19ms] 🇫🇮FI_2|2.5MB/s'
-  - '[23ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
-  - '[23ms] 德国-001 |569KB/s'
-  - '[24ms] 美国 - 洛杉矶 - 1'
-  - '[30ms] 🇺🇸US_1|2.2MB/s'
-  - '[35ms] 加纳 - 阿克拉 - 2'
-  - '[35ms] 加纳 - 阿克拉 - 3'
-  - '[41ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
-  - '[42ms] 加拿大 - 多伦多 - 1'
-  - '[42ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
-  - '[43ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
-  - '[43ms] 加拿大 - 多伦多 - 2'
-  - '[46ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
-  - '[48ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
-  - '[48ms] 🇩🇪DE_1|2.8MB/s'
-  - '[50ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
-  - '[50ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
-  - '[54ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
-  - '[55ms] 美国 - Secaucus - 3'
-  - '[55ms] 美国 - Secaucus - 4'
-  - '[55ms] 美国 - Secaucus - 2'
-  - '[56ms] 加拿大 - 多伦多 - 3'
-  - '[56ms] 加拿大 - 多伦多 - 4'
-  - '[58ms] 🇨🇦CA_2|1.0MB/s'
-  - '[58ms] 🇨🇦CA_1|1.2MB/s'
-  - '[59ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
-  - '[63ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
-  - '[66ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
-  - '[72ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
-  - '[80ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
-  - '[81ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
-  - '[91ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443'
-  - '[92ms] 加拿大 - 蒙特利尔 - 5'
-  - '[101ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
-  - '[111ms] 加纳 - 阿克拉 - 1'
-  - '[119ms] 爱尔兰 - 都柏林 - 1'
-  - '[120ms] 爱尔兰 - 都柏林 - 2'
-  - '[120ms] 爱尔兰 - 都柏林 - 3'
-  - '[126ms] 日本-003 |689KB/s'
-  - '[127ms] 德国 - Frankfurt am Main - 1'
-  - '[132ms] 德国 - Frankfurt am Main - 2'
-  - '[137ms] 瑞士 - 苏黎世 - 1'
-  - '[141ms] 瑞士 - 苏黎世 - 2'
-  - '[142ms] 韩国 - 水原市 - 2'
-  - '[142ms] 韩国 - Gasan-dong - 1'
-  - '[146ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
-  - '[153ms] 西班牙 - 圣塞瓦斯提安 - 1'
-  - '[157ms] 🇫🇮FI_1|2.3MB/s'
-  - '[162ms] 罗马尼亚 - Voluntari - 3'
-  - '[162ms] 罗马尼亚 - Voluntari - 2'
-  - '[163ms] 🇸🇬SG_1|3.4MB/s'
-  - '[164ms] 罗马尼亚 - Voluntari - 5'
-  - '[164ms] 🇩🇪DE_4|1.8MB/s'
-  - '[165ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
-  - '[167ms] 罗马尼亚 - Voluntari - 4'
-  - '[170ms] 🇳🇱NL_2|1.6MB/s'
-  - '[175ms] 罗马尼亚 - Voluntari - 1'
-  - '[182ms] 🇳🇱NL_3|1.6MB/s'
-  - '[185ms] 日本 - 东京 - 1'
-  - '[186ms] 🇳🇱NL_1|1.4MB/s'
-  - '[235ms] 新加坡 - 新加坡 - 1'
-  - '[238ms] 阿曼-001 |1.6MB/s'
-  - '[264ms] 南非 - 约翰内斯堡 - 1'
-  - '[266ms] 南非 - 约翰内斯堡 - 2'
-  - '[269ms] 新加坡 - 新加坡 - 3'
-  - '[287ms] 新加坡 - 新加坡 - 2'
-  - '[295ms] 如有需要，自行搭建'
-  - '[300ms] 敏感时期，更新暂停'
-  - '[300ms] 庆祝亚冬会胜利召开'
-  - '[453ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
-  - '[491ms] 🇩🇪DE_3|1.2MB/s'
-  - '[1169ms] 韩国-007 |821KB/s'
+  - '[1ms] 🇩🇪DE_3|1.1MB/s'
+  - '[2ms] 🇩🇪DE_5|1.0MB/s'
+  - '[2ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
+  - '[2ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
+  - '[2ms] 🇺🇸US_3|2.1MB/s'
+  - '[2ms] 🇬🇧GB_2|1.3MB/s'
+  - '[2ms] 🇺🇸US_1|1.4MB/s'
+  - '[2ms] 🇺🇸US_2|1.3MB/s'
+  - '[2ms] 🇩🇪DE_4|2.1MB/s'
+  - '[2ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
+  - '[6ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
+  - '[11ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
+  - '[12ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
+  - '[15ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
+  - '[15ms] 加拿大 - 多伦多 - 2'
+  - '[15ms] 加拿大 - 多伦多 - 1'
+  - '[21ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
+  - '[21ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
+  - '[35ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
+  - '[54ms] 法国 - 巴黎 - 3'
+  - '[55ms] 阿塞拜疆 - 巴库 - 2'
+  - '[60ms] 11|🇺🇸 美国4|@ripaojiedian'
+  - '[60ms] 法国 - 巴黎 - 2'
+  - '[61ms] 德国-001 |569KB/s'
+  - '[61ms] 12|美国4|@ripaojiedian'
+  - '[62ms] 🇩🇪DE_2|1016KB/s'
+  - '[64ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
+  - '[70ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
+  - '[73ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
+  - '[76ms] 🇬🇧GB_1|1.5MB/s'
+  - '[80ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
+  - '[82ms] 荷兰 - 阿姆斯特丹 - 2'
+  - '[83ms] 13|RU_speednode_0040'
+  - '[83ms] 13|RU_speednode_0043'
+  - '[84ms] 13|RU_speednode_0042'
+  - '[87ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
+  - '[88ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
+  - '[89ms] 9|@tootffarangi🍓'
+  - '[89ms] 🇩🇪DE_1|1.0MB/s'
+  - '[90ms] 德国 - 法兰克福 - 2'
+  - '[92ms] 13|GB_speednode_0014'
+  - '[94ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443'
+  - '[98ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
+  - '[99ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
+  - '[99ms] 荷兰 - 阿姆斯特丹 - 1'
+  - '[100ms] 13|GB_speednode_0015'
+  - '[100ms] 13|GB_speednode_0013'
+  - '[104ms] 13|US_speednode_0045'
+  - '[104ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
+  - '[114ms] 🇫🇮FI_1|1.2MB/s'
+  - '[114ms] 13|DE_speednode_0011'
+  - '[119ms] 俄罗斯 - 圣彼得堡 - 1'
+  - '[120ms] 13|RO_speednode_0036'
+  - '[120ms] 13|RO_speednode_0035'
+  - '[120ms] 13|RO_speednode_0032'
+  - '[121ms] 13|RO_speednode_0031'
+  - '[121ms] 13|RO_speednode_0033'
+  - '[121ms] 13|RO_speednode_0037'
+  - '[121ms] 13|RO_speednode_0034'
+  - '[128ms] 俄罗斯 - 莫斯科 - 3'
+  - '[150ms] 9|JP-@VPNine1'
+  - '[152ms] 13|US_speednode_0046'
+  - '[168ms] 13|NN_speednode_0020'
+  - '[172ms] 13|US_speednode_0048'
+  - '[174ms] 日本-003 |689KB/s'
+  - '[176ms] 德国 - 兰河畔林堡 - 1'
+  - '[183ms] 韩国 - Geumcheon-gu - 2'
+  - '[187ms] 韩国 - Guro-gu - 3'
+  - '[188ms] 韩国-007 |821KB/s'
+  - '[189ms] 13|KR_speednode_0018'
+  - '[190ms] 阿曼-001 |1.6MB/s'
+  - '[191ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
+  - '[193ms] 韩国 - Geumcheon-gu - 1'
+  - '[196ms] 13|US_speednode_0047'
+  - '[225ms] 南非 - 约翰内斯堡 - 1'
+  - '[236ms] 🇸🇬SG_1|1.1MB/s'
+  - '[242ms] 13|NN_speednode_0025'
+  - '[244ms] 13|NN_speednode_0026'
+  - '[246ms] 13|NN_speednode_0029'
+  - '[247ms] ❓Other_1|1.3MB/s'
+  - '[248ms] 13|NN_speednode_0028'
+  - '[249ms] 13|NN_speednode_0027'
+  - '[254ms] 13|NN_speednode_0021'
+  - '[257ms] 13|NN_speednode_0023'
+  - '[313ms] 法国 - 巴黎 - 1'
+  - '[323ms] 13|NN_speednode_0030'
+  - '[329ms] 13|NN_speednode_0022'
+  - '[332ms] 🇸🇬SG_2|1.3MB/s'
+  - '[339ms] 13|NN_speednode_0024'
+  - '[348ms] 新加坡 - 新加坡 - 1'
+  - '[351ms] 阿塞拜疆 - 巴库 - 1'
+  - '[463ms] 13|RU_speednode_0039'
+  - '[488ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
 - name: 🌐 突破锁区
   type: select
   proxies:
@@ -1184,94 +1329,124 @@ proxy-groups:
   - 🇰🇷 韩国
   - 🇬🇧 英国
   - 🇩🇪 德国
+  - 🇫🇷 法国
+  - 🇷🇺 俄罗斯
   - 🇨🇦 加拿大
   - 🇦🇺 澳大利亚
 - name: 🇯🇵 日本
   type: select
   proxies:
-  - '[72ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
-  - '[126ms] 日本-003 |689KB/s'
-  - '[185ms] 日本 - 东京 - 1'
+  - '[12ms] VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443'
+  - '[150ms] 9|JP-@VPNine1'
+  - '[174ms] 日本-003 |689KB/s'
 - name: 🇺🇸 美国
   type: select
   proxies:
-  - '[17ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
-  - '[17ms] 🇺🇸US_2|1.1MB/s'
-  - '[18ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
-  - '[23ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
-  - '[24ms] 美国 - 洛杉矶 - 1'
-  - '[30ms] 🇺🇸US_1|2.2MB/s'
-  - '[41ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
-  - '[43ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
-  - '[46ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
-  - '[48ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
-  - '[50ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
-  - '[54ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
-  - '[55ms] 美国 - Secaucus - 3'
-  - '[55ms] 美国 - Secaucus - 4'
-  - '[55ms] 美国 - Secaucus - 2'
-  - '[66ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
-  - '[80ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
-  - '[81ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
-  - '[91ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443'
-  - '[101ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
+  - '[2ms] 美国-002 |1.9MB/s|GPT|YT-GB|NF|D+'
+  - '[2ms] 德国-002 |1.4MB/s|GPT|YT-US|NF|D+|GM'
+  - '[2ms] 🇺🇸US_3|2.1MB/s'
+  - '[2ms] 🇺🇸US_1|1.4MB/s'
+  - '[2ms] 🇺🇸US_2|1.3MB/s'
+  - '[2ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000'
+  - '[6ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443'
+  - '[21ms] SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990'
+  - '[35ms] VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080'
+  - '[60ms] 11|🇺🇸 美国4|@ripaojiedian'
+  - '[61ms] 12|美国4|@ripaojiedian'
+  - '[64ms] SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080'
+  - '[70ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443'
+  - '[73ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443'
+  - '[80ms] SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443'
+  - '[87ms] VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083'
+  - '[94ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443'
+  - '[98ms] VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443'
+  - '[104ms] 13|US_speednode_0045'
+  - '[104ms] VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443'
+  - '[152ms] 13|US_speednode_0046'
+  - '[172ms] 13|US_speednode_0048'
+  - '[196ms] 13|US_speednode_0047'
 - name: 🇸🇬 新加坡
   type: select
   proxies:
-  - '[163ms] 🇸🇬SG_1|3.4MB/s'
-  - '[235ms] 新加坡 - 新加坡 - 1'
-  - '[269ms] 新加坡 - 新加坡 - 3'
-  - '[287ms] 新加坡 - 新加坡 - 2'
+  - '[236ms] 🇸🇬SG_1|1.1MB/s'
+  - '[332ms] 🇸🇬SG_2|1.3MB/s'
+  - '[348ms] 新加坡 - 新加坡 - 1'
 - name: 🇰🇷 韩国
   type: select
   proxies:
-  - '[142ms] 韩国 - 水原市 - 2'
-  - '[142ms] 韩国 - Gasan-dong - 1'
-  - '[146ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
-  - '[453ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
-  - '[1169ms] 韩国-007 |821KB/s'
+  - '[183ms] 韩国 - Geumcheon-gu - 2'
+  - '[187ms] 韩国 - Guro-gu - 3'
+  - '[188ms] 韩国-007 |821KB/s'
+  - '[189ms] 13|KR_speednode_0018'
+  - '[191ms] 韩国-001 |2.3MB/s|YT-KR|NF|D+'
+  - '[193ms] 韩国 - Geumcheon-gu - 1'
+  - '[488ms] 韩国-008 |4.2MB/s|GPT⁺|YT-KR|NF|D+'
 - name: 🇬🇧 英国
   type: select
   proxies:
-  - '[18ms] 🇬🇧GB_1|1.4MB/s'
-  - '[50ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
-  - '[59ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
+  - '[2ms] 🇬🇧GB_2|1.3MB/s'
+  - '[15ms] SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000'
+  - '[76ms] 🇬🇧GB_1|1.5MB/s'
+  - '[88ms] SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990'
+  - '[92ms] 13|GB_speednode_0014'
+  - '[100ms] 13|GB_speednode_0015'
+  - '[100ms] 13|GB_speednode_0013'
 - name: 🇩🇪 德国
   type: select
   proxies:
-  - '[17ms] 🇩🇪DE_5|1.1MB/s'
-  - '[18ms] 🇩🇪DE_6|1.5MB/s'
-  - '[18ms] 🇩🇪DE_2|2.1MB/s'
-  - '[23ms] 德国-001 |569KB/s'
-  - '[48ms] 🇩🇪DE_1|2.8MB/s'
-  - '[127ms] 德国 - Frankfurt am Main - 1'
-  - '[132ms] 德国 - Frankfurt am Main - 2'
-  - '[164ms] 🇩🇪DE_4|1.8MB/s'
-  - '[165ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
-  - '[491ms] 🇩🇪DE_3|1.2MB/s'
+  - '[1ms] 🇩🇪DE_3|1.1MB/s'
+  - '[2ms] 🇩🇪DE_5|1.0MB/s'
+  - '[2ms] 🇩🇪DE_4|2.1MB/s'
+  - '[61ms] 德国-001 |569KB/s'
+  - '[62ms] 🇩🇪DE_2|1016KB/s'
+  - '[83ms] 13|RU_speednode_0040'
+  - '[83ms] 13|RU_speednode_0043'
+  - '[84ms] 13|RU_speednode_0042'
+  - '[89ms] 🇩🇪DE_1|1.0MB/s'
+  - '[90ms] 德国 - 法兰克福 - 2'
+  - '[99ms] 德国-003 |773KB/s|GPT|YT-DE|NF'
+  - '[114ms] 13|DE_speednode_0011'
+  - '[120ms] 13|RO_speednode_0036'
+  - '[120ms] 13|RO_speednode_0035'
+  - '[120ms] 13|RO_speednode_0032'
+  - '[121ms] 13|RO_speednode_0031'
+  - '[121ms] 13|RO_speednode_0033'
+  - '[121ms] 13|RO_speednode_0037'
+  - '[121ms] 13|RO_speednode_0034'
+  - '[168ms] 13|NN_speednode_0020'
+  - '[176ms] 德国 - 兰河畔林堡 - 1'
+  - '[242ms] 13|NN_speednode_0025'
+  - '[244ms] 13|NN_speednode_0026'
+  - '[246ms] 13|NN_speednode_0029'
+  - '[248ms] 13|NN_speednode_0028'
+  - '[249ms] 13|NN_speednode_0027'
+  - '[254ms] 13|NN_speednode_0021'
+  - '[257ms] 13|NN_speednode_0023'
+  - '[323ms] 13|NN_speednode_0030'
+  - '[329ms] 13|NN_speednode_0022'
+  - '[339ms] 13|NN_speednode_0024'
+  - '[463ms] 13|RU_speednode_0039'
 - name: 🇫🇷 法国
   type: select
   proxies:
-  - REJECT
+  - '[54ms] 法国 - 巴黎 - 3'
+  - '[60ms] 法国 - 巴黎 - 2'
+  - '[313ms] 法国 - 巴黎 - 1'
 - name: 🇷🇺 俄罗斯
   type: select
   proxies:
-  - REJECT
+  - '[119ms] 俄罗斯 - 圣彼得堡 - 1'
+  - '[128ms] 俄罗斯 - 莫斯科 - 3'
 - name: 🇨🇦 加拿大
   type: select
   proxies:
-  - '[42ms] 加拿大 - 多伦多 - 1'
-  - '[42ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
-  - '[43ms] 加拿大 - 多伦多 - 2'
-  - '[56ms] 加拿大 - 多伦多 - 3'
-  - '[56ms] 加拿大 - 多伦多 - 4'
-  - '[58ms] 🇨🇦CA_2|1.0MB/s'
-  - '[58ms] 🇨🇦CA_1|1.2MB/s'
-  - '[92ms] 加拿大 - 蒙特利尔 - 5'
+  - '[15ms] 加拿大 - 多伦多 - 2'
+  - '[15ms] 加拿大 - 多伦多 - 1'
+  - '[21ms] SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990'
 - name: 🇦🇺 澳大利亚
   type: select
   proxies:
-  - '[63ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
+  - '[11ms] VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443'
 - name: 🇮🇳 印度
   type: select
   proxies:
